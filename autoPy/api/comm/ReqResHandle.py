@@ -13,7 +13,8 @@ import json
 
 
 
-def xml_get_field_value(body,field,value_dict = None):
+#def xml_get_field_value(body,field,value_dict = None):
+def xml_get_field_value(body,field,**value_dict):
     '''
     获取xml报文中的字段值，若存在多个则为列表
     :param body: 请求体或响应体
