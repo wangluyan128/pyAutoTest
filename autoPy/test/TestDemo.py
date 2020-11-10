@@ -58,11 +58,16 @@ class TestDemo:
                     print(temp)
                 except:
                     print("Error: 获取节点失败")
-    def alist(self):
+    def alist(self, **value_dict):
+        #字典做为参数只能用**传入
         a = ['a','b','c']
-        pattern = re.compile('<' + field + '>(.*)</' + field + '>',re.I)
-        result_list = pattern.findall(body)
-        print(a[1])
+        str =  "<DATAROOT><DATAROW><BL_CODE>bl_code</BL_CODE><UA_CODE>ua_code</UA_CODE><RESULT_MSG>BATT_TYPE不正确</RESULT_MSG></DATAROW></DATAROOT>"
+        pattern = re.compile('<' + "bl_code" + '>(.*)</' + "bl_code" + '>',re.I)
+        result_list = pattern.findall(str)
+        print(len(result_list))
+        #value_dict = dict()
+        value_dict['bl_code'] = result_list
+        print(value_dict)
 
 if __name__ == "__main__":
     t = TestDemo()
