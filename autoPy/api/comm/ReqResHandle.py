@@ -56,7 +56,7 @@ def xml_update_field_value(body,field,value_dict):
         print('传入参数[%s],值长度与实际长度[%s]不匹配。' %(value,len(findall)))
         return None
     for n,o in zip(value,findall):
-        old_value = 0
+        old_value = o
         new_value = '<' + field + '>' + n + '</' +field + '>'
         body = body.replace(old_value,new_value,1)
     return body

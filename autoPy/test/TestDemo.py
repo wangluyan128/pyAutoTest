@@ -58,8 +58,8 @@ class TestDemo:
                     print(temp)
                 except:
                     print("Error: 获取节点失败")
-    def alist(self, **value_dict):
-        #字典做为参数只能用**传入
+    def fdict(self, **value_dict):
+        #以字典做为参数只能用**传入
         a = ['a','b','c']
         str =  "<DATAROOT><DATAROW><BL_CODE>bl_code</BL_CODE><UA_CODE>ua_code</UA_CODE><RESULT_MSG>BATT_TYPE不正确</RESULT_MSG></DATAROW></DATAROOT>"
         pattern = re.compile('<' + "bl_code" + '>(.*)</' + "bl_code" + '>',re.I)
@@ -69,6 +69,40 @@ class TestDemo:
         value_dict['bl_code'] = result_list
         print(value_dict)
 
+
+    def udict(self):
+        body = "<DATAROOT><DATAROW><BL_CODE>bl_code</BL_CODE><UA_CODE>ua_code</UA_CODE><RESULT_MSG>BATT_TYPE不正确</RESULT_MSG></DATAROW></DATAROOT>"
+        value = {"BL_CODE":"aa"}
+    #正则匹配规则
+        pattern = re.compile('<' + "BL_CODE" + '>.*</' + "BL_CODE" + '>',re.I)
+    #1.值为字符串，更新参数值
+        if isinstance(value,str):
+        #只替换第一个
+            new_value = '<' + "BL_CODE" + '>' + "ok" + '</' + "BL_CODE" + '>'
+            body = re.sub(pattern,new_value,body,count = 1)
+           # print(body)
+           # return body
+    #2.值为列表或元组等序列
+    #匹配搜索所有满足项
+        findall = pattern.findall(body)
+        print(findall)
+        print(len(value))
+        if len(findall) != len(value):
+
+            print('传入参数[%s],值长度与实际长度[%s]不匹配。' %(value,len(findall)))
+            return None
+        print(value)
+        print(findall)
+        for n,o in zip(value,findall):
+            print("2" + o)
+            print("n" + n)
+            old_value = o
+            new_value = '<' + 'BL_CODE' + '>' + n + '</' +'BL_CODE' + '>'
+            print("3" + new_value)
+            body = body.replace(old_value,new_value,1)
+        print(body)
+
+
 if __name__ == "__main__":
     t = TestDemo()
-    t.alist()
+    t.udict()
