@@ -51,7 +51,8 @@ def xml_update_field_value(body,field,value_dict):
     #匹配搜索所有满足项
     findall = pattern.findall(body)
     if len(findall) != len(value):
-        print('传入参数【%s】,值长度与实际长度【%s】不匹配。' %(value,len(findall)))
+        
+        print('传入参数[%s],值长度与实际长度[%s]不匹配。' %(value,len(findall)))
         return None
     for n,o in zip(value,findall):
         old_value = 0
@@ -62,7 +63,7 @@ def xml_update_field_value(body,field,value_dict):
 def json_get_field_value(data_dict,field,value_dict=None):
     '''
     获取节点所有记录
-    :param data_dict:json 请求体或响应体，字典格式
+    :param data_dict:json 请求体或响应体，字典格式  {'a':'1'}
     :param field: 节点路径
     :param value_dict: 值字典
     :return: 当field路径未完全指定时，返回2重新嵌套字典
