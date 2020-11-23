@@ -146,29 +146,86 @@ class TestDemo:
 
     def a1(self):
        # node = "body.baselist[0].name"
-        node = "sites[1].info"
+        node = "list.sites[1].info"
+        node2 = node.split('.')
+        #print(node2)
         data_dict ='{  \
             "name":"网站", \
             "num":3, \
-            "sites":[ \
-                {"name":"Goolge","info":["Android","Goolge搜索","Goolge翻译"]}, \
-                {"name":"Runoob","info":["菜鸟教程","菜鸟工具","菜鸟微信"]}, \
-                {"name":"Taobao","info":["淘宝","网购"]} \
-            ] \
+            "list":{    \
+                "sites":[ \
+                    {"name":"Goolge","info":["Android","Goolge搜索","Goolge翻译"]}, \
+                    {"name":"Runoob","info":["菜鸟教程","菜鸟工具","菜鸟微信"]}, \
+                    {"name":"Taobao","info":["淘宝","网购"]} \
+            ]} \
             }'
-       # node1 = "'b':['a.b[0]']"
+        node1 = "'b':['a.b[0]']"
         node_key_data = dict()
-        node_key =dict(zip(node,[[] for x in node]))
-        node_key_data = dict(zip(node,[[] for x in node]))
-        for n in range(len(node)):
-            if n ==0:
-                if node[0] not in data_dict:
-                    break
-                node_key[node[0]].append(node[0])
-                node_key_data[node[0]].append(data_dict[node[0]])
-                continue
-        print(node[0])
-        print(node_key)
+        node_key =dict(zip(node2,[[] for x in node2]))
+        node_key_data = dict(zip(node2,[[] for x in node2]))
+        try:
+            for n in range(len(node2)):
+                if n ==0:
+                    if node2[0] not in data_dict:
+                        break
+                    node_key[node2[0]].append(node2[0])
+                    node_key_data[node2[0]].append(json.loads(data_dict)[node2[0]])
+                    print(node_key_data)
+                    continue
+                back_data = node_key_data[node2[n-1]]
+                #print(node_key[n])
+                back_no = len(node_key[node2[n-1]])
+                print(back_no)
+                for v in range(back_no):
+                    print(back_data[v])
+                    if node2[n] not in back_data[v]:
+                       # print(node2[n])
+                        if '[' in node2[n] and ']' in node2[n]:
+                            node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
+                            print(node_key[node2[n]])
+                            this_node,this_node_index_str = node2[n].split('[')
+                            try:
+                                this_node_index = int(this_node_index_str.split(']')[0])
+                            except:
+                                print('参数节点[%s]索引不存在。'%node2[n])
+                                this_node_index = None
+                            node_key_data[node2[n]].append(back_data[v][this_node][this_node_index])
+                            continue
+                        else:
+                            continue
+                            cur_node_data = back_data[v][node2[n]]
+                        #判断如果是字典，说明不用细分，直接获取对应的节点名称以及节点数据值即可
+                        if isinstance(cur_node_data,dict):
+                            node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
+                            node_key_data[node2[n]].append(cur_node_data)
+                            continue
+                            if n == len(node) - 1:
+                                node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n])
+                            node_key_data[node2[n]].append(cur_node_data)
+                            continue
+
+                    #前面的情况都不是，那么只剩下最后一种，该节点对应数据为列表形式了
+                    #获取列表长度
+                        cur_node_len = len(cur_node_data)
+                    #第三重循环，根据列表数量，分别需要组合前面的节点路径，再获取对应的节点名以及节点数据
+                        for vn in range(cur_node_len):
+                            node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n] + '[' + str(vn) + ']')
+                            node_key_data[node2[n]].append(cur_node_data[vn])
+                    #print(node_key)
+                    #print(node_key_data)
+        except:
+            pass
+            #判断如果节点没有嵌套列表这种，就不用多层返回了
+    #    if node_key[node2[-1]]:
+            #内层key和外层key相等
+    #        if '.'.join(field) == node_key[node2[-1][0]]:
+    #            value_dict['.'.join(field)] = node_key_data[node2[-1]][0]
+            #嵌套2层字典的场景
+    #        else:
+    #            value_dict['.'.join(field)] = dict(zip(node_key[node2[-1]],node_key_data[node2[-1]]))
+    #    else:
+    #        value_dict['.'.join(field)] = None
+
 
 
 if __name__ == "__main__":
