@@ -81,16 +81,19 @@ def json_get_field_value(data_dict,field,value_dict=None):
         #      'd‘：[]
         #       }
         node_key = dict(zip(node,[[] for x in node]))
+        #上述可以看做a for b in c这种形式，而for b in c 很好理解：我们从c里面取出每一个迭代对象b。
+        #a for b in c这种形式是指对每个符合迭代的b进行a操作，并且以a操作后的形式输出一个列表
+        #所以说上述会完成x，y值的交换并形成新的列表items
         #字典初始化，该字典用于存放各节点数据，和上面类似
         node_key_data = dict(zip(node,[[] for x in node]))
         try:
             #第一重循环，按节点路径遍历
             for n in range(len(node)):
-                #获取前一节点的节点路径组合，以及节点值组合
+                 #获取前一节点的节点路径组合，以及节点值组合
                 if n == 0:
                     if node[0] not in data_dict:
                         break
-                    #存放至字典对应的节点中
+                    #存放至字典对应的节点中 字典.append
                     node_key[node[0]].append(node[0])
                     node_key_data[node[0]].append(data_dict[node[0]])
                     continue
@@ -108,7 +111,7 @@ def json_get_field_value(data_dict,field,value_dict=None):
                             try:
                                 this_node_index = int(this_node_index_str.split(']')[0])
                             except:
-                                print('参数节点【%s】索引不存在。'%node[n])
+                                print('参数节点[%s]索引不存在。'%node[n])
                                 this_node_index = None
                             node_key_data[node[n]].append(back_data[v][this_node][this_node_index])
                             continue
