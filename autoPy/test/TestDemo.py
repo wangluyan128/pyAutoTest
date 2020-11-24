@@ -182,18 +182,23 @@ class TestDemo:
                        # print(node2[n])
                         if '[' in node2[n] and ']' in node2[n]:
                             node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
-                            print(node_key[node2[n]])
+                           # print(node_key[node2[n]])
                             this_node,this_node_index_str = node2[n].split('[')
                             try:
                                 this_node_index = int(this_node_index_str.split(']')[0])
+                                print("adfs "+str(this_node_index))
                             except:
                                 print('参数节点[%s]索引不存在。'%node2[n])
                                 this_node_index = None
                             node_key_data[node2[n]].append(back_data[v][this_node][this_node_index])
+                            print(node_key_data[node2[n]])
                             continue
                         else:
                             continue
-                            cur_node_data = back_data[v][node2[n]]
+                       #当前路径，当前节点的数据
+                        cur_node_data = back_data[v][node2[n]]
+                        print(type(cur_node_data))
+
                         #判断如果是字典，说明不用细分，直接获取对应的节点名称以及节点数据值即可
                         if isinstance(cur_node_data,dict):
                             node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
@@ -216,17 +221,29 @@ class TestDemo:
         except:
             pass
             #判断如果节点没有嵌套列表这种，就不用多层返回了
-    #    if node_key[node2[-1]]:
+        if node_key[node2[-1]]:
             #内层key和外层key相等
-    #        if '.'.join(field) == node_key[node2[-1][0]]:
-    #            value_dict['.'.join(field)] = node_key_data[node2[-1]][0]
+            if '.'.join(field) == node_key[node2[-1][0]]:
+                value_dict['.'.join(field)] = node_key_data[node2[-1]][0]
             #嵌套2层字典的场景
-    #        else:
-    #            value_dict['.'.join(field)] = dict(zip(node_key[node2[-1]],node_key_data[node2[-1]]))
-    #    else:
-    #        value_dict['.'.join(field)] = None
+            else:
+                value_dict['.'.join(field)] = dict(zip(node_key[node2[-1]],node_key_data[node2[-1]]))
+        else:
+            value_dict['.'.join(field)] = None
+        #print(value_dict)
 
-
+    def a2(self):
+        for i in range(1):
+            if i == 0:
+                try:
+                    print("aa")
+                except:
+                    print("cc")
+                print("dd")
+                continue
+            else:
+                continue
+            print("bb")
 
 if __name__ == "__main__":
     t = TestDemo()
