@@ -137,6 +137,7 @@ def json_get_field_value(data_dict,field,value_dict=None):
                     #获取列表长度
                     cur_node_len = len(cur_node_data)
                     #第三重循环，根据列表数量，分别需要组合前面的节点路径，再获取对应的节点名以及节点数据
+                    #['list.sites[1].info[0]', 'list.sites[1].info[1]', 'list.sites[1].info[2]']
                     for vn in range(cur_node_len):
                         node_key[node[n]].append(node_key[node[n - 1]][v] + '.' + node[n] + '[' + str(vn) + ']')
                         node_key_data[node[n]].append(cur_node_data[vn])
@@ -147,7 +148,7 @@ def json_get_field_value(data_dict,field,value_dict=None):
         #判断如果节点没有嵌套列表这种，就不用多层返回了
         if node_key[node[-1]]:
             #内层key和外层key相等
-            if '.'.join(field) == node_key[node[-1][0]]:
+            if '.'.join(field) == node_key[node[-1]][0]:
                 value_dict['.'.join(field)] = node_key_data[node[-1]][0]
             #嵌套2层字典的场景
             else:

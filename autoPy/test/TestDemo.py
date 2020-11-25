@@ -190,49 +190,58 @@ class TestDemo:
                             except:
                                 print('参数节点[%s]索引不存在。'%node2[n])
                                 this_node_index = None
+                            print("3333333")
                             node_key_data[node2[n]].append(back_data[v][this_node][this_node_index])
-                            print(node_key_data[node2[n]])
+                            print("DDDD"+str(node_key_data[node2[n]]))
                             continue
                         else:
                             continue
                        #当前路径，当前节点的数据
-                        cur_node_data = back_data[v][node2[n]]
-                        print(type(cur_node_data))
 
-                        #判断如果是字典，说明不用细分，直接获取对应的节点名称以及节点数据值即可
-                        if isinstance(cur_node_data,dict):
-                            node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
-                            node_key_data[node2[n]].append(cur_node_data)
-                            continue
-                            if n == len(node) - 1:
-                                node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n])
-                            node_key_data[node2[n]].append(cur_node_data)
-                            continue
+                    # print("111111111111"+ str(back_data[v][node2[n]]))
+                    print("22222222")
+                    cur_node_data = back_data[v][node2[n]]
+                    print("3333333"+str(cur_node_data))
+
+                    #判断如果是字典，说明不用细分，直接获取对应的节点名称以及节点数据值即可
+                    if isinstance(cur_node_data,dict):
+                        node_key[node2[n]].append(node_key[node2[n-1]][v] + '.' + node2[n])
+                        node_key_data[node2[n]].append(cur_node_data)
+                        continue
+                        if n == len(node) - 1:
+                            node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n])
+                        node_key_data[node2[n]].append(cur_node_data)
+                        continue
 
                     #前面的情况都不是，那么只剩下最后一种，该节点对应数据为列表形式了
                     #获取列表长度
-                        cur_node_len = len(cur_node_data)
+                    cur_node_len = len(cur_node_data)
                     #第三重循环，根据列表数量，分别需要组合前面的节点路径，再获取对应的节点名以及节点数据
-                        for vn in range(cur_node_len):
-                            node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n] + '[' + str(vn) + ']')
-                            node_key_data[node2[n]].append(cur_node_data[vn])
+                    for vn in range(cur_node_len):
+                        node_key[node2[n]].append(node_key[node2[n - 1]][v] + '.' + node2[n] + '[' + str(vn) + ']')
+                        node_key_data[node2[n]].append(cur_node_data[vn])
                     #print(node_key)
                     #print(node_key_data)
         except:
             pass
             #判断如果节点没有嵌套列表这种，就不用多层返回了
+
         if node_key[node2[-1]]:
+            value_dict = dict()
             #内层key和外层key相等
-            if '.'.join(field) == node_key[node2[-1][0]]:
-                value_dict['.'.join(field)] = node_key_data[node2[-1]][0]
+            if '.'.join(node2) == node_key[node2[-1]][0]:
+                print(type(node_key_data[node2[-1]][0]))
+                value_dict['.'.join(node2)] = node_key_data[node2[-1]][0]
             #嵌套2层字典的场景
             else:
-                value_dict['.'.join(field)] = dict(zip(node_key[node2[-1]],node_key_data[node2[-1]]))
+                print(dict(zip(node_key[node2[-1]],node_key_data[node2[-1]])))
+                value_dict['.'.join(node2)] = dict(zip(node_key[node2[-1]],node_key_data[node2[-1]]))
         else:
-            value_dict['.'.join(field)] = None
-        #print(value_dict)
+            value_dict['.'.join(node2)] = None
+        print(value_dict)
 
     def a2(self):
+
         for i in range(1):
             if i == 0:
                 try:
@@ -245,6 +254,43 @@ class TestDemo:
                 continue
             print("bb")
 
+    def a3(self):
+        i= 0;
+        node = ["list","sites[1]","info"]
+        json_str ='{  \
+            "name":"网站", \
+            "num":3, \
+            "list":{    \
+                "sites":[ \
+                    {"name":"Goolge","info":["Android","Goolge搜索","Goolge翻译"]}, \
+                    {"name":"Runoob","info":["菜鸟教程","菜鸟工具","菜鸟微信"]}, \
+                    {"name":"Taobao","info":["淘宝","网购"]} \
+            ]} \
+            }'
+        print(json.loads(json_str)[node[0]])
+        node_index = -len(node) + i
+        print(node_index)
+        print(node[node_index])
+        if node[node_index] not in json_str:
+        #如果包含[n]形式，说明节点为列表，需处理
+            if '[' in node[node_index] and ']' in node[node_index]:
+                list_node,list_index = node[node_index].split('[')
+                index = list_index.split(']')[0]
+                if index is None or index == '':
+                    print('ERROR:[%s]参数传入错误，请指定列表[%s]索引.' %(node,list_node))
+                    return False
+                else:
+                    index = int(index)
+               # return is_exist_node(node,json_str[list_node],i +1)
+            else:
+                print('[%s]字段节点[%s]不存在。' %(node,node[node_index]))
+                return False
+            #判断如果当前节点为最后一个节点，则返回True
+        if node_index == -1:
+            return True
+
+    #return is_exist_node(node,json_str[node[node_index]],i + 1)
+
 if __name__ == "__main__":
     t = TestDemo()
-    t.a1()
+    t.a3()
