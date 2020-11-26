@@ -1,0 +1,244 @@
+2020-11-26 15:56:25.698 | ERROR    | TestDemo:<module>:21 - An error has been caught in function '<module>', process 'MainProcess' (4584), thread 'MainThread' (15260):
+Traceback (most recent call last):
+
+  File "E:/pyAutoTest/pyTest/TestDemo.py", line 33, in <module>
+    pytest.main(["-s", "TestDemo.py"])
+    ©¦      ©¸ <function main at 0x0000028D7D2C6B70>
+    ©¸ <module 'pytest' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pytest\\__init__.py'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\config\__init__.py", line 158, in main
+    config=config
+           ©¸ <_pytest.config.Config object at 0x0000028D7D41EE10>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           ©¦    ©¦         ©¦     ©¦    ©¦                ©¸ {'config': <_pytest.config.Config object at 0x0000028D7D41EE10>}
+           ©¦    ©¦         ©¦     ©¦    ©¸ <function _HookCaller.get_hookimpls at 0x0000028D7D1341E0>
+           ©¦    ©¦         ©¦     ©¸ <_HookCaller 'pytest_cmdline_main'>
+           ©¦    ©¦         ©¸ <_HookCaller 'pytest_cmdline_main'>
+           ©¦    ©¸ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>>
+           ©¸ <_HookCaller 'pytest_cmdline_main'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           ©¦    ©¦               ©¦     ©¦        ©¸ {'config': <_pytest.config.Config object at 0x0000028D7D41EE10>}
+           ©¦    ©¦               ©¦     ©¸ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\...
+           ©¦    ©¦               ©¸ <_HookCaller 'pytest_cmdline_main'>
+           ©¦    ©¸ <function PluginManager.__init__.<locals>.<lambda> at 0x0000028D7D406C80>
+           ©¸ <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+                ©¦    ©¦    ©¦    ©¦                     ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D40D748>
+                ©¦    ©¦    ©¦    ©¦                     ©¸ <_HookCaller 'pytest_cmdline_main'>
+                ©¦    ©¦    ©¦    ©¸ <method 'get' of 'dict' objects>
+                ©¦    ©¦    ©¸ {'firstresult': True, 'historic': False, 'warn_on_impl': None}
+                ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D40D748>
+                ©¸ <_HookCaller 'pytest_cmdline_main'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          ©¦         ©¦         ©¸ [<_pytest.config.Config object at 0x0000028D7D41EE10>]
+          ©¦         ©¸ <function pytest_cmdline_main at 0x0000028D7D38A9D8>
+          ©¸ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\...
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 289, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           ©¦            ©¦       ©¸ <function _main at 0x0000028D7D38AB70>
+           ©¦            ©¸ <_pytest.config.Config object at 0x0000028D7D41EE10>
+           ©¸ <function wrap_session at 0x0000028D7D38AA60>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 240, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    ©¦       ©¦            ©¦    ©¦       ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    ©¦       ©¦            ©¦    ©¸ <_pytest.config.Config object at 0x0000028D7D41EE10>
+    ©¦       ©¦            ©¸ <function _main at 0x0000028D7D38AB70>
+    ©¦       ©¸ <ExitCode.OK: 0>
+    ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 295, in _main
+    config.hook.pytest_collection(session=session)
+    ©¦      ©¦    ©¦                         ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    ©¦      ©¦    ©¸ <_HookCaller 'pytest_collection'>
+    ©¦      ©¸ <pluggy.hooks._HookRelay object at 0x0000028D7CB93E80>
+    ©¸ <_pytest.config.Config object at 0x0000028D7D41EE10>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           ©¦    ©¦         ©¦     ©¦    ©¦                ©¸ {'session': <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>}
+           ©¦    ©¦         ©¦     ©¦    ©¸ <function _HookCaller.get_hookimpls at 0x0000028D7D1341E0>
+           ©¦    ©¦         ©¦     ©¸ <_HookCaller 'pytest_collection'>
+           ©¦    ©¦         ©¸ <_HookCaller 'pytest_collection'>
+           ©¦    ©¸ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>>
+           ©¸ <_HookCaller 'pytest_collection'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           ©¦    ©¦               ©¦     ©¦        ©¸ {'session': <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>}
+           ©¦    ©¦               ©¦     ©¸ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\...
+           ©¦    ©¦               ©¸ <_HookCaller 'pytest_collection'>
+           ©¦    ©¸ <function PluginManager.__init__.<locals>.<lambda> at 0x0000028D7D406C80>
+           ©¸ <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+                ©¦    ©¦    ©¦    ©¦                     ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D40D978>
+                ©¦    ©¦    ©¦    ©¦                     ©¸ <_HookCaller 'pytest_collection'>
+                ©¦    ©¦    ©¦    ©¸ <method 'get' of 'dict' objects>
+                ©¦    ©¦    ©¸ {'firstresult': True, 'historic': False, 'warn_on_impl': None}
+                ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D40D978>
+                ©¸ <_HookCaller 'pytest_collection'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          ©¦         ©¦         ©¸ [<Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>]
+          ©¦         ©¸ <function pytest_collection at 0x0000028D7D38ABF8>
+          ©¸ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\...
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 306, in pytest_collection
+    session.perform_collect()
+    ©¦       ©¸ <function Session.perform_collect at 0x0000028D7D38B9D8>
+    ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 516, in perform_collect
+    items = self._perform_collect(args, genitems)
+            ©¦    ©¦                ©¦     ©¸ True
+            ©¦    ©¦                ©¸ None
+            ©¦    ©¸ <function Session._perform_collect at 0x0000028D7D38BA60>
+            ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 568, in _perform_collect
+    self.items.extend(self.genitems(node))
+    ©¦    ©¦     ©¦      ©¦    ©¦        ©¸ <Module TestDemo.py>
+    ©¦    ©¦     ©¦      ©¦    ©¸ <function Session.genitems at 0x0000028D7D3951E0>
+    ©¦    ©¦     ©¦      ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    ©¦    ©¦     ©¸ <method 'extend' of 'list' objects>
+    ©¦    ©¸ []
+    ©¸ <Session pyTest exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\main.py", line 768, in genitems
+    rep = collect_one_node(node)
+          ©¦                ©¸ <Module TestDemo.py>
+          ©¸ <function collect_one_node at 0x0000028D7D38A400>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\runner.py", line 441, in collect_one_node
+    rep = ihook.pytest_make_collect_report(collector=collector)  # type: CollectReport
+          ©¦     ©¦                                    ©¸ <Module TestDemo.py>
+          ©¦     ©¸ <_HookCaller 'pytest_make_collect_report'>
+          ©¸ <pluggy.hooks._HookRelay object at 0x0000028D7CB93E80>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           ©¦    ©¦         ©¦     ©¦    ©¦                ©¸ {'collector': <Module TestDemo.py>}
+           ©¦    ©¦         ©¦     ©¦    ©¸ <function _HookCaller.get_hookimpls at 0x0000028D7D1341E0>
+           ©¦    ©¦         ©¦     ©¸ <_HookCaller 'pytest_make_collect_report'>
+           ©¦    ©¦         ©¸ <_HookCaller 'pytest_make_collect_report'>
+           ©¦    ©¸ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>>
+           ©¸ <_HookCaller 'pytest_make_collect_report'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           ©¦    ©¦               ©¦     ©¦        ©¸ {'collector': <Module TestDemo.py>}
+           ©¦    ©¦               ©¦     ©¸ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Pytho...
+           ©¦    ©¦               ©¸ <_HookCaller 'pytest_make_collect_report'>
+           ©¦    ©¸ <function PluginManager.__init__.<locals>.<lambda> at 0x0000028D7D406C80>
+           ©¸ <_pytest.config.PytestPluginManager object at 0x0000028D7CB79E48>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\manager.py", line 87, in <lambda>
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+                ©¦    ©¦    ©¦    ©¦                     ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D41E198>
+                ©¦    ©¦    ©¦    ©¦                     ©¸ <_HookCaller 'pytest_make_collect_report'>
+                ©¦    ©¦    ©¦    ©¸ <method 'get' of 'dict' objects>
+                ©¦    ©¦    ©¸ {'firstresult': True, 'historic': False, 'warn_on_impl': None}
+                ©¦    ©¸ <pluggy.hooks.HookSpec object at 0x0000028D7D41E198>
+                ©¸ <_HookCaller 'pytest_make_collect_report'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          ©¦         ©¦         ©¸ [<Module TestDemo.py>]
+          ©¦         ©¸ <function pytest_make_collect_report at 0x0000028D7D38A378>
+          ©¸ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python...
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\runner.py", line 324, in pytest_make_collect_report
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+           ©¦        ©¦                      ©¦         ©¸ <function Module.collect at 0x0000028D7D3C6A60>
+           ©¦        ©¦                      ©¸ <Module TestDemo.py>
+           ©¦        ©¸ <classmethod object at 0x0000028D7D376358>
+           ©¸ _pytest.runner.CallInfo
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\runner.py", line 294, in from_call
+    result = func()  # type: Optional[_T]
+             ©¸ <function pytest_make_collect_report.<locals>.<lambda> at 0x0000028D7D6799D8>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\runner.py", line 324, in <lambda>
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+           ©¦        ©¦                      ©¦         ©¸ <function Module.collect at 0x0000028D7D3C6A60>
+           ©¦        ©¦                      ©¸ <Module TestDemo.py>
+           ©¦        ©¸ <classmethod object at 0x0000028D7D376358>
+           ©¸ _pytest.runner.CallInfo
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\python.py", line 487, in collect
+    self._inject_setup_module_fixture()
+    ©¦    ©¸ <function Module._inject_setup_module_fixture at 0x0000028D7D3C6AE8>
+    ©¸ <Module TestDemo.py>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\python.py", line 500, in _inject_setup_module_fixture
+    self.obj, ("setUpModule", "setup_module")
+    ©¦    ©¸ <property object at 0x0000028D7D3C7048>
+    ©¸ <Module TestDemo.py>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\python.py", line 288, in obj
+    self._obj = obj = self._getobj()
+    ©¦                 ©¦    ©¸ <function Module._getobj at 0x0000028D7D3C68C8>
+    ©¦                 ©¸ <Module TestDemo.py>
+    ©¸ <Module TestDemo.py>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\python.py", line 484, in _getobj
+    return self._importtestmodule()
+           ©¦    ©¸ <function Module._importtestmodule at 0x0000028D7D3C6BF8>
+           ©¸ <Module TestDemo.py>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\python.py", line 552, in _importtestmodule
+    mod = import_path(self.fspath, mode=importmode)
+          ©¦           ©¦    ©¦            ©¸ 'prepend'
+          ©¦           ©¦    ©¸ <member 'fspath' of 'Node' objects>
+          ©¦           ©¸ <Module TestDemo.py>
+          ©¸ <function import_path at 0x0000028D7D2C60D0>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\pathlib.py", line 520, in import_path
+    importlib.import_module(module_name)
+    ©¦         ©¦             ©¸ 'TestDemo'
+    ©¦         ©¸ <function import_module at 0x0000028D7C8FEAE8>
+    ©¸ <module 'importlib' from 'C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\importlib\\__init__.py'>
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ©¦          ©¦           ©¦    ©¦        ©¦        ©¸ 0
+           ©¦          ©¦           ©¦    ©¦        ©¸ None
+           ©¦          ©¦           ©¦    ©¸ 0
+           ©¦          ©¦           ©¸ 'TestDemo'
+           ©¦          ©¸ <function _gcd_import at 0x0000028D7C0B7E18>
+           ©¸ <module 'importlib._bootstrap' (frozen)>
+
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+
+  File "C:\Users\DM\AppData\Local\Programs\Python\Python36\lib\site-packages\_pytest\assertion\rewrite.py", line 170, in exec_module
+    exec(co, module.__dict__)
+         ©¦   ©¦      ©¸ <member '__dict__' of 'module' objects>
+         ©¦   ©¸ <module 'TestDemo' from 'E:\\pyAutoTest\\pyTest\\TestDemo.py'>
+         ©¸ <code object <module> at 0x0000028D7D68D930, file "E:\pyAutoTest\pyTest\TestDemo.py", line 1>
+
+> File "E:\pyAutoTest\pyTest\TestDemo.py", line 21, in <module>
+    a = my_function(1,1,-2)
+        ©¸ <function my_function at 0x0000028D7D691D08>
+
+  File "E:\pyAutoTest\pyTest\TestDemo.py", line 17, in my_function
+    a = 1/(x+y+z)
+           ©¦ ©¦ ©¸ -2
+           ©¦ ©¸ 1
+           ©¸ 1
+
+ZeroDivisionError: division by zero

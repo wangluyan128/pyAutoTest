@@ -1,0 +1,14 @@
+2020-11-26 15:54:02.499 | ERROR    | __main__:<module>:21 - An error has been caught in function '<module>', process 'MainProcess' (14824), thread 'MainThread' (13808):
+Traceback (most recent call last):
+
+> File "E:/pyAutoTest/pyTest/TestDemo.py", line 21, in <module>
+    a = my_function(1,1,-2)
+        ©¸ <function my_function at 0x000002BDA5627048>
+
+  File "E:/pyAutoTest/pyTest/TestDemo.py", line 17, in my_function
+    a = 1/(x+y+z)
+           ©¦ ©¦ ©¸ -2
+           ©¦ ©¸ 1
+           ©¸ 1
+
+ZeroDivisionError: division by zero

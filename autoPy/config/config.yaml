@@ -1,0 +1,36 @@
+server:
+  #测试地址
+  test: http://localhost:8888/api/private/v1/
+  #开发地址
+  dev: http://127.0.0.1:8888/api/private/v1/
+
+#实际响应jsonpath提取规则设置
+responseReg:
+  #提取token的jsonpath表达式
+  token: $.data.token
+  #提取实际响应的断言数据jsonpath表达式，与excel中的预期结果数据进行比对用
+  response: $.meta
+
+#相关文件路径
+filePath:
+  caseData: ../data/case_data.xlsx
+  reportData: ../result/report/data/
+  reportGenerate: ../result/report/html/
+  reportZip: ../result/report/html/apiAutoTestReport.zip
+  logPath: ../result/logs/运行日志{time}.log
+
+email:
+  #发件人邮箱
+  user: 123456.com
+  #发件人邮箱授权码
+  password:
+  #邮箱服务协议
+  server: stmp.163.com
+  #主体内容
+  contents: 解压apiAutoReport.zip(接口测试报告)后，请使用已安装Live Server 插件的VsCode，打开解压目录下的index.html查看报告
+  #收件人邮箱
+  addressees: ["收件人邮箱1","收件人邮箱2","收件人邮箱3"]
+  #标题
+  title: 接口自动化测试报告(见附件)
+  #附件
+  enclosures: ["../result/report/html/apiAutoTestReport.zip",]
