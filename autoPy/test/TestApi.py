@@ -6,17 +6,23 @@
 @file:TestApi.py
 @time:2020/11/25
 """
+import json
 import os
 import shutil
 from loguru import logger
+
+from api.comm.BaseRequest import BaseRequest
 from api.utils.ReadConfig import ReadConfig
 import pytest
 import allure
 
 #读取配置文件
 from api.utils.ReadData import ReadData
+from api.utils.SaveResponse import SaveResponse
+from api.utils.TreatingData import TreatingData
 
 rc = ReadConfig()
+base_url = rc.read_server_config('test')
 log_path = rc.read_file_path('log_path')
 report_data = rc.read_file_path('report_data')
 report_generate = rc.read_file_path('report_generate')
@@ -25,6 +31,10 @@ case_data_path = rc.read_file_path('case_data')
 data_list = ReadData(case_data_path).get_data()
 #数据处理对象
 treat_data = TreatingData()
+#实例化响应的对象
+save_response_dict = SaveResponse()
+#请求对象
+br = BaseRequest()
 class TestApiAuto(object):
     #启动方法
     def runTest(self):
@@ -53,6 +63,14 @@ class TestApiAuto(object):
         logger.debug(f'***********...执行用例编号： {case_number} ...***********')
 
         with allure.step("处理相关数据依赖，header"):
-            data,header,parameters_path_url = treat_data
+            data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)
+            allure.attach(json.dumps(header,ensure_ascii=False,indent=4),"请求头",allure.attachment_type.TEXT)
+            allure.attach(json.dumps(data,ensure_ascii=False,indent=4),"请求数据",allure.attachment_type.TEXT)
+
+        with allure.step("发送请求，取得响应结果的json串"):
+            allure.attach(json.dumps(base_url + path + parameters_path_url,ensure_ascii=False,indent=4),"最终请求地址",allure.attachment_type.TEXT)
+            res = br.base_requests(method = method,url = base_url+path+parameters_path_url,parametric_key=parametric_key,file_var = file_var,file_path = file_path,
+                                   data = data,header = header)
+            allure.attach(json.dumps(res,ensure_ascii=False,indent=4),"实际响应",allure.attachment_type.TEXT)
 if __name__ == '__main__':
     TestApiAuto().runTest()

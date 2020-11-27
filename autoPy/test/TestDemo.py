@@ -255,7 +255,8 @@ class TestDemo:
             print("bb")
 
         l1 = ['a','b','c']
-
+        file_path_list = eval("[\"/Users/zy7y/Desktop/vue.js\",\"/Users/zy7y/Desktop/jenkins.war\"]")
+        print(file_path_list)
 
     def a3(self):
         i= 0;
@@ -300,4 +301,4 @@ class TestDemo:
 
 if __name__ == "__main__":
     t = TestDemo()
-    t.a3()
+    t.a2()

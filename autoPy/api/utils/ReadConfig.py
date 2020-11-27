@@ -19,5 +19,10 @@ class ReadConfig(object):
             self.data = yaml.load(file.read(),Loader=yaml.FullLoader)
 
     @logger.catch
+    def read_server_config(self,server_name):
+        logger.info(self.data.get('server').get(server_name))
+        return self.data.get('server').get(server_name)
+
+    @logger.catch
     def read_file_path(self,file_path_name):
         return self.data.get('file_path').get(file_path_name)
