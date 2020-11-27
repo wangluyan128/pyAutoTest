@@ -254,6 +254,9 @@ class TestDemo:
                 continue
             print("bb")
 
+        l1 = ['a','b','c']
+
+
     def a3(self):
         i= 0;
         node = ["list","sites[1]","info"]
@@ -267,6 +270,10 @@ class TestDemo:
                     {"name":"Taobao","info":["淘宝","网购"]} \
             ]} \
             }'
+        json1 = json.loads(json_str)
+        print(json1.items())
+        for dk,dv in json1.items():
+            print(dk+" "+ dv)
         print(json.loads(json_str)[node[0]])
         node_index = -len(node) + i
         print(node_index)

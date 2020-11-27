@@ -59,8 +59,16 @@ class Test_login():
         pass
 
 if __name__ =='__main__':
-    pytest.main(["-v","-s","--alluredir","./result"])
-    os.system(f'allure serve ./result')
+    pytest.main(["-v","-s","--alluredir","./result/html"])
+    #os.system(f'allure serve ./result')
+    #os.popen('allure serve ./result').read()
+    #print(os.popen('dir').read())
+    #os.system(r"C:\Users\DM\AppData\Local\Programs\Python\Python36\Lib\site-packages\allure-2.13.7\bin/allure.bat "
+     #         "generate "    #allure转换命令：allure generate allure源文件目录 -o 转换后目录
+     #         "E:/pyAutoTest/pyTest/result/"
+     #         "-o "
+     #         "E:/pyAutoTest/pyTest/result/html")
+    os.system('allure generate ./report/html -o ./report/html/ --clean')
 '''
 实例2：
 
