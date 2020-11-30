@@ -24,8 +24,17 @@ class ReadConfig(object):
         return self.data.get('server').get(server_name)
 
     @logger.catch
+    def read_response_reg(self):
+        get_token = self.data.get("response_reg").get("token")
+        get_resp = self.data.get("response_reg").get("response")
+        logger.info(f'从响应中提取的token表达式：{get_token}')
+        logger.info(f'从响应提取的需要校验的表达式：{get_resp}')
+        return get_token,get_resp
+
+    @logger.catch
     def read_file_path(self,file_path_name):
         return self.data.get('file_path').get(file_path_name)
+
     @logger.catch
     def read_server_reg(self):
         get_token = self.data.get("response_reg").get("token")
@@ -33,3 +42,6 @@ class ReadConfig(object):
         logger.info(f'从响应中提取的token表达式：{get_token}')
         logger.info(f'从响应提取的需要校验的表达式：{get_resp}')
         return get_token,get_resp
+
+    def read_email_setting(self):
+        return self.data.get('email')
