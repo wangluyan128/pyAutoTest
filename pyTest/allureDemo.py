@@ -1,3 +1,4 @@
+'''
 import os
 
 import pytest
@@ -69,7 +70,8 @@ if __name__ =='__main__':
      #         "-o "
      #         "E:/pyAutoTest/pyTest/result/html")
     os.system('allure generate ./report/html -o ./report/html/ --clean')
-'''
+
+
 实例2：
 
 import pytest
