@@ -9,6 +9,8 @@
 import json
 import os
 import shutil
+
+from jsonpath import jsonpath
 from loguru import logger
 
 from api.comm.BaseRequest import BaseRequest
@@ -35,6 +37,9 @@ treat_data = TreatingData()
 save_response_dict = SaveResponse()
 #请求对象
 br = BaseRequest()
+#获取token
+token_reg,res_reg = rc.read_server_reg()
+
 class TestApiAuto(object):
     #启动方法
     def runTest(self):
@@ -72,5 +77,37 @@ class TestApiAuto(object):
             res = br.base_requests(method = method,url = base_url+path+parameters_path_url,parametric_key=parametric_key,file_var = file_var,file_path = file_path,
                                    data = data,header = header)
             allure.attach(json.dumps(res,ensure_ascii=False,indent=4),"实际响应",allure.attachment_type.TEXT)
+
+        with allure("将响应结果的内容写入实际响应字典中"):
+            save_response_dict.save_actual_response(case_key = case_number,case_response=res)
+            allure.attach(json.dumps(save_response_dict.actual_response,ensure_ascii=False,indent=4),"实际响应字典",allure.attachment_type.TEXT)
+
+            #写token的接口必须是要正确无误能返回token的
+            if is_token =='写':
+                with allure.step("从登录的响应中提取token到header中"):
+                    treat_data.token_header['Authorization'] = jsonpath.jsonpath(res,token_reg)[0]
+
+        with allure.step("根据配置文件的提取响应规划提取实际数据"):
+            really = jsonpath.jsonpath(res,res_reg)[0]
+            allure.attach(json.dumps(really,ensure_ascii=False,index = 4),"提取用于断言的实际响应部分数据",allure.attachment_type.TEXT)
+
+        with allure.step("处理读取出来的预期结果响应"):
+            #处理预期结果数据中使用True/False/None导致无法转换bug
+            if 'None' in expect:
+                expect = expect.replace('None','null')
+            if 'True' in expect:
+                expect = expect.replace('True','true')
+            if 'False' in expect:
+                expect = expect.replace('False','false')
+            expect = json.loads(expect)
+            allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
+
+        with allure.step("预期结果与实际响应进行断言操作"):
+            logger.info(f'完整的json响应：{res}\n需要校验的数据字典:{really}预期校验的数据字典：{expect}\n测试结果：{really == expect}')
+            logger.debug(f'********...用例编号：{case_number},执行完毕，日志查看...********\n\n')
+            allure.attach(json.dumps(really == expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
+            assert really == expect
+
+
 if __name__ == '__main__':
     TestApiAuto().runTest()
