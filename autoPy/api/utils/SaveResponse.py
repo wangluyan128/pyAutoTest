@@ -30,7 +30,7 @@ class SaveResponse(object):
     def read_depend_data(self,depend):
         '''
 
-        :param depend: 需要依赖数据字典{“case_001”：['jsonpath表达式1’，‘jsonpath表达式2’"}
+        :param depend: 需要依赖数据字典{“case_001”："['jsonpath表达式1’，‘jsonpath表达式2’]"}
         :return:
         '''
         depend_dict = {}
@@ -56,7 +56,7 @@ if __name__ == '__main__':
      sr.save_actual_response("case_001", {'data': None, 'meta': {'msg': '参数错误', 'status': 400}})
      sr.save_actual_response("case_002", {'data': {'id': 500, 'rid': 0, 'username': 'admin', 'mobile': '13718940015', 'email': '1172366686@qq.com', 'token': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjUwMCwicmlkIjowLCJpYXQiOjE1OTY4NTYwNTQsImV4cCI6MTU5Njk0MjQ1NH0.6D9u4x8M4yVWAsK-zJPCw2e7sddClFV-JvntuQyZ8JA'}, 'meta': {'msg': '登录成功', 'status': 200}})
 
-     print(sr.actual_response, type(sr.actual_response))
+     #print(sr.actual_response, type(sr.actual_response))
      depned_str = """{"case_002": ["$.data.id"],
                     "case_001":["$.meta.msg","$.meta.status"]}"""
 

@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 """
 @project: apiAutoTest
-@author: yan
+@author:
 @file: TreatingData.py
 @time:
 """

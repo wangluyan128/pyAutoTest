@@ -1,9 +1,14 @@
 import os
+import shutil
 
 import pytest
 import allure
 @allure.feature('这里是一级标签')
 class Test_all():
+
+
+
+
     @allure.step(title="allure通过注解方式完成内容的展示，setp表示测试步骤1...")
     def test_setup(self):
         print("我就是打酱油的setup")
@@ -14,8 +19,8 @@ class Test_all():
         print("我要运行")
         assert True
 
-    def test_skip(self):
-        print("我要跳过")
+    #def test_skip(self):
+    #    print("我要跳过")
 
     @allure.severity(allure.severity_level.BLOCKER)  #严重级别
     @allure.testcase("http://www.baidu.com/", "测试用例的地址")
@@ -88,6 +93,6 @@ class Test_all():
     #或者 allure.attach.file(source, name, attachment_type, extension)
     #链接@allure.link  @allure.issue  @allure.testcase
 if __name__ == '__main__':
-    pytest.main(["-s","--alluredir","report/data"])
-    os.system(f'allure generate report/data -o report/html --clean')
+    pytest.main(["-s","--alluredir","report/data/"])
+    os.system(f'allure generate report/data/ -o report/html --clean')
     #os.system(f'allure serve report/')
