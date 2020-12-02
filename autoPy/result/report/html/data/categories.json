@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "ValueError: Circular reference detected",
+      "children" : [ {
+        "name" : "测试请求数据与依赖数据相同key的情况",
+        "uid" : "725536a225421a57",
+        "parentUid" : "4ee8dc232f22e39a2d4401446418f685",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606873358667,
+          "stop" : 1606873358694,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'case_009'", "'测试请求数据与依赖数据相同key的情况'", "'{\"pagenum\": 1, \"pagesize\": \"12\",\"id\":[1]}'", "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "'读'", "'get'", "''", "'params'", "'users'" ]
+      } ],
+      "uid" : "4ee8dc232f22e39a2d4401446418f685"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

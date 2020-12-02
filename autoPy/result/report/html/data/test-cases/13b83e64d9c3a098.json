@@ -1,0 +1,126 @@
+{
+  "uid" : "13b83e64d9c3a098",
+  "name" : "删除用户zy7y",
+  "fullName" : "TestApi.TestApiAuto#test_main",
+  "historyId" : "1e6aefa93fe27f35e8a47861bf14fd68",
+  "time" : {
+    "start" : 1606873358637,
+    "stop" : 1606873358642,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "处理相关数据依赖，header",
+      "time" : {
+        "start" : 1606873358637,
+        "stop" : 1606873358642,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7ac324b167ec83c2",
+        "name" : "请求头",
+        "source" : "7ac324b167ec83c2.txt",
+        "type" : "text/plain",
+        "size" : 2
+      }, {
+        "uid" : "6a63d14ba967cc2d",
+        "name" : "请求数据",
+        "source" : "6a63d14ba967cc2d.txt",
+        "type" : "text/plain",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TestApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApiAuto"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "10316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_number",
+    "value" : "'case_008'"
+  }, {
+    "name" : "case_title",
+    "value" : "'删除用户zy7y'"
+  }, {
+    "name" : "data",
+    "value" : "''"
+  }, {
+    "name" : "dependent",
+    "value" : "''"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"msg\": \"删除成功\", \"status\": 200}'"
+  }, {
+    "name" : "file_path",
+    "value" : "''"
+  }, {
+    "name" : "file_var",
+    "value" : "''"
+  }, {
+    "name" : "is_token",
+    "value" : "'读'"
+  }, {
+    "name" : "method",
+    "value" : "'delete'"
+  }, {
+    "name" : "parameters",
+    "value" : "'/{\"case_005\":\"$.data.id\"}'"
+  }, {
+    "name" : "parametric_key",
+    "value" : "'params'"
+  }, {
+    "name" : "path",
+    "value" : "'users'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "13b83e64d9c3a098.json",
+  "parameterValues" : [ "'case_008'", "'删除用户zy7y'", "''", "''", "'{\"msg\": \"删除成功\", \"status\": 200}'", "''", "''", "'读'", "'delete'", "'/{\"case_005\":\"$.data.id\"}'", "'params'", "'users'" ]
+}

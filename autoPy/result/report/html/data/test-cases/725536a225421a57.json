@@ -1,0 +1,130 @@
+{
+  "uid" : "725536a225421a57",
+  "name" : "测试请求数据与依赖数据相同key的情况",
+  "fullName" : "TestApi.TestApiAuto#test_main[case_009-测试请求数据与依赖数据相同key的情况-users-读-get-params----{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}-{\"pagenum\": 1, \"pagesize\": \"12\",\"id\":",
+  "historyId" : "ea08285ec16c274fa2e2194991f1ae4a",
+  "time" : {
+    "start" : 1606873358667,
+    "stop" : 1606873358694,
+    "duration" : 27
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: Circular reference detected",
+  "statusTrace" : "self = <TestApi.TestApiAuto object at 0x000001CAE6F57A20>\ncase_number = 'case_009', case_title = '测试请求数据与依赖数据相同key的情况', path = 'users'\nis_token = '读', method = 'get', parametric_key = 'params', file_var = ''\nfile_path = '', parameters = ''\ndependent = '{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'\ndata = {'id': [1, [1, [1, [1, [1, [...]]]]]], 'pagenum': 1, 'pagesize': '12'}\nexpect = '{\"msg\": \"获取管理员列表成功\", \"status\": 200}'\n\n    @pytest.mark.parametrize('case_number,case_title,path,is_token,method,parametric_key,file_var,'\n                             'file_path,parameters,dependent,data,expect',data_list)\n    def test_main(self,case_number,case_title,path,is_token,method,parametric_key,file_var,\n                  file_path,parameters,dependent,data,expect):\n        #动态添加标题\n        allure.dynamic.title(case_title)\n    \n        logger.debug(f'***********...执行用例编号： {case_number} ...***********')\n    \n    \n        with allure.step(\"处理相关数据依赖，header\"):\n    \n            data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)\n            allure.attach(json.dumps(header,ensure_ascii=False,indent=4),\"请求头\",allure.attachment_type.TEXT)\n>           allure.attach(json.dumps(data,ensure_ascii=False,indent=4),\"请求数据\",allure.attachment_type.TEXT)\n\nTestApi.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\__init__.py:238: in dumps\n    **kw).encode(obj)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:201: in encode\n    chunks = list(chunks)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:430: in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:404: in _iterencode_dict\n    yield from chunks\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:325: in _iterencode_list\n    yield from chunks\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nlst = [1, [1, [1, [1, [1, [1, [...]]]]]]], _current_indent_level = 2\n\n    def _iterencode_list(lst, _current_indent_level):\n        if not lst:\n            yield '[]'\n            return\n        if markers is not None:\n            markerid = id(lst)\n            if markerid in markers:\n>               raise ValueError(\"Circular reference detected\")\nE               ValueError: Circular reference detected\n\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:284: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: Circular reference detected",
+    "statusTrace" : "self = <TestApi.TestApiAuto object at 0x000001CAE6F57A20>\ncase_number = 'case_009', case_title = '测试请求数据与依赖数据相同key的情况', path = 'users'\nis_token = '读', method = 'get', parametric_key = 'params', file_var = ''\nfile_path = '', parameters = ''\ndependent = '{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'\ndata = {'id': [1, [1, [1, [1, [1, [...]]]]]], 'pagenum': 1, 'pagesize': '12'}\nexpect = '{\"msg\": \"获取管理员列表成功\", \"status\": 200}'\n\n    @pytest.mark.parametrize('case_number,case_title,path,is_token,method,parametric_key,file_var,'\n                             'file_path,parameters,dependent,data,expect',data_list)\n    def test_main(self,case_number,case_title,path,is_token,method,parametric_key,file_var,\n                  file_path,parameters,dependent,data,expect):\n        #动态添加标题\n        allure.dynamic.title(case_title)\n    \n        logger.debug(f'***********...执行用例编号： {case_number} ...***********')\n    \n    \n        with allure.step(\"处理相关数据依赖，header\"):\n    \n            data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)\n            allure.attach(json.dumps(header,ensure_ascii=False,indent=4),\"请求头\",allure.attachment_type.TEXT)\n>           allure.attach(json.dumps(data,ensure_ascii=False,indent=4),\"请求数据\",allure.attachment_type.TEXT)\n\nTestApi.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\__init__.py:238: in dumps\n    **kw).encode(obj)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:201: in encode\n    chunks = list(chunks)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:430: in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:404: in _iterencode_dict\n    yield from chunks\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:325: in _iterencode_list\n    yield from chunks\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nlst = [1, [1, [1, [1, [1, [1, [...]]]]]]], _current_indent_level = 2\n\n    def _iterencode_list(lst, _current_indent_level):\n        if not lst:\n            yield '[]'\n            return\n        if markers is not None:\n            markerid = id(lst)\n            if markerid in markers:\n>               raise ValueError(\"Circular reference detected\")\nE               ValueError: Circular reference detected\n\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py:284: ValueError",
+    "steps" : [ {
+      "name" : "处理相关数据依赖，header",
+      "time" : {
+        "start" : 1606873358667,
+        "stop" : 1606873358670,
+        "duration" : 3
+      },
+      "status" : "broken",
+      "statusMessage" : "ValueError: Circular reference detected\n",
+      "statusTrace" : "  File \"E:\\pyAutoTest\\autoPy\\test\\TestApi.py\", line 83, in test_main\n    allure.attach(json.dumps(data,ensure_ascii=False,indent=4),\"请求数据\",allure.attachment_type.TEXT)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py\", line 430, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py\", line 404, in _iterencode_dict\n    yield from chunks\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\json\\encoder.py\", line 284, in _iterencode_list\n    raise ValueError(\"Circular reference detected\")\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8d99837f375b1982",
+        "name" : "请求头",
+        "source" : "8d99837f375b1982.txt",
+        "type" : "text/plain",
+        "size" : 2
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TestApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApiAuto"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "10316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_number",
+    "value" : "'case_009'"
+  }, {
+    "name" : "case_title",
+    "value" : "'测试请求数据与依赖数据相同key的情况'"
+  }, {
+    "name" : "data",
+    "value" : "'{\"pagenum\": 1, \"pagesize\": \"12\",\"id\":[1]}'"
+  }, {
+    "name" : "dependent",
+    "value" : "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'"
+  }, {
+    "name" : "expect",
+    "value" : "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'"
+  }, {
+    "name" : "file_path",
+    "value" : "''"
+  }, {
+    "name" : "file_var",
+    "value" : "''"
+  }, {
+    "name" : "is_token",
+    "value" : "'读'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "parameters",
+    "value" : "''"
+  }, {
+    "name" : "parametric_key",
+    "value" : "'params'"
+  }, {
+    "name" : "path",
+    "value" : "'users'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "725536a225421a57.json",
+  "parameterValues" : [ "'case_009'", "'测试请求数据与依赖数据相同key的情况'", "'{\"pagenum\": 1, \"pagesize\": \"12\",\"id\":[1]}'", "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "'读'", "'get'", "''", "'params'", "'users'" ]
+}

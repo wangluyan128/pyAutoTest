@@ -1,0 +1,126 @@
+{
+  "uid" : "8be89047fcd4c682",
+  "name" : "get请求实现登录",
+  "fullName" : "TestApi.TestApiAuto#test_main",
+  "historyId" : "13a3dba37ff691a261ca05219826547e",
+  "time" : {
+    "start" : 1606873358456,
+    "stop" : 1606873358460,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "处理相关数据依赖，header",
+      "time" : {
+        "start" : 1606873358457,
+        "stop" : 1606873358460,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3bc188093ebfb9d",
+        "name" : "请求头",
+        "source" : "3bc188093ebfb9d.txt",
+        "type" : "text/plain",
+        "size" : 2
+      }, {
+        "uid" : "1645c5b8ceeb8a9e",
+        "name" : "请求数据",
+        "source" : "1645c5b8ceeb8a9e.txt",
+        "type" : "text/plain",
+        "size" : 47
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TestApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApiAuto"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "10316-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_number",
+    "value" : "'case_001'"
+  }, {
+    "name" : "case_title",
+    "value" : "'get请求实现登录'"
+  }, {
+    "name" : "data",
+    "value" : "'{\"username\": \"admin\", \"password\": \"\"}'"
+  }, {
+    "name" : "dependent",
+    "value" : "''"
+  }, {
+    "name" : "expect",
+    "value" : "'{\n        \"msg\": \"参数错误\",\n        \"status\": 400\n    }'"
+  }, {
+    "name" : "file_path",
+    "value" : "''"
+  }, {
+    "name" : "file_var",
+    "value" : "''"
+  }, {
+    "name" : "is_token",
+    "value" : "''"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "parameters",
+    "value" : "''"
+  }, {
+    "name" : "parametric_key",
+    "value" : "'params'"
+  }, {
+    "name" : "path",
+    "value" : "'login'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8be89047fcd4c682.json",
+  "parameterValues" : [ "'case_001'", "'get请求实现登录'", "'{\"username\": \"admin\", \"password\": \"\"}'", "''", "'{\n        \"msg\": \"参数错误\",\n        \"status\": 400\n    }'", "''", "''", "''", "'get'", "''", "'params'", "'login'" ]
+}

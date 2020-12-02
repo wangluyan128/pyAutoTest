@@ -1,0 +1,91 @@
+[ {
+  "uid" : "c37dc2fe76b9ea92",
+  "name" : "post请求实现登录",
+  "time" : {
+    "start" : 1606873358498,
+    "stop" : 1606873358502,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a59bfe5a7b2c22b",
+  "name" : "修改用户状态接口",
+  "time" : {
+    "start" : 1606873358589,
+    "stop" : 1606873358595,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bf1829dd6b19130",
+  "name" : "get请求查询用户数据列表",
+  "time" : {
+    "start" : 1606873358521,
+    "stop" : 1606873358525,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13b83e64d9c3a098",
+  "name" : "删除用户zy7y",
+  "time" : {
+    "start" : 1606873358637,
+    "stop" : 1606873358642,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22a8cc4e80c1bf59",
+  "name" : "get请求查询用户数据列表",
+  "time" : {
+    "start" : 1606873358544,
+    "stop" : 1606873358547,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d1d8e2d772307c3",
+  "name" : "添加用户正常接口数据",
+  "time" : {
+    "start" : 1606873358566,
+    "stop" : 1606873358570,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8be89047fcd4c682",
+  "name" : "get请求实现登录",
+  "time" : {
+    "start" : 1606873358456,
+    "stop" : 1606873358460,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "725536a225421a57",
+  "name" : "测试请求数据与依赖数据相同key的情况",
+  "time" : {
+    "start" : 1606873358667,
+    "stop" : 1606873358694,
+    "duration" : 27
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "968aaa0ad173c11",
+  "name" : "修改用户状态为2",
+  "time" : {
+    "start" : 1606873358614,
+    "stop" : 1606873358618,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

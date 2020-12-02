@@ -32,7 +32,9 @@ class TreatingData(object):
             if dependent.find('=') != -1:
                 dependent_key = dependent.split('=')[0]
                 dependent_value = dependent.split('=')[1]
-                dependent_data = {dependent_key:save_response_dict.read_depend_data(dependent_value)}
+                #dependent_data = {dependent_key:save_response_dict.read_depend_data(dependent_value)}
+                dependent_data = json.loads(dependent_value)
+                print(dependent_data)
             else:
                 dependent_data = save_response_dict.read_depend_data(dependent)
             logger.debug(f'依赖数据解析获取的字典{dependent_data}')

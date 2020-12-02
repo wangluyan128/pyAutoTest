@@ -1,0 +1,11 @@
+{
+    "case_002": [
+        "$.data.id"
+    ],
+    "case_001": [
+        "$.meta.msg",
+        "$.meta.status"
+    ],
+    "pagenum": 1,
+    "pagesize": "12"
+}
