@@ -1,15 +1,16 @@
 server:
   #测试地址
-  test: http://localhost:8888/api/private/v1/
+  #test: http://localhost:8888/api/private/v1/
+  test: http://dms-api.op.dianhun.cn:80
   #开发地址
   dev: http://127.0.0.1:8888/api/private/v1/
 
 #实际响应jsonpath提取规则设置
 response_reg:
   #提取token的jsonpath表达式
-  token: $.data.token
+  token: $.data
   #提取实际响应的断言数据jsonpath表达式，与excel中的预期结果数据进行比对用
-  response: $.meta
+  #response: $.*
 
 #相关文件路径
 file_path:

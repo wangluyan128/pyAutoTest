@@ -343,6 +343,18 @@ class TestDemo:
         print(jsonpath.jsonpath(json_str,'$..book[?(@.isbn)'))      #获取所有具有isbn属性的书
         print(jsonpath.jsonpath(json_str,'$..book[?(@.price<10)]'))  #获取price小于10 的书
 
+        str1 = '{"dhId":"wangyan","key":"666"}'
+        str2 = '{"name":"zhangsan","age":"17","email":"123@163.com"}'
+        list1 = ['success', 0, 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTI5IiwiZXhwIjoxNjA2OTM4NTUwfQ.QcWcCc_Ler2ghZMcR4vCp9HWkVaUBgBzTrlMB7jLPf_rEresZgVcWDBOdWrwC6i3QI5rl91G8e8INbs872atbg']
+        mylist = [123, {'name': 'dragon'}, {'location': ('ch', 'nt')}]
+        print(type(str1))
+        data = json.loads(str1)
+        print(data)
+        json.dumps(mylist,ensure_ascii=False)
+        dict1 = {'message': 'success', 'code': 0, 'data': {'content': [{'id': 147, 'name': '电梦网络测试组', 'orgId': 265, 'orgType': 1, 'pid': 0, 'status': 0, 'pms': 'fangwei', 'adminUsers': 'zhujun,shencenwei', 'products': '5', 'productList': [{'id': 5, 'uniqId': 1330466377, 'enName': 'Omni Adventure', 'name': '放置旅团', 'icon': 'https://open.17m3.com/uploadfiles/developer/2019/07/26/20190726162608.png', 'status': 1, 'createdAt': '1999-01-01 00:00:00', 'updatedAt': '2020-10-20 11:18:26'}], 'adminUserList': [{'id': 78, 'dhId': 'shencenwei', 'name': '沈岑伟', 'admin': 0, 'superAdmin': True, 'deptAdmin': False, 'companyId': 5, 'status': None, 'createdAt': '2020-10-20 10:28:27', 'updatedAt': '2020-12-02 00:00:25', 'department': {'id': 82, 'name': '运营开发部', 'orgId': 512, 'orgType': 3, 'pid': 509, 'status': 1, 'pms': 'anita,shencenwei', 'adminUsers': 'anita,fisn', 'products': '1,2,3', 'productList': None, 'adminUserList': None, 'pmsList': None, 'demandTypes': None, 'projects': None, 'createdAt': '2020-10-20 10:28:26', 'updatedAt': '2020-12-01 16:35:44'}}, {'id': 767, 'dhId': 'zhujun', 'name': '朱军', 'admin': 0, 'superAdmin': True, 'deptAdmin': True, 'companyId': 6, 'status': None, 'createdAt': '2020-10-20 14:39:29', 'updatedAt': '2020-10-20 14:39:29', 'department': {'id': 147, 'name': '电梦网络测试组', 'orgId': 265, 'orgType': 1, 'pid': 0, 'status': 0, 'pms': 'fangwei', 'adminUsers': 'zhujun,shencenwei', 'products': '5', 'productList': None, 'adminUserList': None, 'pmsList': None, 'demandTypes': None, 'projects': None, 'createdAt': '2020-10-20 14:39:26', 'updatedAt': '2020-11-21 00:00:06'}}], 'pmsList': [{'id': 787, 'dhId': 'fangwei', 'name': '方伟', 'admin': 0, 'superAdmin': False, 'deptAdmin': False, 'companyId': 6, 'status': None, 'createdAt': '2020-10-20 14:39:29', 'updatedAt': '2020-10-20 14:39:29', 'department': {'id': 147, 'name': '电梦网络测试组', 'orgId': 265, 'orgType': 1, 'pid': 0, 'status': 0, 'pms': 'fangwei', 'adminUsers': 'zhujun,shencenwei', 'products': '5', 'productList': None, 'adminUserList': None, 'pmsList': None, 'demandTypes': None, 'projects': None, 'createdAt': '2020-10-20 14:39:26', 'updatedAt': '2020-11-21 00:00:06'}}], 'demandTypes': [{'id': 37, 'name': '系统'}, {'id': 46, 'name': '设计'}, {'id': 44, 'name': '网站'}, {'id': 45, 'name': '测试'}], 'projects': [{'id': 20087261, 'name': '野蛮人大作战'}, {'id': 20108871, 'name': '游戏引入评测'}], 'createdAt': '2020-10-20 14:39:26', 'updatedAt': '2020-11-21 00:00:06'}], 'page': 0, 'size': 20, 'total': 1}}
+        dict2 = [{'id': 5, 'uniqId': 1330466377, 'enName': 'Omni Adventure', 'name': '放置旅团', 'icon': 'https://open.17m3.com/uploadfiles/developer/2019/07/26/20190726162608.png', 'status': 1, 'createdAt': '1999-01-01 00:00:00', 'updatedAt': '2020-10-20 11:18:26'}]
+        print(jsonpath.jsonpath(dict1,'$.[message,code]'))
+        print(type(['success', 0]))
 if __name__ == "__main__":
     t = TestDemo()
     t.jsonpathdemo()

@@ -1,13 +1,13 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "09702089fd01fd1b816ff9d3871d2e38",
-    "name" : "TestApi",
+    "uid" : "ff2b04dbb9c449a4d40723f51d841925",
+    "name" : "test",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 7,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 2,
       "unknown" : 0,
       "total" : 9
     }

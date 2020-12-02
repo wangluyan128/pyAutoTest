@@ -21,11 +21,13 @@ class TreatingData(object):
         self.no_token_header = {}
         self.token_header = {}
     def treating_data(self,is_token,parameters,dependent,data,save_response_dict):
+
         #使用哪个header
         if is_token == '':
             header = self.no_token_header
         else:
             header = self.token_header
+
         logger.info(f'处理依赖前data的数据:{data}')
         #处理依赖数据data
         if dependent != '':
@@ -65,8 +67,12 @@ class TreatingData(object):
                 data = None
                 logger.info(f'data无数据，依赖无数据{data}')
             else:
-                data = json.loads(data)
-                logger.info(f'data有数据，依赖无数据{data}')
+                try:
+                    data = json.loads(data)
+                    logger.info(f'data有数据，依赖无数据{data}')
+                except JSONDecodeError as e:
+                    logger.error(f'data格式有误,请检查数据格式{e}')
+
 
         #处理路径参数Path的依赖
         #传进来的参数类似{"case_002“：”$.data.id"}/item/{"case_002":"$.meta.status"}，进行列表拆分
