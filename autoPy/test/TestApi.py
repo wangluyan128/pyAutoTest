@@ -10,6 +10,7 @@ import json
 import os
 import shutil
 import sys
+import zipfile
 
 import jsonpath
 from loguru import logger
@@ -23,6 +24,7 @@ import allure
 from api.utils.ReadData import ReadData
 from api.utils.SaveResponse import SaveResponse
 from api.utils.TreatingData import TreatingData
+
 
 rc = ReadConfig()
 base_url = rc.read_server_config('test')
@@ -135,7 +137,10 @@ if __name__ == '__main__':
     TestApiAuto().runTest()
 
     # 使用jenkins集成将不会使用到这两个方法（邮件发送/报告压缩zip）
-    # from tools.zip_file import zipDir
-    # from tools.send_email import send_email
-    # zipDir(report_generate, report_zip)
-    # send_email(email_setting)
+    from api.utils.ZipFile import zipDir
+    from api.utils.SendEmail import SendEmail
+
+    report_generate = os.path.join('../',report_generate)
+    zipDir(report_generate,report_zip)
+    #zip = zipfile.ZipFile('../result/report/apiAutoTestReport.zip', 'w', zipfile.ZIP_DEFLATED)
+#    SendEmail(email_setting)

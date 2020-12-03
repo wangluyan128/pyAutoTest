@@ -1,7 +1,9 @@
 #!/usr/bin/env/python3
 # -*- coding:utf-8 -*-
 import json
+import os
 import re
+import zipfile
 from collections import OrderedDict
 
 import jsonpath
@@ -355,6 +357,26 @@ class TestDemo:
         dict2 = [{'id': 5, 'uniqId': 1330466377, 'enName': 'Omni Adventure', 'name': '放置旅团', 'icon': 'https://open.17m3.com/uploadfiles/developer/2019/07/26/20190726162608.png', 'status': 1, 'createdAt': '1999-01-01 00:00:00', 'updatedAt': '2020-10-20 11:18:26'}]
         print(jsonpath.jsonpath(dict1,'$.[message,code]'))
         print(type(['success', 0]))
+
+    def zipDemo(self):
+        zip = zipfile.ZipFile('../result/report/apiAutoTestReport.zip',"w",zipfile.ZIP_DEFLATED)
+
+        for path,dirnames,filenames in os.walk('../result/report/html',onerror='FileNotFoundError'):
+        #去掉目标跟路径，只对目标文件夹下边的文件及文件夹压缩
+            print('1111')
+            fpath = path.replace('../result/report/html','')
+            print(path)
+            print(filenames)
+            for filename in filenames:
+                zip.write(path,filename)
+
+#            for filename in filenames:
+#                zip.write(os.path.join(path,filename),os.path.join(fpath,filename))
+            zip.close()
+
+#        zfile = zipfile.ZipFile("test.zip","w")
+#        zfile.write(r"./a/1.txt")
+#        zfile.close()
 if __name__ == "__main__":
     t = TestDemo()
-    t.jsonpathdemo()
+    t.zipDemo()

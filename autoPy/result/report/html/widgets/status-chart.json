@@ -1,90 +1,90 @@
 [ {
-  "uid" : "b408293a567f4542",
-  "name" : "get请求实现登录",
-  "time" : {
-    "start" : 1606903499196,
-    "stop" : 1606903499277,
-    "duration" : 81
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ecd9408bad6f02e3",
-  "name" : "测试请求数据与依赖数据相同key的情况",
-  "time" : {
-    "start" : 1606903500056,
-    "stop" : 1606903500060,
-    "duration" : 4
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "2c0997f29bae9d4c",
-  "name" : "get请求查询用户数据列表",
-  "time" : {
-    "start" : 1606903499361,
-    "stop" : 1606903499370,
-    "duration" : 9
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "e08c1a39f3a46329",
-  "name" : "部门管理分页查询",
-  "time" : {
-    "start" : 1606903499298,
-    "stop" : 1606903499339,
-    "duration" : 41
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d4412de47d2b525e",
+  "uid" : "11a9fb43c3b888c5",
   "name" : "添加用户正常接口数据",
   "time" : {
-    "start" : 1606903499657,
-    "stop" : 1606903499665,
+    "start" : 1606985615755,
+    "stop" : 1606985615762,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "525a8534b52714b0",
+  "name" : "删除用户zy7y",
+  "time" : {
+    "start" : 1606985616041,
+    "stop" : 1606985616048,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "5ce5ed4b251d11c7",
+  "name" : "get请求查询用户数据列表",
+  "time" : {
+    "start" : 1606985615665,
+    "stop" : 1606985615672,
+    "duration" : 7
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a1d8b53a18bf0d6d",
+  "name" : "修改用户状态接口",
+  "time" : {
+    "start" : 1606985615848,
+    "stop" : 1606985615856,
     "duration" : 8
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "91010f335c494cc8",
-  "name" : "删除用户zy7y",
-  "time" : {
-    "start" : 1606903499943,
-    "stop" : 1606903499950,
-    "duration" : 7
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "53c471167e4b2d07",
-  "name" : "修改用户状态接口",
-  "time" : {
-    "start" : 1606903499748,
-    "stop" : 1606903499755,
-    "duration" : 7
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "2ec13c8840803521",
-  "name" : "修改用户状态为2",
-  "time" : {
-    "start" : 1606903499842,
-    "stop" : 1606903499851,
-    "duration" : 9
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "bc926ab66fce4b53",
+  "uid" : "b97f5e12c7d6d852",
   "name" : "get请求查询用户数据列表",
   "time" : {
-    "start" : 1606903499559,
-    "stop" : 1606903499566,
-    "duration" : 7
+    "start" : 1606985615458,
+    "stop" : 1606985615468,
+    "duration" : 10
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "864daea3f43364e",
+  "name" : "测试请求数据与依赖数据相同key的情况",
+  "time" : {
+    "start" : 1606985616161,
+    "stop" : 1606985616288,
+    "duration" : 127
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b09805f7f98de7ef",
+  "name" : "get请求实现登录",
+  "time" : {
+    "start" : 1606985615297,
+    "stop" : 1606985615361,
+    "duration" : 64
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bb84b8b29677be9",
+  "name" : "部门管理分页查询",
+  "time" : {
+    "start" : 1606985615393,
+    "stop" : 1606985615434,
+    "duration" : 41
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "173d268cf9fc7d65",
+  "name" : "修改用户状态为2",
+  "time" : {
+    "start" : 1606985615947,
+    "stop" : 1606985615956,
+    "duration" : 9
   },
   "status" : "broken",
   "severity" : "normal"

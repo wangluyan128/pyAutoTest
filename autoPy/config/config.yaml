@@ -17,21 +17,21 @@ file_path:
   case_data: ../data/case_data.xlsx
   report_data: ../result/report/data
   report_generate: ../result/report/html
-  report_zip: ../result/report/html/apiAutoTestReport.zip
+  report_zip: ../result/report/apiAutoTestReport.zip
   log_path: ../result/logs/运行日志{time}.log
 
 email:
   #发件人邮箱
-  user: 123456.com
+  user: 381349463@qq.com
   #发件人邮箱授权码
-  password:
+  password: nqcnpacwujgibhcf
   #邮箱服务协议
-  host: stmp.163.com
+  host: smtp.qq.com
   #主体内容
   contents: 解压apiAutoReport.zip(接口测试报告)后，请使用已安装Live Server 插件的VsCode，打开解压目录下的index.html查看报告
   #收件人邮箱
-  addressees: ["收件人邮箱1","收件人邮箱2","收件人邮箱3"]
+  addressees: ["wangluyan128@126.com","381349463@qq.com"]
   #标题
   title: 接口自动化测试报告(见附件)
   #附件
-  enclosures: ["../result/report/html/apiAutoTestReport.zip",]
+  enclosures: ["../../result/report/apiAutoTestReport.zip",]

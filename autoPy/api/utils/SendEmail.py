@@ -10,7 +10,10 @@
 import yagmail
 from loguru import logger
 
+from api.utils.ReadConfig import ReadConfig
 
+#rc = ReadConfig()
+#email_setting = rc.read_email_setting()
 def SendEmail(setting):
     '''
     入参一个字典
@@ -24,8 +27,15 @@ def SendEmail(setting):
     :return:
     '''
     yag = yagmail.SMTP(setting['user'],setting['password'],setting['host'])
+    print(setting['addressees'])
+    print(setting['title'])
+    print(setting['contents'])
     #发送邮箱
     yag.send(setting['addressees'],setting['title'],setting['contents'],setting['enclosures'])
     #关闭服务
     yag.close()
     logger.info("邮件发送成功！")
+
+if __name__ == '__main__':
+    pass
+    #SendEmail(email_setting)

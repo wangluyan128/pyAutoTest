@@ -7,25 +7,25 @@
       "name" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
       "children" : [ {
         "name" : "get请求查询用户数据列表",
-        "uid" : "2c0997f29bae9d4c",
+        "uid" : "b97f5e12c7d6d852",
         "parentUid" : "da0f7eff28cdcf954c453f16fd1fbd6a",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499361,
-          "stop" : 1606903499370,
-          "duration" : 9
+          "start" : 1606985615458,
+          "stop" : 1606985615468,
+          "duration" : 10
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'case_003'", "'get请求查询用户数据列表'", "'{\"pagenum\": 1, \"pagesize\": \"12\"}'", "'key={\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "'读'", "'get'", "''", "'params'", "'users'", "''" ]
       }, {
         "name" : "get请求查询用户数据列表",
-        "uid" : "bc926ab66fce4b53",
+        "uid" : "5ce5ed4b251d11c7",
         "parentUid" : "da0f7eff28cdcf954c453f16fd1fbd6a",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499559,
-          "stop" : 1606903499566,
+          "start" : 1606985615665,
+          "stop" : 1606985615672,
           "duration" : 7
         },
         "flaky" : false,
@@ -33,13 +33,13 @@
         "parameters" : [ "'case_004'", "'get请求查询用户数据列表'", "'{\"pagenum\": 1, \"pagesize\": \"12\"}'", "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "''", "'get'", "''", "'data'", "'users'", "''" ]
       }, {
         "name" : "添加用户正常接口数据",
-        "uid" : "d4412de47d2b525e",
+        "uid" : "11a9fb43c3b888c5",
         "parentUid" : "da0f7eff28cdcf954c453f16fd1fbd6a",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499657,
-          "stop" : 1606903499665,
-          "duration" : 8
+          "start" : 1606985615755,
+          "stop" : 1606985615762,
+          "duration" : 7
         },
         "flaky" : false,
         "newFailed" : false,
@@ -50,13 +50,13 @@
       "name" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/{\"case_005\":\"$.data.create_time\"}",
       "children" : [ {
         "name" : "修改用户状态接口",
-        "uid" : "53c471167e4b2d07",
+        "uid" : "a1d8b53a18bf0d6d",
         "parentUid" : "8abd89e59ba78de3d5e913fbb9a07df7",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499748,
-          "stop" : 1606903499755,
-          "duration" : 7
+          "start" : 1606985615848,
+          "stop" : 1606985615856,
+          "duration" : 8
         },
         "flaky" : false,
         "newFailed" : false,
@@ -67,12 +67,12 @@
       "name" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/2",
       "children" : [ {
         "name" : "修改用户状态为2",
-        "uid" : "2ec13c8840803521",
+        "uid" : "173d268cf9fc7d65",
         "parentUid" : "aeaec1950f06f6c256c109488764ba49",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499842,
-          "stop" : 1606903499851,
+          "start" : 1606985615947,
+          "stop" : 1606985615956,
           "duration" : 9
         },
         "flaky" : false,
@@ -84,12 +84,12 @@
       "name" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}",
       "children" : [ {
         "name" : "删除用户zy7y",
-        "uid" : "91010f335c494cc8",
+        "uid" : "525a8534b52714b0",
         "parentUid" : "248948c8182c446586d61308cdbf78c4",
         "status" : "broken",
         "time" : {
-          "start" : 1606903499943,
-          "stop" : 1606903499950,
+          "start" : 1606985616041,
+          "stop" : 1606985616048,
           "duration" : 7
         },
         "flaky" : false,
@@ -101,13 +101,13 @@
       "name" : "ValueError: Circular reference detected",
       "children" : [ {
         "name" : "测试请求数据与依赖数据相同key的情况",
-        "uid" : "ecd9408bad6f02e3",
+        "uid" : "864daea3f43364e",
         "parentUid" : "4ee8dc232f22e39a2d4401446418f685",
         "status" : "broken",
         "time" : {
-          "start" : 1606903500056,
-          "stop" : 1606903500060,
-          "duration" : 4
+          "start" : 1606985616161,
+          "stop" : 1606985616288,
+          "duration" : 127
         },
         "flaky" : false,
         "newFailed" : false,
