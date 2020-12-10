@@ -1,0 +1,67 @@
+{
+  "uid" : "abf50b05e2343e32",
+  "name" : "test_db[data_db_list0]",
+  "fullName" : "test.TestApi.TestApiAuto#test_db",
+  "historyId" : "adf87d136970852962ae973d13fc6ebe",
+  "time" : {
+    "start" : 1607508887825,
+    "stop" : 1607508887825,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: got empty parameter set ['data_db_list'], function test_db at E:\\pyAutoTest\\autoPy\\test\\TestApi.py:164",
+  "statusTrace" : "('E:\\\\pyAutoTest\\\\autoPy\\\\test\\\\TestApi.py', 165, \"Skipped: got empty parameter set ['data_db_list'], function test_db at E:\\\\pyAutoTest\\\\autoPy\\\\test\\\\TestApi.py:164\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "需求管理平台"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='got empty parameter set ['data_db_list'], function test_db at E:\\pyAutoTest\\autoPy\\test\\TestApi.py:164')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "TestApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApiAuto"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "17712-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.TestApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data_db_list",
+    "value" : "<NotSetType.token: 0>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip(reason='got empty parameter set ['data_db_list'], function test_db at E:\\pyAutoTest\\autoPy\\test\\TestApi.py:164')" ]
+  },
+  "source" : "abf50b05e2343e32.json",
+  "parameterValues" : [ "<NotSetType.token: 0>" ]
+}

@@ -9,121 +9,43 @@
         "name" : "TestApiAuto",
         "children" : [ {
           "name" : "get请求实现登录",
-          "uid" : "b09805f7f98de7ef",
+          "uid" : "6a3488a2caafc091",
           "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
           "status" : "passed",
           "time" : {
-            "start" : 1606985615297,
-            "stop" : 1606985615361,
-            "duration" : 64
+            "start" : 1607508887687,
+            "stop" : 1607508887747,
+            "duration" : 60
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'case_001'", "'get请求实现登录'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'['success', 0]'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
+          "parameters" : [ "'case_001'", "'get请求实现登录'", "'access_log:1|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'['success', 0]'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
         }, {
           "name" : "部门管理分页查询",
-          "uid" : "8bb84b8b29677be9",
+          "uid" : "b62b3359e3944a88",
           "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
           "status" : "passed",
           "time" : {
-            "start" : 1606985615393,
-            "stop" : 1606985615434,
+            "start" : 1607508887766,
+            "stop" : 1607508887807,
             "duration" : 41
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'case_002'", "'部门管理分页查询'", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"电梦网络测试组\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/department/page-query'", "'$.[message,code]'" ]
+          "parameters" : [ "'case_002'", "'部门管理分页查询'", "''", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"电梦网络测试组\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/department/page-query'", "'$.[message,code]'" ]
         }, {
-          "name" : "get请求查询用户数据列表",
-          "uid" : "b97f5e12c7d6d852",
+          "name" : "test_db[data_db_list0]",
+          "uid" : "abf50b05e2343e32",
           "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
+          "status" : "skipped",
           "time" : {
-            "start" : 1606985615458,
-            "stop" : 1606985615468,
-            "duration" : 10
+            "start" : 1607508887825,
+            "stop" : 1607508887825,
+            "duration" : 0
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'case_003'", "'get请求查询用户数据列表'", "'{\"pagenum\": 1, \"pagesize\": \"12\"}'", "'key={\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "'读'", "'get'", "''", "'params'", "'users'", "''" ]
-        }, {
-          "name" : "get请求查询用户数据列表",
-          "uid" : "5ce5ed4b251d11c7",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985615665,
-            "stop" : 1606985615672,
-            "duration" : 7
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_004'", "'get请求查询用户数据列表'", "'{\"pagenum\": 1, \"pagesize\": \"12\"}'", "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "''", "'get'", "''", "'data'", "'users'", "''" ]
-        }, {
-          "name" : "添加用户正常接口数据",
-          "uid" : "11a9fb43c3b888c5",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985615755,
-            "stop" : 1606985615762,
-            "duration" : 7
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_005'", "'添加用户正常接口数据'", "'{\"username\": \"tester_zy7y1213\",\"password\": \"123456\"}'", "''", "'{\"msg\":\"创建成功\",\"status\":201}'", "''", "''", "'读'", "'post'", "''", "'data'", "'users'", "''" ]
-        }, {
-          "name" : "修改用户状态接口",
-          "uid" : "a1d8b53a18bf0d6d",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985615848,
-            "stop" : 1606985615856,
-            "duration" : 8
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_006'", "'修改用户状态接口'", "''", "''", "'{\"msg\": \"设置状态成功\", \"status\": 200}'", "''", "''", "'读'", "'put'", "'/{\"case_005\":\"$.data.id\"}/state/{\"case_005\":\"$.data.create_time\"}'", "'data'", "'users'", "''" ]
-        }, {
-          "name" : "修改用户状态为2",
-          "uid" : "173d268cf9fc7d65",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985615947,
-            "stop" : 1606985615956,
-            "duration" : 9
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_007'", "'修改用户状态为2'", "''", "''", "'{\"msg\": \"设置状态成功\", \"status\": 200}'", "''", "''", "'读'", "'put'", "'/{\"case_005\":\"$.data.id\"}/state/2'", "'data'", "'users'", "''" ]
-        }, {
-          "name" : "删除用户zy7y",
-          "uid" : "525a8534b52714b0",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985616041,
-            "stop" : 1606985616048,
-            "duration" : 7
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_008'", "'删除用户zy7y'", "''", "''", "'{\"msg\": \"删除成功\", \"status\": 200}'", "''", "''", "'读'", "'delete'", "'/{\"case_005\":\"$.data.id\"}'", "'params'", "'users'", "''" ]
-        }, {
-          "name" : "测试请求数据与依赖数据相同key的情况",
-          "uid" : "864daea3f43364e",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "broken",
-          "time" : {
-            "start" : 1606985616161,
-            "stop" : 1606985616288,
-            "duration" : 127
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_009'", "'测试请求数据与依赖数据相同key的情况'", "'{\"pagenum\": 1, \"pagesize\": \"12\",\"id\":[1]}'", "'{\"case_002\": [\"$.data.id\"],\"case_001\":[\"$.meta.msg\",\"$.meta.status\"]}'", "'{\"msg\": \"获取管理员列表成功\", \"status\": 200}'", "''", "''", "'读'", "'get'", "''", "'params'", "'users'", "''" ]
+          "parameters" : [ "<NotSetType.token: 0>" ]
         } ],
         "uid" : "5e338c17087fa7e3606bbcb269230a36"
       } ],

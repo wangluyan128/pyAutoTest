@@ -1,91 +1,31 @@
 [ {
-  "uid" : "864daea3f43364e",
-  "name" : "测试请求数据与依赖数据相同key的情况",
+  "uid" : "abf50b05e2343e32",
+  "name" : "test_db[data_db_list0]",
   "time" : {
-    "start" : 1606985616161,
-    "stop" : 1606985616288,
-    "duration" : 127
+    "start" : 1607508887825,
+    "stop" : 1607508887825,
+    "duration" : 0
   },
-  "status" : "broken",
+  "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "b97f5e12c7d6d852",
-  "name" : "get请求查询用户数据列表",
-  "time" : {
-    "start" : 1606985615458,
-    "stop" : 1606985615468,
-    "duration" : 10
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "525a8534b52714b0",
-  "name" : "删除用户zy7y",
-  "time" : {
-    "start" : 1606985616041,
-    "stop" : 1606985616048,
-    "duration" : 7
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "173d268cf9fc7d65",
-  "name" : "修改用户状态为2",
-  "time" : {
-    "start" : 1606985615947,
-    "stop" : 1606985615956,
-    "duration" : 9
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "b09805f7f98de7ef",
-  "name" : "get请求实现登录",
-  "time" : {
-    "start" : 1606985615297,
-    "stop" : 1606985615361,
-    "duration" : 64
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5ce5ed4b251d11c7",
-  "name" : "get请求查询用户数据列表",
-  "time" : {
-    "start" : 1606985615665,
-    "stop" : 1606985615672,
-    "duration" : 7
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "a1d8b53a18bf0d6d",
-  "name" : "修改用户状态接口",
-  "time" : {
-    "start" : 1606985615848,
-    "stop" : 1606985615856,
-    "duration" : 8
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "8bb84b8b29677be9",
+  "uid" : "b62b3359e3944a88",
   "name" : "部门管理分页查询",
   "time" : {
-    "start" : 1606985615393,
-    "stop" : 1606985615434,
+    "start" : 1607508887766,
+    "stop" : 1607508887807,
     "duration" : 41
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "11a9fb43c3b888c5",
-  "name" : "添加用户正常接口数据",
+  "uid" : "6a3488a2caafc091",
+  "name" : "get请求实现登录",
   "time" : {
-    "start" : 1606985615755,
-    "stop" : 1606985615762,
-    "duration" : 7
+    "start" : 1607508887687,
+    "stop" : 1607508887747,
+    "duration" : 60
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 } ]

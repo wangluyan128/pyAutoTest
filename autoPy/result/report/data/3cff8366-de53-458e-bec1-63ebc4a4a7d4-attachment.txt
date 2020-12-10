@@ -1,0 +1,165 @@
+{
+    "case_001": {
+        "message": "success",
+        "code": 0,
+        "data": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTI5IiwiZXhwIjoxNjA3NTUyMDg5fQ.y7DoJQUwu_Z6tnUiqQfloD385YA750tW5ipslqvX80rhAfL09ud2kUoDWKApEHifaiQDjDD_OkOw15vlQhZsxw"
+    },
+    "case_002": {
+        "message": "success",
+        "code": 0,
+        "data": {
+            "content": [
+                {
+                    "id": 147,
+                    "name": "电梦网络测试组",
+                    "orgId": 265,
+                    "orgType": 1,
+                    "pid": 0,
+                    "status": 0,
+                    "pms": "fangwei",
+                    "adminUsers": "zhujun,shencenwei",
+                    "products": "5",
+                    "productList": [
+                        {
+                            "id": 5,
+                            "uniqId": 1330466377,
+                            "enName": "Omni Adventure",
+                            "name": "放置旅团",
+                            "icon": "https://open.17m3.com/uploadfiles/developer/2019/07/26/20190726162608.png",
+                            "status": 1,
+                            "createdAt": "1999-01-01 00:00:00",
+                            "updatedAt": "2020-10-20 11:18:26"
+                        }
+                    ],
+                    "adminUserList": [
+                        {
+                            "id": 78,
+                            "dhId": "shencenwei",
+                            "name": "沈岑伟",
+                            "admin": 0,
+                            "superAdmin": true,
+                            "deptAdmin": false,
+                            "companyId": 5,
+                            "status": null,
+                            "createdAt": "2020-10-20 10:28:27",
+                            "updatedAt": "2020-12-09 00:00:23",
+                            "department": {
+                                "id": 82,
+                                "name": "运营开发部",
+                                "orgId": 512,
+                                "orgType": 3,
+                                "pid": 509,
+                                "status": 1,
+                                "pms": "anita,shencenwei",
+                                "adminUsers": "anita,fisn",
+                                "products": "1,2,3",
+                                "productList": null,
+                                "adminUserList": null,
+                                "pmsList": null,
+                                "demandTypes": null,
+                                "projects": null,
+                                "createdAt": "2020-10-20 10:28:26",
+                                "updatedAt": "2020-12-01 16:35:44"
+                            }
+                        },
+                        {
+                            "id": 767,
+                            "dhId": "zhujun",
+                            "name": "朱军",
+                            "admin": 0,
+                            "superAdmin": true,
+                            "deptAdmin": true,
+                            "companyId": 6,
+                            "status": null,
+                            "createdAt": "2020-10-20 14:39:29",
+                            "updatedAt": "2020-10-20 14:39:29",
+                            "department": {
+                                "id": 147,
+                                "name": "电梦网络测试组",
+                                "orgId": 265,
+                                "orgType": 1,
+                                "pid": 0,
+                                "status": 0,
+                                "pms": "fangwei",
+                                "adminUsers": "zhujun,shencenwei",
+                                "products": "5",
+                                "productList": null,
+                                "adminUserList": null,
+                                "pmsList": null,
+                                "demandTypes": null,
+                                "projects": null,
+                                "createdAt": "2020-10-20 14:39:26",
+                                "updatedAt": "2020-11-21 00:00:06"
+                            }
+                        }
+                    ],
+                    "pmsList": [
+                        {
+                            "id": 787,
+                            "dhId": "fangwei",
+                            "name": "方伟",
+                            "admin": 0,
+                            "superAdmin": false,
+                            "deptAdmin": false,
+                            "companyId": 6,
+                            "status": null,
+                            "createdAt": "2020-10-20 14:39:29",
+                            "updatedAt": "2020-10-20 14:39:29",
+                            "department": {
+                                "id": 147,
+                                "name": "电梦网络测试组",
+                                "orgId": 265,
+                                "orgType": 1,
+                                "pid": 0,
+                                "status": 0,
+                                "pms": "fangwei",
+                                "adminUsers": "zhujun,shencenwei",
+                                "products": "5",
+                                "productList": null,
+                                "adminUserList": null,
+                                "pmsList": null,
+                                "demandTypes": null,
+                                "projects": null,
+                                "createdAt": "2020-10-20 14:39:26",
+                                "updatedAt": "2020-11-21 00:00:06"
+                            }
+                        }
+                    ],
+                    "demandTypes": [
+                        {
+                            "id": 37,
+                            "name": "系统"
+                        },
+                        {
+                            "id": 46,
+                            "name": "设计"
+                        },
+                        {
+                            "id": 44,
+                            "name": "网站"
+                        },
+                        {
+                            "id": 45,
+                            "name": "测试"
+                        }
+                    ],
+                    "projects": [
+                        {
+                            "id": 20087261,
+                            "name": "野蛮人大作战"
+                        },
+                        {
+                            "id": 20108871,
+                            "name": "游戏引入评测"
+                        }
+                    ],
+                    "createdAt": "2020-10-20 14:39:26",
+                    "updatedAt": "2020-11-21 00:00:06"
+                }
+            ],
+            "page": 0,
+            "size": 20,
+            "total": 1
+        }
+    }
+}

@@ -1,85 +1,5 @@
 {
-  "ed6d9d8622052a2b21d902b372684a93" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b97f5e12c7d6d852",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
-      "time" : {
-        "start" : 1606985615458,
-        "stop" : 1606985615468,
-        "duration" : 10
-      }
-    } ]
-  },
-  "08a80dcac48651c08b35492b55aaf70a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "5ce5ed4b251d11c7",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
-      "time" : {
-        "start" : 1606985615665,
-        "stop" : 1606985615672,
-        "duration" : 7
-      }
-    } ]
-  },
-  "f711dd39ada450723aec46733e06c776" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a1d8b53a18bf0d6d",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/{\"case_005\":\"$.data.create_time\"}",
-      "time" : {
-        "start" : 1606985615848,
-        "stop" : 1606985615856,
-        "duration" : 8
-      }
-    } ]
-  },
-  "b81bf1b86e71d4d02a8239b1bbc2db01" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "525a8534b52714b0",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}",
-      "time" : {
-        "start" : 1606985616041,
-        "stop" : 1606985616048,
-        "duration" : 7
-      }
-    } ]
-  },
-  "f660992337d5a8902e5f0f0af9e22749" : {
+  "9fd7dbcd1bad41159588feae31d53e7b" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -89,56 +9,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8bb84b8b29677be9",
+      "uid" : "b62b3359e3944a88",
       "status" : "passed",
       "time" : {
-        "start" : 1606985615393,
-        "stop" : 1606985615434,
+        "start" : 1607508887766,
+        "stop" : 1607508887807,
         "duration" : 41
       }
     } ]
   },
-  "f6a3397353ad11578342caeb52691388" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "173d268cf9fc7d65",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/2",
-      "time" : {
-        "start" : 1606985615947,
-        "stop" : 1606985615956,
-        "duration" : 9
-      }
-    } ]
-  },
-  "e4271338febd1a4ab628d6166e74ead2" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "11a9fb43c3b888c5",
-      "status" : "broken",
-      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
-      "time" : {
-        "start" : 1606985615755,
-        "stop" : 1606985615762,
-        "duration" : 7
-      }
-    } ]
-  },
-  "0659820b7164f364c0b268e95f467f00" : {
+  "453ccf7e03c39dea44e9e88549e6709a" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -148,32 +28,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b09805f7f98de7ef",
+      "uid" : "6a3488a2caafc091",
       "status" : "passed",
       "time" : {
-        "start" : 1606985615297,
-        "stop" : 1606985615361,
-        "duration" : 64
+        "start" : 1607508887687,
+        "stop" : 1607508887747,
+        "duration" : 60
       }
     } ]
   },
-  "98e3538d3c395fdcb5d0bdce4e89c669" : {
+  "adf87d136970852962ae973d13fc6ebe" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
+      "broken" : 0,
+      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "864daea3f43364e",
-      "status" : "broken",
-      "statusDetails" : "ValueError: Circular reference detected",
+      "uid" : "abf50b05e2343e32",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: got empty parameter set ['data_db_list'], function test_db at E:\\pyAutoTest\\autoPy\\test\\TestApi.py:164",
       "time" : {
-        "start" : 1606985616161,
-        "stop" : 1606985616288,
-        "duration" : 127
+        "start" : 1607508887825,
+        "stop" : 1607508887825,
+        "duration" : 0
       }
     } ]
   }
