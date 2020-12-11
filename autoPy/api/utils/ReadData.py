@@ -24,7 +24,7 @@ class ReadData(object):
         table = self.book.sheet_by_index(0)
 
         for nrow in range(1,table.nrows):
-            if nrow in [1,2]:
+            if nrow in [1]:
                 #每行第4列 是否运行
                 if table.cell_value(nrow,3) != '否': #每行第三列等于否将不读取内容
                     value = table.row_values(nrow)

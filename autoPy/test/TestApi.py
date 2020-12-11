@@ -114,7 +114,7 @@ class TestApiAuto(object):
                     treat_data.token_header['Authorization'] = "Bearer " +jsonpath.jsonpath(res,token_reg)[0]
 
         with allure.step("根据配置文件的提取响应规划提取实际数据"):
-
+            #print("查看res响应类型："+str(type(res)))
             if isinstance(res,list):
                pass
             if isinstance(res,dict):
@@ -125,19 +125,24 @@ class TestApiAuto(object):
 
         with allure.step("处理读取出来的预期结果响应"):
             #处理预期结果数据中使用True/False/None导致无法转换bug
+
             if 'None' in expect:
                 expect = expect.replace('None','null')
             if 'True' in expect:
                 expect = expect.replace('True','true')
             if 'False' in expect:
                 expect = expect.replace('False','false')
-            if isinstance(expect,dict):
-                expect = json.loads(expect)
+            #if isinstance(expect,dict):
+            expect = json.loads(expect)
+
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
             
         with allure.step("预期结果与实际响应进行断言操作"):
+            print("eeeeeee"+str(really==expect))
+            print(type(really))
+            print(expect)
             logger.info(f'完整的json响应：{res}\n需要校验的数据字典:{really}预期校验的数据字典：{expect}\n测试结果：{really == expect}')
-            logger.debug(f'********...用例编号：{case_number},执行完毕，日志查看...********\n\n')
+            logger.debug(f'********...用例编号：{case_number},执行完毕，进行数据库校验...********\n\n')
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
             if isinstance(expect,list):
                 assert really == expect
@@ -155,19 +160,40 @@ class TestApiAuto(object):
                     data_db_list = ReadData(case_db_path).get_Db_data(table_name,int(data_id))
                     if data_db_list:
                         logger.info(f'数据列表信息：{data_db_list}\n')
-                        TestApiAuto().test_db(data_db_list)
+                        TestApiAuto().check_db(data_db_list)
                     else:
                         logger.error("未查到数据")
 
             else:
                 logger.info(f'没有添加数据库数据校验')
 
-    @pytest.mark.parametrize('data_db_list',data_db_list)
-    def test_db(self,data_db_list):
-
+   # @pytest.mark.parametrize('data_db_list',data_db_list)
+    def check_db(self,data_db_list):
+        expect_data = None
+        really_data = None
+        logger.info(f'开始数据库校验')
         effect_row,effect_reslut = operate_db.query_db(data_db_list[0][2],data_db_list[0][3],data_db_list[0][4])
-        logger.info(f'返回结果数量:{effect_row}\n完整的数据库结果：{effect_reslut}\n预期校验的数据字典：{data_db_list[0][5]}\n测试结果：{effect_row == data_db_list[0][5]}')
+        if data_db_list[0][5] in ['',None]:
+            logger.error(f'预期结果没有填写，请补充完整！')
+        else:
+            if data_db_list[0][3] in ['',None]:
+                expect_data =int(data_db_list[0][5])
+                really_data = effect_row
+            else:
+                expect_data = data_db_list[0][5].split(",")
+                effect_result_list = list(effect_reslut[0])
+                for n in range(len(effect_result_list)):
+                    if isinstance(effect_result_list[n],int):
+                        effect_result_list[n] = str(effect_result_list[n])
+                really_data = effect_result_list
+        assert expect_data == really_data
+
+        logger.info(f'返回结果数量:{effect_row}\n完整的数据库结果：{effect_reslut}\n预期校验的数据字典：{expect_data}\n测试结果：{really_data == expect_data} ')
         allure.attach(json.dumps(data_db_list[0][5],ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
+
+
+
+        logger.debug(f'********...全部执行完毕，日志查看...********\n\n')
 
 
 

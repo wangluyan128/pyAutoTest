@@ -9,43 +9,17 @@
         "name" : "TestApiAuto",
         "children" : [ {
           "name" : "get请求实现登录",
-          "uid" : "6a3488a2caafc091",
+          "uid" : "e5253d776c2e0891",
           "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
           "status" : "passed",
           "time" : {
-            "start" : 1607508887687,
-            "stop" : 1607508887747,
-            "duration" : 60
+            "start" : 1607665530755,
+            "stop" : 1607665530824,
+            "duration" : 69
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'case_001'", "'get请求实现登录'", "'access_log:1|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'['success', 0]'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
-        }, {
-          "name" : "部门管理分页查询",
-          "uid" : "b62b3359e3944a88",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "passed",
-          "time" : {
-            "start" : 1607508887766,
-            "stop" : 1607508887807,
-            "duration" : 41
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'case_002'", "'部门管理分页查询'", "''", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"电梦网络测试组\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/department/page-query'", "'$.[message,code]'" ]
-        }, {
-          "name" : "test_db[data_db_list0]",
-          "uid" : "abf50b05e2343e32",
-          "parentUid" : "5e338c17087fa7e3606bbcb269230a36",
-          "status" : "skipped",
-          "time" : {
-            "start" : 1607508887825,
-            "stop" : 1607508887825,
-            "duration" : 0
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "<NotSetType.token: 0>" ]
+          "parameters" : [ "'case_001'", "'get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
         } ],
         "uid" : "5e338c17087fa7e3606bbcb269230a36"
       } ],

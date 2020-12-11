@@ -1,4 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Dec 09 18:14:47 CST 2020","Wed Dec 09 18:14:47 CST 2020","60","test","TestApi","TestApiAuto","","","get请求实现登录",""
-"passed","Wed Dec 09 18:14:47 CST 2020","Wed Dec 09 18:14:47 CST 2020","41","test","TestApi","TestApiAuto","","","部门管理分页查询",""
-"skipped","Wed Dec 09 18:14:47 CST 2020","Wed Dec 09 18:14:47 CST 2020","0","test","TestApi","TestApiAuto","","","test_db[data_db_list0]",""
+"passed","Fri Dec 11 13:45:30 CST 2020","Fri Dec 11 13:45:30 CST 2020","69","test","TestApi","TestApiAuto","","","get请求实现登录",""

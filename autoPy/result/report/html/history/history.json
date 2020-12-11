@@ -1,5 +1,5 @@
 {
-  "9fd7dbcd1bad41159588feae31d53e7b" : {
+  "9240af5dbac453f57e4e6a059c0c0aa2" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,51 +9,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b62b3359e3944a88",
+      "uid" : "e5253d776c2e0891",
       "status" : "passed",
       "time" : {
-        "start" : 1607508887766,
-        "stop" : 1607508887807,
-        "duration" : 41
-      }
-    } ]
-  },
-  "453ccf7e03c39dea44e9e88549e6709a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "6a3488a2caafc091",
-      "status" : "passed",
-      "time" : {
-        "start" : 1607508887687,
-        "stop" : 1607508887747,
-        "duration" : 60
-      }
-    } ]
-  },
-  "adf87d136970852962ae973d13fc6ebe" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "abf50b05e2343e32",
-      "status" : "skipped",
-      "statusDetails" : "Skipped: got empty parameter set ['data_db_list'], function test_db at E:\\pyAutoTest\\autoPy\\test\\TestApi.py:164",
-      "time" : {
-        "start" : 1607508887825,
-        "stop" : 1607508887825,
-        "duration" : 0
+        "start" : 1607665530755,
+        "stop" : 1607665530824,
+        "duration" : 69
       }
     } ]
   }
