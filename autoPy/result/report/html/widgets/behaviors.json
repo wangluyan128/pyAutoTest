@@ -4,12 +4,12 @@
     "uid" : "7c05b669d4d08ae266a0b9cbba4a1d77",
     "name" : "需求管理平台",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 1
+      "total" : 3
     }
   } ]
 }

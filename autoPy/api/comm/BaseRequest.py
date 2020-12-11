@@ -51,6 +51,8 @@ class BaseRequest(object):
             res = session.request(method = method,url = url,data = data,files = files,headers = header)
         elif parametric_key == 'json':
             res = session.request(method = method,url = url,json = data,files = files,headers = header)
+        elif parametric_key == '':
+            res = session.request(method = method,url = url,params=data,headers = header)
         else:
             raise ValueError('可选关键字为：get/delete/head/options/请求使用params,post/put/patch请求可使用json(application/json)/data')
         logger.info(f'请求方法：{method},请求路径：{url},请求参数：{data},请求文件：{files},请求头:{header}')

@@ -92,7 +92,7 @@ class TestApiAuto(object):
         logger.debug(f'***********...执行用例编号： {case_number} ...***********')
 
         with allure.step("处理相关数据依赖，header"):
-
+            print(parameters)
             data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)
 
             allure.attach(json.dumps(header,ensure_ascii=False,indent=4),"请求头",allure.attachment_type.TEXT)
@@ -133,14 +133,14 @@ class TestApiAuto(object):
             if 'False' in expect:
                 expect = expect.replace('False','false')
             #if isinstance(expect,dict):
-            expect = json.loads(expect)
-
+            expect = json.loads(expect)#dic()
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
             
         with allure.step("预期结果与实际响应进行断言操作"):
-            print("eeeeeee"+str(really==expect))
-            print(type(really))
-            print(expect)
+
+            if isinstance(really,list):
+                expect = list(expect.values())
+
             logger.info(f'完整的json响应：{res}\n需要校验的数据字典:{really}预期校验的数据字典：{expect}\n测试结果：{really == expect}')
             logger.debug(f'********...用例编号：{case_number},执行完毕，进行数据库校验...********\n\n')
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
@@ -169,12 +169,23 @@ class TestApiAuto(object):
 
    # @pytest.mark.parametrize('data_db_list',data_db_list)
     def check_db(self,data_db_list):
-        expect_data = None
-        really_data = None
+        expect_data = ''
+        #really_data = ''
         logger.info(f'开始数据库校验')
         effect_row,effect_reslut = operate_db.query_db(data_db_list[0][2],data_db_list[0][3],data_db_list[0][4])
         if data_db_list[0][5] in ['',None]:
+
+            if data_db_list[0][3] in ['',None]:
+                really_data = effect_row
+            else:
+                effect_result_list = list(effect_reslut[0])
+                for n in range(len(effect_result_list)):
+                    if isinstance(effect_result_list[n],int):
+                        effect_result_list[n] = str(effect_result_list[n])
+                really_data = effect_result_list
+
             logger.error(f'预期结果没有填写，请补充完整！')
+
         else:
             if data_db_list[0][3] in ['',None]:
                 expect_data =int(data_db_list[0][5])
@@ -193,7 +204,7 @@ class TestApiAuto(object):
 
 
 
-        logger.debug(f'********...全部执行完毕，日志查看...********\n\n')
+        logger.debug(f'********...全部执行完毕，请日志查看...********\n\n')
 
 
 

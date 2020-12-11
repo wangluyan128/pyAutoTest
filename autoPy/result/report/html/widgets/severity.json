@@ -1,11 +1,31 @@
 [ {
-  "uid" : "e5253d776c2e0891",
-  "name" : "get请求实现登录",
+  "uid" : "6a444f318454d2d3",
+  "name" : "登录管理|get请求实现登录",
   "time" : {
-    "start" : 1607665530755,
-    "stop" : 1607665530824,
-    "duration" : 69
+    "start" : 1607680774615,
+    "stop" : 1607680774681,
+    "duration" : 66
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61fcae12abb8e6d7",
+  "name" : "部门管理|获取本人管理的部门列表",
+  "time" : {
+    "start" : 1607680774701,
+    "stop" : 1607680774745,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b335870d961bf761",
+  "name" : "部门管理|查看详情",
+  "time" : {
+    "start" : 1607680774764,
+    "stop" : 1607680774803,
+    "duration" : 39
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

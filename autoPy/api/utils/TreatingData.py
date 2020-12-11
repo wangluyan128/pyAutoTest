@@ -76,7 +76,9 @@ class TreatingData(object):
 
         #处理路径参数Path的依赖
         #传进来的参数类似{"case_002“：”$.data.id"}/item/{"case_002":"$.meta.status"}，进行列表拆分
+        print(parameters)
         path_list = parameters.split('/')
+
         #获取列表长度迭代
         for i in range(len(path_list)):
             try:
