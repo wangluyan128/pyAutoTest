@@ -49,8 +49,10 @@ class Test_all():
     @pytest.mark.parametrize('param2',[True],ids=["这是一个有意思的操作"])
     @pytest.mark.parametrize('param3',[1])
     def test_1(self,param1,param2,param3):
+        print("111111111")
         allure.attach.file(r'E:\Myproject/pytest-allure/test/test_1.jsp',
                            '我是附件截图的名字',attachment_type=allure.attachment_type.JPG)
+
 
     @allure.step('这里是操作步骤打印：name:"{0}",age:"{age}"')
     def step_with_title(self,name,age=0):
@@ -70,7 +72,10 @@ class Test_all():
     def test_3(self):
         pass
 
-
+    @pytest.mark.parametrize('param4',param4)
+    def test_4(param4):
+        print("sssssssssss")
+        print(param4)
     #执行命令 pytest test_1.py --allure-stories "这里是第二个二级标签", "这里是第三个二级标签"
     #@allure.story @allure.feature 还可以用来指定执行的case集合
     #使用@allure.severity装饰器

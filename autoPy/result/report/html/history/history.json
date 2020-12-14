@@ -1,5 +1,5 @@
 {
-  "82d25c66dcfe091ee72e610c07d2d1d4" : {
+  "d9bbb289c214a48416132a6375654ebc" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b335870d961bf761",
+      "uid" : "6a68c45f768329c8",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert ['参数类型解析异常', 10001000] == ['success', 0]\n  At index 0 diff: '参数类型解析异常' != 'success'\n  Use -v to get the full diff",
       "time" : {
-        "start" : 1607680774764,
-        "stop" : 1607680774803,
-        "duration" : 39
+        "start" : 1607941250926,
+        "stop" : 1607941250957,
+        "duration" : 31
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6a444f318454d2d3",
+      "uid" : "8c35a2daae118f6d",
       "status" : "passed",
       "time" : {
-        "start" : 1607680774615,
-        "stop" : 1607680774681,
-        "duration" : 66
+        "start" : 1607941250810,
+        "stop" : 1607941250863,
+        "duration" : 53
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "61fcae12abb8e6d7",
+      "uid" : "6d768dce69512957",
       "status" : "passed",
       "time" : {
-        "start" : 1607680774701,
-        "stop" : 1607680774745,
-        "duration" : 44
+        "start" : 1607941250874,
+        "stop" : 1607941250915,
+        "duration" : 41
       }
     } ]
   }

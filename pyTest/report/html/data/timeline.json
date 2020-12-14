@@ -1,0 +1,3482 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-O07PCGI",
+    "children" : [ {
+      "name" : "5364-MainThread",
+      "children" : [ {
+        "name" : "用例标题2",
+        "uid" : "6d4c7946be9f325b",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826720,
+          "stop" : 1606787826721,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "306079aeebb97dc4",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787826490,
+          "stop" : 1606787826494,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e3a238971f5cead2",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826192,
+          "stop" : 1606787826194,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "dfac7c8e24913d56",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787826235,
+          "stop" : 1606787826242,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "1d9c0395a95494b2",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826178,
+          "stop" : 1606787826180,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "c6b6b74c40918739",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826020,
+          "stop" : 1606787826021,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9ab6283b7f65b85a",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826205,
+          "stop" : 1606787826207,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "6ae5ffb9ee159ffa",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826727,
+          "stop" : 1606787826728,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "f13e17529c96b752",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787826034,
+          "stop" : 1606787826036,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b3509c2ced5b25b2",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826152,
+          "stop" : 1606787826154,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "8ecfae4676a0b339",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826219,
+          "stop" : 1606787826221,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "a447f061ada8ebfc",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826166,
+          "stop" : 1606787826167,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "c5ba3552322725c3",
+        "parentUid" : "36752a03af96467eb2b47ff0b2803980",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787826027,
+          "stop" : 1606787826029,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "36752a03af96467eb2b47ff0b2803980"
+    }, {
+      "name" : "13716-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "201cfa2ff604dc4d",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757620,
+          "stop" : 1606787757624,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "b9d346781872a78d",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757888,
+          "stop" : 1606787757888,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "f25ddb1b7fcc04e4",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757669,
+          "stop" : 1606787757672,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e1dbdafe16c6a785",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757641,
+          "stop" : 1606787757644,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "f728ea8743e135e0",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787757792,
+          "stop" : 1606787757795,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "3138ccd764bfb096",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787757469,
+          "stop" : 1606787757474,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "25298f975e8e7153",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757689,
+          "stop" : 1606787757690,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "9ac65921caedb858",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757453,
+          "stop" : 1606787757459,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "60f67d4bfa0e82a",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757679,
+          "stop" : 1606787757681,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "e3cee23a34d9516e",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757885,
+          "stop" : 1606787757885,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "f953b62587861518",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757441,
+          "stop" : 1606787757443,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ed0b5913a007e5ed",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787757655,
+          "stop" : 1606787757657,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "49fbe3f105506266",
+        "parentUid" : "de7d8dd3a668edb352d8b069aa59f87a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787757697,
+          "stop" : 1606787757703,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      } ],
+      "uid" : "de7d8dd3a668edb352d8b069aa59f87a"
+    }, {
+      "name" : "17156-MainThread",
+      "children" : [ {
+        "name" : "test_error",
+        "uid" : "eea4d0192b28cebf",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394340239,
+          "stop" : 1607394340240,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "d836a677f8551663",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340232,
+          "stop" : 1607394340233,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "79fcf840a10077ce",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340266,
+          "stop" : 1607394340267,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "f7db6946c9019ae",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394340407,
+          "stop" : 1607394340408,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "6d6d8470685d7be",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340294,
+          "stop" : 1607394340296,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d95f008d1187a2b0",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340280,
+          "stop" : 1607394340281,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "5ac1eff0e188472a",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340274,
+          "stop" : 1607394340275,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "efe217ccbe2e88f1",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340287,
+          "stop" : 1607394340288,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "445d56e33114f6c4",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340235,
+          "stop" : 1607394340236,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "5534d66d009ec968",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340302,
+          "stop" : 1607394340303,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "7b299b957be4dfd7",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394340309,
+          "stop" : 1607394340312,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "69a516846db8620",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340483,
+          "stop" : 1607394340483,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "fb62e5a275aad8ea",
+        "parentUid" : "a0ee7a6a273344336be1d9f969e1cff7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394340486,
+          "stop" : 1607394340486,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0ee7a6a273344336be1d9f969e1cff7"
+    }, {
+      "name" : "5208-MainThread",
+      "children" : [ {
+        "name" : "test_run",
+        "uid" : "d3da468c7e903837",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456481,
+          "stop" : 1607392456483,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "dc2ac8c8cae50962",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456561,
+          "stop" : 1607392456562,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "8dff4fb7267c5b44",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392456575,
+          "stop" : 1607392456577,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "dd53a5b074955b61",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456523,
+          "stop" : 1607392456524,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "b999ae0b9ffebd1",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456762,
+          "stop" : 1607392456762,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "6adadfbdba5ceb28",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392456486,
+          "stop" : 1607392456487,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "bade989946e52026",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456516,
+          "stop" : 1607392456517,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ae2b8163dc9b8ae8",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456568,
+          "stop" : 1607392456569,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "a5268f13bd6814f3",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456759,
+          "stop" : 1607392456760,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "52317cff60e9ae59",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456543,
+          "stop" : 1607392456545,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "f7bb52846fd196d3",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456478,
+          "stop" : 1607392456478,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e8d6f0e871be8c9c",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392456553,
+          "stop" : 1607392456554,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "86909cd72dbf8ff8",
+        "parentUid" : "d9026ed245838ce99cf360fff53cc264",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392456678,
+          "stop" : 1607392456680,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      } ],
+      "uid" : "d9026ed245838ce99cf360fff53cc264"
+    }, {
+      "name" : "11096-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "bcc9bec57f15c807",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060906,
+          "stop" : 1607394060907,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "2fef23c4f9ba1dd7",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060842,
+          "stop" : 1607394060842,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ff8ce3dade6d84c",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060899,
+          "stop" : 1607394060900,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "811ba2f9ca2b66c1",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394060921,
+          "stop" : 1607394060924,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c416f09725d7fcd2",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060877,
+          "stop" : 1607394060878,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "a678b147c465ba13",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060844,
+          "stop" : 1607394060846,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c1447a8172144884",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060891,
+          "stop" : 1607394060892,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "b1c3c137d4a886fb",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394061103,
+          "stop" : 1607394061103,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "eebb1c17a9e777e1",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394061100,
+          "stop" : 1607394061101,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "af775750b383bcfe",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394061021,
+          "stop" : 1607394061022,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "785132b553fc69c3",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060913,
+          "stop" : 1607394060915,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "dd4a06080f302031",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607394060849,
+          "stop" : 1607394060850,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "2a7a103fb11105b1",
+        "parentUid" : "2c36cb35aeb121f3de8aac1bee0ab497",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607394060885,
+          "stop" : 1607394060886,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      } ],
+      "uid" : "2c36cb35aeb121f3de8aac1bee0ab497"
+    }, {
+      "name" : "4692-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "637dc0f2ff56f543",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904856,
+          "stop" : 1606787904858,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "db846804410e9fd9",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787905139,
+          "stop" : 1606787905142,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "50a196621bf37af8",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904870,
+          "stop" : 1606787904872,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c6c9457874daede1",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904829,
+          "stop" : 1606787904831,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "1e5af9058d965c61",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904680,
+          "stop" : 1606787904682,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "63b57cf91412f269",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904673,
+          "stop" : 1606787904675,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "78f59ef0aca0749c",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787904886,
+          "stop" : 1606787904893,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "b43d098d311999c3",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787904686,
+          "stop" : 1606787904688,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "45ee90e2f7ee202e",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787905374,
+          "stop" : 1606787905374,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "dd88ad2b4fdba1af",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904816,
+          "stop" : 1606787904817,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "40744fd7ac029a04",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904802,
+          "stop" : 1606787904804,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "97b3dfc70c8d7fa",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787904842,
+          "stop" : 1606787904844,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "eb3546bfbf060114",
+        "parentUid" : "8f239abc2f4295a83bf0637177926711",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787905367,
+          "stop" : 1606787905368,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f239abc2f4295a83bf0637177926711"
+    }, {
+      "name" : "10052-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "65cce7f081023325",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410599,
+          "stop" : 1607392410601,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c565c2bcb3e5cc01",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410584,
+          "stop" : 1607392410586,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "a30bf3372219e51d",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392410607,
+          "stop" : 1607392410735,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "427fa1758f77a2a4",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410907,
+          "stop" : 1607392410908,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "7b9757af5d46e9b",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392410503,
+          "stop" : 1607392410512,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "4a8f35d2e5704f30",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410483,
+          "stop" : 1607392410484,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "377eef6304d8f5f5",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410567,
+          "stop" : 1607392410568,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "28e6825574a08f45",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410574,
+          "stop" : 1607392410575,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "968dc76bf40e2d9d",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410592,
+          "stop" : 1607392410593,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "8b7ef681e07a5c9c",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410491,
+          "stop" : 1607392410495,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "f5eb8a4f9a7298dd",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410910,
+          "stop" : 1607392410910,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "bd35e894b77bfc6c",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392410830,
+          "stop" : 1607392410831,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d6428bd3ebc9bb3",
+        "parentUid" : "8e82b51872e8f083eaa55c473d79429d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392410559,
+          "stop" : 1607392410560,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      } ],
+      "uid" : "8e82b51872e8f083eaa55c473d79429d"
+    }, {
+      "name" : "15664-MainThread",
+      "children" : [ {
+        "name" : "用例标题1",
+        "uid" : "b9d6f9ffa14aed3b",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392607592,
+          "stop" : 1607392607596,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "b426907f43adbdd8",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392607498,
+          "stop" : 1607392607499,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "d3e3698491800c06",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607768,
+          "stop" : 1607392607769,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "3c413b7aa4de1ca1",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607771,
+          "stop" : 1607392607771,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d3bee804413e31d5",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607543,
+          "stop" : 1607392607545,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "24309192e5d67746",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607571,
+          "stop" : 1607392607573,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "2bfca5155ca6969b",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392607691,
+          "stop" : 1607392607692,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b077ad0ec27e97ec",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607562,
+          "stop" : 1607392607563,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e9fb23f569e08ba1",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607553,
+          "stop" : 1607392607554,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "ba32c8d5c094585b",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607494,
+          "stop" : 1607392607495,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "6350cba7d924ac05",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607581,
+          "stop" : 1607392607582,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "29f3d4832bad52c1",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607490,
+          "stop" : 1607392607490,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d7916e427eaccb0",
+        "parentUid" : "554bceffb996f72edb9cb65b96476155",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392607534,
+          "stop" : 1607392607536,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      } ],
+      "uid" : "554bceffb996f72edb9cb65b96476155"
+    }, {
+      "name" : "984-MainThread",
+      "children" : [ {
+        "name" : "用例标题1",
+        "uid" : "19f04c435a9eeac4",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607065272732,
+          "stop" : 1607065272733,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b44e58222faae488",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272571,
+          "stop" : 1607065272572,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "76b6ae5ec3d43494",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272477,
+          "stop" : 1607065272478,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "73c7c5acfac3bb42",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272504,
+          "stop" : 1607065272505,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "1f682807684dc1d7",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272812,
+          "stop" : 1607065272813,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "7405bcc2c5dfa434",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272607,
+          "stop" : 1607065272609,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ae3d33272d230f6a",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272560,
+          "stop" : 1607065272562,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "32bdf38d1b234ce1",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272589,
+          "stop" : 1607065272590,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "a3c006b8f5ca56d4",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607065272616,
+          "stop" : 1607065272620,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "844627a45f8a17b8",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607065272508,
+          "stop" : 1607065272521,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9b9cfeda30b0a256",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272598,
+          "stop" : 1607065272599,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "78d98ca324ab3de",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272815,
+          "stop" : 1607065272815,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9fcbfd671705c4ca",
+        "parentUid" : "6cdf670e3b4562ba16b5e7ce9d39359f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607065272580,
+          "stop" : 1607065272581,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      } ],
+      "uid" : "6cdf670e3b4562ba16b5e7ce9d39359f"
+    }, {
+      "name" : "9752-MainThread",
+      "children" : [ {
+        "name" : "test_setup",
+        "uid" : "d1bdc3924a6d7218",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627774,
+          "stop" : 1606787627775,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "60129eb9aa46d4e9",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787627987,
+          "stop" : 1606787627990,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "f9481e610481e8d2",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787628085,
+          "stop" : 1606787628085,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "74b9bc645f49e1f0",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787628082,
+          "stop" : 1606787628083,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "68b561e9d5d630fa",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787627782,
+          "stop" : 1606787627783,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "4e3b12d46af7afd",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627778,
+          "stop" : 1606787627779,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e0ceb25eeb37a213",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627859,
+          "stop" : 1606787627860,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "de94eb5fe57fa315",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627876,
+          "stop" : 1606787627878,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "e15c307212810fe7",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627851,
+          "stop" : 1606787627852,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "bf17d329d968225",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787627886,
+          "stop" : 1606787627892,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ace85d0c72b44939",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627843,
+          "stop" : 1606787627844,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "3c6cddeaabd1b36c",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627867,
+          "stop" : 1606787627868,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "baa47df229dc4758",
+        "parentUid" : "edc531e1e8ea0e1f21f5e5b6deed929e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787627834,
+          "stop" : 1606787627836,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      } ],
+      "uid" : "edc531e1e8ea0e1f21f5e5b6deed929e"
+    }, {
+      "name" : "16552-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "ad9d4f7ce0a3a67e",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711344,
+          "stop" : 1607393711346,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "a78e544dea191e23",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711278,
+          "stop" : 1607393711279,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "799c19003aa0e34b",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711211,
+          "stop" : 1607393711211,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "68d88dfbb4f67bc8",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711217,
+          "stop" : 1607393711221,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "d3049f884f721bbe",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607393711227,
+          "stop" : 1607393711230,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "fa1838d0c89f6f78",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607393711352,
+          "stop" : 1607393711354,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c92bf0d90f76b518",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711288,
+          "stop" : 1607393711290,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "afc63e679eb7fa62",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607393711454,
+          "stop" : 1607393711455,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d2a0132864710276",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711307,
+          "stop" : 1607393711310,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "392293bbb6e93014",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711539,
+          "stop" : 1607393711539,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "f2f72103cc545107",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711317,
+          "stop" : 1607393711318,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "1d6055b2c46f66b2",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711536,
+          "stop" : 1607393711537,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "fb4045de7f11dd2c",
+        "parentUid" : "dfd0c1c470f07e6094e74b717dd63f1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607393711298,
+          "stop" : 1607393711299,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      } ],
+      "uid" : "dfd0c1c470f07e6094e74b717dd63f1f"
+    }, {
+      "name" : "13740-MainThread",
+      "children" : [ {
+        "name" : "用例标题3",
+        "uid" : "5ff0325fa997df9f",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787871207,
+          "stop" : 1606787871208,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "c0c826a0ceac298c",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787870975,
+          "stop" : 1606787870979,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b5b4e82b835d0f51",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870676,
+          "stop" : 1606787870678,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "f3bbe29a50918f38",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870648,
+          "stop" : 1606787870649,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "6905a386f92bca45",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787870520,
+          "stop" : 1606787870521,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "5d0efe04a3d5bcfa",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787870719,
+          "stop" : 1606787870726,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "7108325186a87afb",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870689,
+          "stop" : 1606787870691,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "d7a3877e2083670e",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787871200,
+          "stop" : 1606787871201,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "48412e0c518742bb",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870513,
+          "stop" : 1606787870515,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "3ad5d92477f90d87",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870507,
+          "stop" : 1606787870508,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "52a07abab1f25617",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870634,
+          "stop" : 1606787870636,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "12ec1aaa52fc52f6",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870662,
+          "stop" : 1606787870664,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "99dff1ac9a21345a",
+        "parentUid" : "1df6a334bc6190a4a93bbb3713446a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787870703,
+          "stop" : 1606787870705,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      } ],
+      "uid" : "1df6a334bc6190a4a93bbb3713446a22"
+    }, {
+      "name" : "2096-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "a8b2f4026099af8d",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538157,
+          "stop" : 1607072538158,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "43c014901ee093ef",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538079,
+          "stop" : 1607072538079,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "dad014a18a916d91",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538164,
+          "stop" : 1607072538166,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c202eea83c63c17f",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538140,
+          "stop" : 1607072538141,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "1659ba0e9bce26f2",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538132,
+          "stop" : 1607072538134,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "ca2d54224d71eaae",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538379,
+          "stop" : 1607072538380,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "5e4ef33611a8e68d",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538082,
+          "stop" : 1607072538103,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "3fe7fba274cb3702",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538148,
+          "stop" : 1607072538150,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "89be52b7574c8665",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607072538202,
+          "stop" : 1607072538206,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "576b691c4de5c4b1",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538382,
+          "stop" : 1607072538382,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "fdb61362fa6d1372",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607072538175,
+          "stop" : 1607072538176,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "d76acbd6977789c1",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607072538294,
+          "stop" : 1607072538295,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "288a4ce80ab3c361",
+        "parentUid" : "59290f4df52d6545d3f9db2df0f482c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607072538105,
+          "stop" : 1607072538106,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "59290f4df52d6545d3f9db2df0f482c8"
+    }, {
+      "name" : "13764-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "b17bfd5f5a2ae52e",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502957,
+          "stop" : 1607306502958,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "7da216924858f62f",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502906,
+          "stop" : 1607306502906,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b8a4812f633014bf",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502986,
+          "stop" : 1607306502987,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "9ad06a8008589e04",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502909,
+          "stop" : 1607306502910,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "85b869102083ee4",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502949,
+          "stop" : 1607306502950,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "c1640ff192c523a6",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306503199,
+          "stop" : 1607306503199,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "ba43dcbac3dec972",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306503195,
+          "stop" : 1607306503196,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "1fd18010a235e0cb",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306503000,
+          "stop" : 1607306503002,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "d6c4a46bcd5e52a6",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607306502912,
+          "stop" : 1607306502913,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d473b2cfc6a2130d",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502993,
+          "stop" : 1607306502994,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "f2940b833958e010",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607306503010,
+          "stop" : 1607306503014,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "fd2d9704666786cc",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607306502964,
+          "stop" : 1607306502965,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "c496711aaec880f",
+        "parentUid" : "b754618c4c426865e4d1d4c46b6dbfd7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607306503097,
+          "stop" : 1607306503098,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      } ],
+      "uid" : "b754618c4c426865e4d1d4c46b6dbfd7"
+    }, {
+      "name" : "12468-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "d15f7b1af8742a40",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277078,
+          "stop" : 1606787277080,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "996e61d4b19cb49e",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277315,
+          "stop" : 1606787277316,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "31ab459797aeb4c1",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787276999,
+          "stop" : 1606787277001,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "5d359dafe5428157",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277319,
+          "stop" : 1606787277319,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "3bc5ea60f20dc0ef",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277088,
+          "stop" : 1606787277089,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "f9bdf3d28d8c8211",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787276996,
+          "stop" : 1606787276997,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b683e8f011d19806",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277070,
+          "stop" : 1606787277071,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "797b3d87bbefc0ed",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277096,
+          "stop" : 1606787277097,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "38b2a6f46121e40a",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787277104,
+          "stop" : 1606787277112,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "852ad4e24bb8ae80",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277054,
+          "stop" : 1606787277055,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "962080b3c893b236",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787277211,
+          "stop" : 1606787277214,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ec03c2e9a76274cd",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787277062,
+          "stop" : 1606787277063,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "a9adf444297fbbd8",
+        "parentUid" : "cb2ea6d48db17a15a1fea06d1adfc253",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787276993,
+          "stop" : 1606787276993,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cb2ea6d48db17a15a1fea06d1adfc253"
+    }, {
+      "name" : "3220-MainThread",
+      "children" : [ {
+        "name" : "用例标题3",
+        "uid" : "93f0aeb14c724925",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980655,
+          "stop" : 1607395980655,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "5c7614a34e312f00",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980652,
+          "stop" : 1607395980653,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "6c0e4a4994087968",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607395980401,
+          "stop" : 1607395980402,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "15c9c9387b1d6e31",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607395980470,
+          "stop" : 1607395980473,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "4a76191f49cb79e5",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980457,
+          "stop" : 1607395980458,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9aafb58342c14872",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980449,
+          "stop" : 1607395980450,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "4a8025346c4fe644",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980436,
+          "stop" : 1607395980437,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "f00702ee72cdbc2",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607395980573,
+          "stop" : 1607395980574,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "dec25c506fbb70e6",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980428,
+          "stop" : 1607395980430,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9219b57ee3c44cb6",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980443,
+          "stop" : 1607395980444,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "8f1460d094f522c9",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980395,
+          "stop" : 1607395980395,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_run",
+        "uid" : "1187903c0fb3d4c4",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980398,
+          "stop" : 1607395980399,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9a3d21a13fb05a3e",
+        "parentUid" : "32f9c7eb7d0faed373aace6bba92b399",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607395980464,
+          "stop" : 1607395980465,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      } ],
+      "uid" : "32f9c7eb7d0faed373aace6bba92b399"
+    }, {
+      "name" : "5708-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "55c26dc172f32052",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705327,
+          "stop" : 1606787705328,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d6033d43f00f0c35",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705344,
+          "stop" : 1606787705346,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "202fbd58a524cc04",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787705467,
+          "stop" : 1606787705470,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "9c62dd44c37aa68b",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705568,
+          "stop" : 1606787705568,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d5a0642b23e25fab",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705335,
+          "stop" : 1606787705337,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "ac798f2ed5855319",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705258,
+          "stop" : 1606787705260,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "db40ce89a9227998",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705361,
+          "stop" : 1606787705362,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "d6dd169356002f61",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705565,
+          "stop" : 1606787705566,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9a2acb986bbc44cb",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705318,
+          "stop" : 1606787705320,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "b023b99d2dbd5d89",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787705369,
+          "stop" : 1606787705374,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "55adc2dc1910a935",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787705263,
+          "stop" : 1606787705265,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "6ffebcbb709c68c9",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705252,
+          "stop" : 1606787705253,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9b5e446d8dec3a2a",
+        "parentUid" : "35e5abbee47f13fc260f9f85274c6183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787705353,
+          "stop" : 1606787705354,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      } ],
+      "uid" : "35e5abbee47f13fc260f9f85274c6183"
+    }, {
+      "name" : "4588-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "5bf2d17cf7955946",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497126,
+          "stop" : 1607392497128,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9b3c5db41199d3df",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497136,
+          "stop" : 1607392497138,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "cb6584e764b72cca",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497168,
+          "stop" : 1607392497170,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "285e578e3472da17",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497157,
+          "stop" : 1607392497159,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "108bd9714acec14d",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497178,
+          "stop" : 1607392497180,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "2e2823beeffa9d05",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497370,
+          "stop" : 1607392497370,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_error",
+        "uid" : "74e34c4949c01b3",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392497077,
+          "stop" : 1607392497081,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "7d09c565e7a26bd7",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392497189,
+          "stop" : 1607392497193,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "1c020ed9a6916994",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497372,
+          "stop" : 1607392497372,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "1a9dd640fd4d9300",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497061,
+          "stop" : 1607392497062,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "a5be22a3dd9df78e",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392497294,
+          "stop" : 1607392497296,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "5b6299e322de11e7",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497147,
+          "stop" : 1607392497149,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "97c0bf4f0343399e",
+        "parentUid" : "703162e210b58a312feccb6697b040cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392497068,
+          "stop" : 1607392497071,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "703162e210b58a312feccb6697b040cc"
+    }, {
+      "name" : "12428-MainThread",
+      "children" : [ {
+        "name" : "用例标题3",
+        "uid" : "59842e93f1a7b402",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191484,
+          "stop" : 1606787191484,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "c7bcbad1a8e038",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191252,
+          "stop" : 1606787191253,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "3b3a506ae6302041",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191124,
+          "stop" : 1606787191126,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_skip",
+        "uid" : "2d94e45cbddd3c4f",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191129,
+          "stop" : 1606787191129,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "a59d821db0f4e44f",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787191379,
+          "stop" : 1606787191382,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "c7ef933e96b50743",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191480,
+          "stop" : 1606787191480,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "139f954a073cca79",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191242,
+          "stop" : 1606787191244,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "914a119433108393",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191260,
+          "stop" : 1606787191262,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "ffdddeb01655c555",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191201,
+          "stop" : 1606787191202,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "a7c5ae17fe12da47",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191233,
+          "stop" : 1606787191234,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "938f9f05c66cf9f3",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787191133,
+          "stop" : 1606787191134,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "b877302760ac5788",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191192,
+          "stop" : 1606787191193,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "8bba1244b36e7cc7",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1606787191121,
+          "stop" : 1606787191121,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "fab263a20025f07f",
+        "parentUid" : "f508907744297d5e10ea13be15c6bfc8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1606787191269,
+          "stop" : 1606787191275,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      } ],
+      "uid" : "f508907744297d5e10ea13be15c6bfc8"
+    }, {
+      "name" : "4608-MainThread",
+      "children" : [ {
+        "name" : "用例标题0",
+        "uid" : "5fc2d6d90e8da06b",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542139,
+          "stop" : 1607392542140,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "d885c6a75350a105",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542146,
+          "stop" : 1607392542148,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'青铜'", "2", "20" ]
+      }, {
+        "name" : "test_setup",
+        "uid" : "bf3c1cad855b47a2",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542076,
+          "stop" : 1607392542076,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "57a8be979a6a6bac",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392542277,
+          "stop" : 1607392542278,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 2'", "True", "1" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "9286cf2b9d9e1c60",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542154,
+          "stop" : 1607392542155,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "1", "10" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "90bb76ea93c922d8",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542161,
+          "stop" : 1607392542162,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'白银'", "2", "20" ]
+      }, {
+        "name" : "用例标题3",
+        "uid" : "d86b0f2d9dacdc35",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542356,
+          "stop" : 1607392542356,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "666bbf7d14a57011",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542174,
+          "stop" : 1607392542176,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "2", "20" ]
+      }, {
+        "name" : "用例标题0",
+        "uid" : "76a5f6984d5644c5",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542168,
+          "stop" : 1607392542169,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'黄金'", "1", "10" ]
+      }, {
+        "name" : "test_run",
+        "uid" : "32205a1a373f08e",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542082,
+          "stop" : 1607392542087,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题1",
+        "uid" : "50170c8f6d91b61c",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392542182,
+          "stop" : 1607392542185,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'value 1'", "True", "1" ]
+      }, {
+        "name" : "test_error",
+        "uid" : "659248ccb9eb8196",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607392542091,
+          "stop" : 1607392542112,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "用例标题2",
+        "uid" : "905069ac8828bf9e",
+        "parentUid" : "f0ebc1eade3233deb2ad3070b6e6d5b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607392542354,
+          "stop" : 1607392542354,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f0ebc1eade3233deb2ad3070b6e6d5b3"
+    } ],
+    "uid" : "a50650873bb3b1e3fcba765edac9bdf2"
+  } ]
+}

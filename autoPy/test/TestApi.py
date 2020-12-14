@@ -65,7 +65,6 @@ class TestApiAuto(object):
             shutil.rmtree(path='../result/report')
             shutil.rmtree(path='../result/logs')
             #print(os.path.basename(sys.argv[0]))
-
         #日志存取路径
         logger.add(log_path,encoding='utf-8')
         #pytest比unittest更简化，方便
@@ -73,7 +72,6 @@ class TestApiAuto(object):
         pytest.main(["-s",os.path.basename(sys.argv[0]),"--alluredir", report_data])
         # 本地生成 allure 报告文件
         os.system(f'allure generate {report_data} -o {report_generate} --clean')
-
         # 直接启动allure报告（会占用一个进程，建立一个本地服务并且自动打开浏览器访问，ps 程序不会自动结束，需要自己去关闭）
         #os.system(f'allure serve {report_data}')
         logger.warning('报告已生成')
@@ -86,25 +84,19 @@ class TestApiAuto(object):
                              'file_path,parameters,dependent,data,res_reg,expect,check_db',data_response_list)
     def test_main(self,case_number,case_title,path,is_token,method,parametric_key,file_var,
                   file_path,parameters,dependent,data,res_reg,expect,check_db):
+        print(parameters)
         #动态添加标题
         allure.dynamic.title(case_title)
-
         logger.debug(f'***********...执行用例编号： {case_number} ...***********')
-
         with allure.step("处理相关数据依赖，header"):
-            print(parameters)
             data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)
-
             allure.attach(json.dumps(header,ensure_ascii=False,indent=4),"请求头",allure.attachment_type.TEXT)
             allure.attach(json.dumps(data,ensure_ascii=False,indent=4),"请求数据",allure.attachment_type.TEXT)
-
-
         with allure.step("发送请求，取得响应结果的json串"):
             allure.attach(json.dumps(base_url + path + parameters_path_url,ensure_ascii=False,indent=4),"最终请求地址",allure.attachment_type.TEXT)
             res = br.base_requests(method = method,url = base_url+path+parameters_path_url,parametric_key=parametric_key,file_var = file_var,file_path = file_path,
                                    data = data,header = header)
             allure.attach(json.dumps(res,ensure_ascii=False,indent=4),"实际响应",allure.attachment_type.TEXT)
-
         with allure.step("将响应结果的内容写入实际响应字典中"):
             save_response_dict.save_actual_response(case_key = case_number,case_response=res)
             allure.attach(json.dumps(save_response_dict.actual_response,ensure_ascii=False,indent=4),"实际响应字典",allure.attachment_type.TEXT)
@@ -112,7 +104,6 @@ class TestApiAuto(object):
             if is_token =='写':
                 with allure.step("从登录的响应中提取token到header中"):
                     treat_data.token_header['Authorization'] = "Bearer " +jsonpath.jsonpath(res,token_reg)[0]
-
         with allure.step("根据配置文件的提取响应规划提取实际数据"):
             #print("查看res响应类型："+str(type(res)))
             if isinstance(res,list):
@@ -122,10 +113,8 @@ class TestApiAuto(object):
             if isinstance(res,str):
                 pass
             allure.attach(json.dumps(really,ensure_ascii=False),"提取用于断言的实际响应部分数据",allure.attachment_type.TEXT)
-
         with allure.step("处理读取出来的预期结果响应"):
             #处理预期结果数据中使用True/False/None导致无法转换bug
-
             if 'None' in expect:
                 expect = expect.replace('None','null')
             if 'True' in expect:
@@ -135,19 +124,15 @@ class TestApiAuto(object):
             #if isinstance(expect,dict):
             expect = json.loads(expect)#dic()
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
-            
         with allure.step("预期结果与实际响应进行断言操作"):
-
             if isinstance(really,list):
                 expect = list(expect.values())
-
             logger.info(f'完整的json响应：{res}\n需要校验的数据字典:{really}预期校验的数据字典：{expect}\n测试结果：{really == expect}')
             logger.debug(f'********...用例编号：{case_number},执行完毕，进行数据库校验...********\n\n')
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
             if isinstance(expect,list):
                 assert really == expect
             #assert set(expect.items()).issubset(set(really.items()))
-
         with allure.step("预期数据与实际结果进行断言操作"):
             if check_db:
                 table_list = check_db.split("|")
@@ -166,15 +151,13 @@ class TestApiAuto(object):
 
             else:
                 logger.info(f'没有添加数据库数据校验')
-
-   # @pytest.mark.parametrize('data_db_list',data_db_list)
+    @pytest.mark.parametrize('data_db_list',data_db_list)#db_id,db_type,db_table,db_field,db_expect
     def check_db(self,data_db_list):
         expect_data = ''
         #really_data = ''
         logger.info(f'开始数据库校验')
         effect_row,effect_reslut = operate_db.query_db(data_db_list[0][2],data_db_list[0][3],data_db_list[0][4])
         if data_db_list[0][5] in ['',None]:
-
             if data_db_list[0][3] in ['',None]:
                 really_data = effect_row
             else:
@@ -185,7 +168,6 @@ class TestApiAuto(object):
                 really_data = effect_result_list
 
             logger.error(f'预期结果没有填写，请补充完整！')
-
         else:
             if data_db_list[0][3] in ['',None]:
                 expect_data =int(data_db_list[0][5])
@@ -198,27 +180,18 @@ class TestApiAuto(object):
                         effect_result_list[n] = str(effect_result_list[n])
                 really_data = effect_result_list
         assert expect_data == really_data
-
         logger.info(f'返回结果数量:{effect_row}\n完整的数据库结果：{effect_reslut}\n预期校验的数据字典：{expect_data}\n测试结果：{really_data == expect_data} ')
         allure.attach(json.dumps(data_db_list[0][5],ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
-
-
-
         logger.debug(f'********...全部执行完毕，请日志查看...********\n\n')
-
-
-
-
 
 if __name__ == '__main__':
     TestApiAuto().runTest()
-
     # 使用jenkins集成将不会使用到这两个方法（邮件发送/报告压缩zip）
     from api.utils.ZipFile import zipDir
     from api.utils.SendEmail import SendEmail
 
-    report_generate = os.path.join('../',report_generate)
-    zipDir(report_generate,report_zip)
+    #report_generate = os.path.join('../',report_generate)
+    #zipDir(report_generate,report_zip)
     #zip = zipfile.ZipFile('../result/report/apiAutoTestReport.zip', 'w', zipfile.ZIP_DEFLATED)
 #    SendEmail(email_setting)
 #    OperateDB()

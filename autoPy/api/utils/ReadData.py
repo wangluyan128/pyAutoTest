@@ -53,4 +53,5 @@ class ReadData(object):
                 data_list.append(value)
         except Exception as e:
             logger.error(f'数据表未发现数据，发现异常{e}')
+
         return data_list

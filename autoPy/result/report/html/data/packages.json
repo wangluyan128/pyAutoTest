@@ -5,43 +5,43 @@
     "name" : "test.TestApi",
     "children" : [ {
       "name" : "登录管理|get请求实现登录",
-      "uid" : "6a444f318454d2d3",
+      "uid" : "8c35a2daae118f6d",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1607680774615,
-        "stop" : 1607680774681,
-        "duration" : 66
+        "start" : 1607941250810,
+        "stop" : 1607941250863,
+        "duration" : 53
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_001'", "'登录管理|get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
     }, {
       "name" : "部门管理|获取本人管理的部门列表",
-      "uid" : "61fcae12abb8e6d7",
+      "uid" : "6d768dce69512957",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1607680774701,
-        "stop" : 1607680774745,
-        "duration" : 44
+        "start" : 1607941250874,
+        "stop" : 1607941250915,
+        "duration" : 41
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_004'", "'部门管理|获取本人管理的部门列表'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department/my'", "'$.[message,code]'" ]
     }, {
       "name" : "部门管理|查看详情",
-      "uid" : "b335870d961bf761",
+      "uid" : "6a68c45f768329c8",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "failed",
       "time" : {
-        "start" : 1607680774764,
-        "stop" : 1607680774803,
-        "duration" : 39
+        "start" : 1607941250926,
+        "stop" : 1607941250957,
+        "duration" : 31
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data.adminUserList.department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
+      "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data[0].adminUserList[0].department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
     } ],
     "uid" : "test.TestApi"
   } ]

@@ -9,7 +9,7 @@
 import json
 from json import JSONDecodeError
 
-from jsonpath import jsonpath
+import jsonpath
 from loguru import logger
 
 
@@ -21,13 +21,11 @@ class TreatingData(object):
         self.no_token_header = {}
         self.token_header = {}
     def treating_data(self,is_token,parameters,dependent,data,save_response_dict):
-
         #使用哪个header
         if is_token == '':
             header = self.no_token_header
         else:
             header = self.token_header
-
         logger.info(f'处理依赖前data的数据:{data}')
         #处理依赖数据data
         if dependent != '':
@@ -72,13 +70,10 @@ class TreatingData(object):
                     logger.info(f'data有数据，依赖无数据{data}')
                 except JSONDecodeError as e:
                     logger.error(f'data格式有误,请检查数据格式{e}')
-
-
         #处理路径参数Path的依赖
         #传进来的参数类似{"case_002“：”$.data.id"}/item/{"case_002":"$.meta.status"}，进行列表拆分
-        print(parameters)
-        path_list = parameters.split('/')
 
+        path_list = parameters.split('/')
         #获取列表长度迭代
         for i in range(len(path_list)):
             try:
@@ -91,20 +86,22 @@ class TreatingData(object):
                 continue
             else:
                 #解析该字典，获取用例编号，表达式
-                logger.info(f'{path_dict}')
+                logger.info(f'获得字典信息：{path_dict}')
                 #处理json.loads('数字')正常序列化导致的AttributeError
                 try:
                     for k,v in path_dict.items():
                         try:
                             #尝试从对应的case实际响应提取某个字段内容
-                            path_list[i] = jsonpath.jsonpath(save_response_dict.actual_response[k],v)[0]
+                            #path_list[i] = jsonpath.jsonpath(json.dumps(save_response_dict.actual_response[k]),v)[0]
+                            path_list[i] = jsonpath.jsonpath(save_response_dict.actual_response[k],v)
+                            #path_list[i] = jsonpath.jsonpath(save_response_dict.actual_response[k],"$.data[0].adminUserList[0].department.id")
+                            print(path_list)
                         except TypeError as e:
                             logger.error(f'无法提取，请检查响应字典中是否支持该表达式.{e}')
                 except AttributeError as e:
                     logger.error(f'类型错误：{type(path_list[i])},本次将不转换值{path_list[i]},{e}')
         #字典中存在有不是str的元素：使用map转换在全字符串的列表
         path_list = map(str,path_list)
-
         #将字符串列表转换成字符：500/item/200
         parameters_path_url = "/".join(path_list)
         logger.info(f'path路径参数解析依赖后的路径为{parameters_path_url}')

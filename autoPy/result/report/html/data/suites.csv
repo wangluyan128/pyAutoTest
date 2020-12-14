@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Fri Dec 11 17:59:34 CST 2020","Fri Dec 11 17:59:34 CST 2020","39","test","TestApi","TestApiAuto","","","部门管理|查看详情",""
-"passed","Fri Dec 11 17:59:34 CST 2020","Fri Dec 11 17:59:34 CST 2020","66","test","TestApi","TestApiAuto","","","登录管理|get请求实现登录",""
-"passed","Fri Dec 11 17:59:34 CST 2020","Fri Dec 11 17:59:34 CST 2020","44","test","TestApi","TestApiAuto","","","部门管理|获取本人管理的部门列表",""
+"passed","Mon Dec 14 18:20:50 CST 2020","Mon Dec 14 18:20:50 CST 2020","41","test","TestApi","TestApiAuto","","","部门管理|获取本人管理的部门列表",""
+"passed","Mon Dec 14 18:20:50 CST 2020","Mon Dec 14 18:20:50 CST 2020","53","test","TestApi","TestApiAuto","","","登录管理|get请求实现登录",""
+"failed","Mon Dec 14 18:20:50 CST 2020","Mon Dec 14 18:20:50 CST 2020","31","test","TestApi","TestApiAuto","","","部门管理|查看详情",""

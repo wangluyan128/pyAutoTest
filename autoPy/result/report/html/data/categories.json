@@ -7,17 +7,17 @@
       "name" : "AssertionError: assert ['参数类型解析异常', 10001000] == ['success', 0]\n  At index 0 diff: '参数类型解析异常' != 'success'\n  Use -v to get the full diff",
       "children" : [ {
         "name" : "部门管理|查看详情",
-        "uid" : "b335870d961bf761",
+        "uid" : "6a68c45f768329c8",
         "parentUid" : "375709571d92743caf105150a3eadd3e",
         "status" : "failed",
         "time" : {
-          "start" : 1607680774764,
-          "stop" : 1607680774803,
-          "duration" : 39
+          "start" : 1607941250926,
+          "stop" : 1607941250957,
+          "duration" : 31
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data.adminUserList.department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
+        "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data[0].adminUserList[0].department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
       } ],
       "uid" : "375709571d92743caf105150a3eadd3e"
     } ],
