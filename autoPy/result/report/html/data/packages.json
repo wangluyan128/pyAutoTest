@@ -5,39 +5,39 @@
     "name" : "test.TestApi",
     "children" : [ {
       "name" : "登录管理|get请求实现登录",
-      "uid" : "8c35a2daae118f6d",
+      "uid" : "1c0e89e70949c603",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1607941250810,
-        "stop" : 1607941250863,
-        "duration" : 53
+        "start" : 1608022542755,
+        "stop" : 1608022542964,
+        "duration" : 209
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_001'", "'登录管理|get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
     }, {
       "name" : "部门管理|获取本人管理的部门列表",
-      "uid" : "6d768dce69512957",
+      "uid" : "a82926dfbeaa2198",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1607941250874,
-        "stop" : 1607941250915,
-        "duration" : 41
+        "start" : 1608022543005,
+        "stop" : 1608022543057,
+        "duration" : 52
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_004'", "'部门管理|获取本人管理的部门列表'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department/my'", "'$.[message,code]'" ]
     }, {
       "name" : "部门管理|查看详情",
-      "uid" : "6a68c45f768329c8",
+      "uid" : "961c4101348abe20",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1607941250926,
-        "stop" : 1607941250957,
-        "duration" : 31
+        "start" : 1608022543071,
+        "stop" : 1608022544975,
+        "duration" : 1904
       },
       "flaky" : false,
       "newFailed" : false,
