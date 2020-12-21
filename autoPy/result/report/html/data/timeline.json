@@ -4,48 +4,74 @@
   "children" : [ {
     "name" : "DESKTOP-O07PCGI",
     "children" : [ {
-      "name" : "11944-MainThread",
+      "name" : "22092-MainThread",
       "children" : [ {
-        "name" : "登录管理|get请求实现登录",
-        "uid" : "1c0e89e70949c603",
-        "parentUid" : "7f479cbbe7186c5741eb9ceeb691f426",
+        "name" : "部门管理|获取所有的三级部门",
+        "uid" : "5c9942637ca9d8db",
+        "parentUid" : "b1eafdfe61a0218e8cc17a60cfcf952a",
         "status" : "passed",
         "time" : {
-          "start" : 1608022542755,
-          "stop" : 1608022542964,
-          "duration" : 209
+          "start" : 1608516006479,
+          "stop" : 1608516007958,
+          "duration" : 1479
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'case_003'", "'部门管理|获取所有的三级部门'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department'", "'$.[message,code]'" ]
+      }, {
+        "name" : "登录管理|get请求实现登录",
+        "uid" : "eb737706d79b5658",
+        "parentUid" : "b1eafdfe61a0218e8cc17a60cfcf952a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608516006362,
+          "stop" : 1608516006417,
+          "duration" : 55
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'case_001'", "'登录管理|get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
       }, {
-        "name" : "部门管理|获取本人管理的部门列表",
-        "uid" : "a82926dfbeaa2198",
-        "parentUid" : "7f479cbbe7186c5741eb9ceeb691f426",
+        "name" : "部门管理|查看详情",
+        "uid" : "9cd224b265123d85",
+        "parentUid" : "b1eafdfe61a0218e8cc17a60cfcf952a",
         "status" : "passed",
         "time" : {
-          "start" : 1608022543005,
-          "stop" : 1608022543057,
-          "duration" : 52
+          "start" : 1608516008025,
+          "stop" : 1608516008074,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data[0].adminUserList[0].department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
+      }, {
+        "name" : "部门管理|获取本人管理的部门列表",
+        "uid" : "ee619544cf876e81",
+        "parentUid" : "b1eafdfe61a0218e8cc17a60cfcf952a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608516007968,
+          "stop" : 1608516008013,
+          "duration" : 45
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'case_004'", "'部门管理|获取本人管理的部门列表'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department/my'", "'$.[message,code]'" ]
       }, {
-        "name" : "部门管理|查看详情",
-        "uid" : "961c4101348abe20",
-        "parentUid" : "7f479cbbe7186c5741eb9ceeb691f426",
+        "name" : "部门管理|部门管理分页查询",
+        "uid" : "86e3e46010d1c9ae",
+        "parentUid" : "b1eafdfe61a0218e8cc17a60cfcf952a",
         "status" : "passed",
         "time" : {
-          "start" : 1608022543071,
-          "stop" : 1608022544975,
-          "duration" : 1904
+          "start" : 1608516006429,
+          "stop" : 1608516006466,
+          "duration" : 37
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data[0].adminUserList[0].department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
+        "parameters" : [ "'case_002'", "'部门管理|部门管理分页查询'", "''", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"电梦网络测试组\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/department/page-query'", "'$.[message,code]'" ]
       } ],
-      "uid" : "7f479cbbe7186c5741eb9ceeb691f426"
+      "uid" : "b1eafdfe61a0218e8cc17a60cfcf952a"
     } ],
     "uid" : "a50650873bb3b1e3fcba765edac9bdf2"
   } ]

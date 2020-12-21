@@ -94,16 +94,15 @@ class TreatingData(object):
                             #尝试从对应的case实际响应提取某个字段内容
                             #path_list[i] = jsonpath.jsonpath(json.dumps(save_response_dict.actual_response[k]),v)[0]
                             path_list[i] = jsonpath.jsonpath(save_response_dict.actual_response[k],v)
-                            print(path_list[1])
-                            #if isinstance(path_list[i],list):
-                            #    path_list[i]
+                            if isinstance(path_list[i],list):
+                                path_list[i]= path_list[i][0]
                         except TypeError as e:
                             logger.error(f'无法提取，请检查响应字典中是否支持该表达式.{e}')
                 except AttributeError as e:
                     logger.error(f'类型错误：{type(path_list[i])},本次将不转换值{path_list[i]},{e}')
 
         #字典中存在有不是str的元素：使用map转换在全字符串的列表
-        path_list = map(str,path_list)
+        path_list = list(map(str,path_list))
         #print(list(path_list))
 
         #将字符串列表转换成字符：500/item/200
