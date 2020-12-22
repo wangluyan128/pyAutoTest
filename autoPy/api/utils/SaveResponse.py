@@ -35,12 +35,10 @@ class SaveResponse(object):
         '''
         depend_dict = {}
         depend = json.loads(depend)
-        print(depend)
         for k,v in depend.items():
             #取得依赖中对应case编号的值提取表达式
             try:
                 for value in v:
-                    print(value)
                     #value:'$.data.id'
                     #获取对应应用例编号的实际响应结果
                     if self.actual_response:
@@ -53,7 +51,6 @@ class SaveResponse(object):
                         depend_dict
             except TypeError as e:
                 logger.error(f'实际响应结果中无法正常使用该表达式提取到任何内容，发现异常{e}')
-        print(depend_dict)
         return depend_dict
 
 # 调试代码

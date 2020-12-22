@@ -5,56 +5,95 @@
     "name" : "test.TestApi",
     "children" : [ {
       "name" : "登录管理|get请求实现登录",
-      "uid" : "f40df4f165b1b31d",
+      "uid" : "248f0ad9c4a2ec15",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608625491609,
-        "stop" : 1608625491734,
-        "duration" : 125
+        "start" : 1608628682674,
+        "stop" : 1608628682729,
+        "duration" : 55
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_001'", "'登录管理|get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
     }, {
       "name" : "用户管理|查看所有用户",
-      "uid" : "9d64d3d36d461103",
+      "uid" : "59374ec766f6ee34",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608625491754,
-        "stop" : 1608625492764,
-        "duration" : 1010
+        "start" : 1608628682741,
+        "stop" : 1608628683660,
+        "duration" : 919
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_011'", "'用户管理|查看所有用户'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/admin-user'", "'$.[message,code]'" ]
     }, {
       "name" : "用户管理|创建用户",
-      "uid" : "43ab6fcc6ae5c06",
+      "uid" : "26f035a7aafd9157",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608625492775,
-        "stop" : 1608625492925,
-        "duration" : 150
+        "start" : 1608628683670,
+        "stop" : 1608628683816,
+        "duration" : 146
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_012'", "'用户管理|创建用户'", "''", "'{\n  \"id\" : 1275,\n  \"dhId\" : \"test1\",\n  \"name\" : \"测试账号3\",\n  \"admin\" : 0,\n  \"companyId\" : 6,\n  \"status\" : 1,\n  \"createdAt\" : \"2020-10-23 18:24:24\",\n  \"updatedAt\" : \"2020-10-29 09:49:34\",\n  \"department\" : {\n    \"id\" : 147,\n    \"name\" : \"电梦网络测试组\",\n    \"orgId\" : 265,\n    \"orgType\" : 1,\n    \"pid\" : 0,\n    \"status\" : 1,\n    \"pms\" : \"fangwei\",\n    \"adminUsers\" : \"zhujun,shencenwei\",\n    \"products\" : \"5\",\n    \"productList\" : null,\n    \"demandTypes\" : [{\n\t\t\t\t\"id\": 37,\n\t\t\t\t\"name\": \"系统\"\n\t\t\t}, {\n\t\t\t\t\"id\": 46,\n\t\t\t\t\"name\": \"设计\"\n\t\t\t}, {\n\t\t\t\t\"id\": 44,\n\t\t\t\t\"name\": \"网站\"\n\t\t\t}, {\n\t\t\t\t\"id\": 45,\n\t\t\t\t\"name\": \"测试\"\n\t\t\t}],\n    \"projects\" : [{\n\t\t\t\t\"id\": 41,\n\t\t\t\t\"name\": null\n\t\t\t}, {\n\t\t\t\t\"id\": 42,\n\t\t\t\t\"name\": null\n\t\t\t}],\n    \"createdAt\" : \"2020-10-20 14:39:26\",\n    \"updatedAt\" : \"2020-12-21 14:33:44\"\n  }\n}'", "'{\"case_011\":[\"$.data[(@.length-1)].id\",\"$.data[?(@.name=='测试账号')].dhId\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'post'", "''", "'json'", "'/api/admin-user'", "'$.[message,code]'" ]
     }, {
       "name" : "用户管理|查看某个用户",
-      "uid" : "c4a035c390a9a06f",
+      "uid" : "effc683cf9b2156",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608625492936,
-        "stop" : 1608625493061,
-        "duration" : 125
+        "start" : 1608628683827,
+        "stop" : 1608628683945,
+        "duration" : 118
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_013'", "'用户管理|查看某个用户'", "''", "''", "'{\"case_012\":[\"$.data.id\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/id'", "'data'", "'/api/admin-user'", "'$.[message,code]'" ]
+    }, {
+      "name" : "用户管理|修改用户信息",
+      "uid" : "ded20da7b4b8d3f",
+      "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608628683958,
+        "stop" : 1608628684080,
+        "duration" : 122
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'case_014'", "'用户管理|修改用户信息'", "''", "'{\n  \"id\" : 1275,\n  \"dhId\" : \"test1\",\n  \"name\" : \"测试账号3\",\n  \"admin\" : 0,\n  \"companyId\" : 6,\n  \"status\" : 1,\n  \"createdAt\" : \"2020-10-23 18:24:24\",\n  \"updatedAt\" : \"2020-10-29 09:49:34\",\n  \"department\" : {\n    \"id\" : 147,\n    \"name\" : \"电梦网络测试组\",\n    \"orgId\" : 265,\n    \"orgType\" : 1,\n    \"pid\" : 0,\n    \"status\" : 1,\n    \"pms\" : \"fangwei\",\n    \"adminUsers\" : \"zhujun,shencenwei\",\n    \"products\" : \"5\",\n    \"productList\" : null,\n    \"demandTypes\" : [{\n\t\t\t\t\"id\": 37,\n\t\t\t\t\"name\": \"系统\"\n\t\t\t}, {\n\t\t\t\t\"id\": 46,\n\t\t\t\t\"name\": \"设计\"\n\t\t\t}, {\n\t\t\t\t\"id\": 44,\n\t\t\t\t\"name\": \"网站\"\n\t\t\t}, {\n\t\t\t\t\"id\": 45,\n\t\t\t\t\"name\": \"测试\"\n\t\t\t}],\n    \"projects\" : [{\n\t\t\t\t\"id\": 41,\n\t\t\t\t\"name\": null\n\t\t\t}, {\n\t\t\t\t\"id\": 42,\n\t\t\t\t\"name\": null\n\t\t\t}],\n    \"createdAt\" : \"2020-10-20 14:39:26\",\n    \"updatedAt\" : \"2020-12-21 14:33:44\"\n  }\n}'", "'{\"case_012\":[\"$.data.id\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'put'", "'/id'", "'json'", "'/api/admin-user'", "'$.[message,code]'" ]
+    }, {
+      "name" : "用户管理|分页查询",
+      "uid" : "bfa7e40c325fcf86",
+      "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608628684092,
+        "stop" : 1608628684242,
+        "duration" : 150
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'case_015'", "'用户管理|分页查询'", "''", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"测试账号\",\"query\":\"1\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/admin-user/page-query'", "'$.[message,code]'" ]
+    }, {
+      "name" : "用户管理|禁用/删除用户",
+      "uid" : "3e4a77fe188c53af",
+      "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608628684255,
+        "stop" : 1608628684392,
+        "duration" : 137
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'case_016'", "'用户管理|禁用/删除用户'", "''", "''", "'{\"case_012\":[\"$.data.id\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'delete'", "'/id'", "'data'", "'/api/admin-user'", "'$.[message,code]'" ]
     } ],
     "uid" : "test.TestApi"
   } ]

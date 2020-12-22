@@ -38,7 +38,39 @@ class TreatingData(object):
             else:
                 dependent_data = save_response_dict.read_depend_data(dependent)
             logger.debug(f'依赖数据解析获取的字典{dependent_data}')
-            if parameters != '':
+            if parameters != '' and data != '':
+                data = json.loads(data)
+                exists_key = False
+                parameters_list = parameters.split('/')
+                for dk,dv in dependent_data.items():
+                    for pl in parameters_list:
+                        if pl == dk:
+                            print(type(dv))
+                            if isinstance(dv,int):
+                                dv = str(dv)
+                            parameters=parameters.replace(pl,dv)
+                logger.info(f'parameters有数据,依赖有数据时{parameters}')
+                #处理data与依赖中有相同key的问题，目前支持列表，字典，本地列表形式调试通过，需要在定义时，data中该key定义成列表
+                #实例{"id":[1],"user":{"username":"123"}}
+                for k,v in data.items():
+                    for dk,dv in dependent_data.items():
+                        if k == dk:
+                            print(type(data[k]))
+                            if isinstance(data[k],list):
+                                data[k].append(dv)
+                            if isinstance(data[k],dict):
+                                data[k].update(dv)
+                            if isinstance(data[k],int):
+                                data[k]=dv
+                            if isinstance(data[k],str):
+                                data[k]=dv
+                            exists_key = True
+                    if exists_key is False:
+                        #合并组成一个新的data
+                        dependent_data.update(data)
+                        data = dependent_data
+                        logger.info(f'data有数据,依赖有数据时{data}')
+            elif parameters != '' and data == '':
                 #实例/id/name/num
                 parameters_list = parameters.split('/')
                 #print(parameters_list)
@@ -48,9 +80,9 @@ class TreatingData(object):
                             print(type(dv))
                             if isinstance(dv,int):
                                 dv = str(dv)
-                                parameters=parameters.replace(pl,dv)
+                            parameters=parameters.replace(pl,dv)
                 logger.info(f'parameters有数据,依赖有数据时{parameters}')
-            elif data != '':
+            elif data != '' and parameters == '':
                 data = json.loads(data)
                 exists_key = False
                 #处理data与依赖中有相同key的问题，目前支持列表，字典，本地列表形式调试通过，需要在定义时，data中该key定义成列表
