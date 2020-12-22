@@ -69,7 +69,7 @@ class TestApiAuto(object):
         logger.add(log_path,encoding='utf-8')
         #pytest比unittest更简化，方便
         #pytest.main(args = [f'--alluredir={report_data}'])
-        pytest.main(["-s",os.path.basename(sys.argv[0]),"--alluredir", report_data,"--reruns",3,"--reruns-delay",5])   # 运行失败的用例可以执行3次,每次间隔5秒
+        pytest.main(["-s",os.path.basename(sys.argv[0]),"--alluredir", report_data,"--reruns","3","--reruns-delay","5"])   # 运行失败的用例可以执行3次,每次间隔5秒
         # 本地生成 allure 报告文件
         os.system(f'allure generate {report_data} -o {report_generate} --clean')
         # 直接启动allure报告（会占用一个进程，建立一个本地服务并且自动打开浏览器访问，ps 程序不会自动结束，需要自己去关闭）
