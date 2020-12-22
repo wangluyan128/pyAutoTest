@@ -1,0 +1,60 @@
+{
+    "message": "success",
+    "code": 0,
+    "data": {
+        "id": 1309,
+        "dhId": "test26",
+        "name": "测试账号3",
+        "admin": 0,
+        "superAdmin": null,
+        "deptAdmin": null,
+        "companyId": 6,
+        "status": 1,
+        "createdAt": "2020-10-23 18:24:24",
+        "updatedAt": "2020-10-29 09:49:34",
+        "department": {
+            "id": 147,
+            "name": "电梦网络测试组",
+            "orgId": 265,
+            "orgType": 1,
+            "pid": 0,
+            "status": 1,
+            "pms": "fangwei",
+            "adminUsers": "zhujun,shencenwei",
+            "products": "5",
+            "productList": null,
+            "adminUserList": null,
+            "pmsList": null,
+            "demandTypes": [
+                {
+                    "id": 46,
+                    "name": "设计"
+                },
+                {
+                    "id": 44,
+                    "name": "网站"
+                },
+                {
+                    "id": 45,
+                    "name": "测试"
+                },
+                {
+                    "id": 37,
+                    "name": "系统"
+                }
+            ],
+            "projects": [
+                {
+                    "id": 42,
+                    "name": null
+                },
+                {
+                    "id": 41,
+                    "name": null
+                }
+            ],
+            "createdAt": "2020-10-20 14:39:26",
+            "updatedAt": "2020-12-21 14:33:44"
+        }
+    }
+}

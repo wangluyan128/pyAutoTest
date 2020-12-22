@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/autoPy/data/case_data.xlsx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/autoPy/data/case_data_bak.xlsx" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

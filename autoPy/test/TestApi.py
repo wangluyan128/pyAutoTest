@@ -121,7 +121,7 @@ class TestApiAuto(object):
             if 'False' in expect:
                 expect = expect.replace('False','false')
             #if isinstance(expect,dict):
-            expect = json.loads(expect)#dic()
+            expect = json.loads(expect)  #dic()
             allure.attach(json.dumps(expect,ensure_ascii=False,indent=4),"测试结果",allure.attachment_type.TEXT)
         with allure.step("预期结果与实际响应进行断言操作"):
             if isinstance(really,list):

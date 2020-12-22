@@ -5,26 +5,44 @@ import pytest
 import allure
 @allure.feature('这里是一级标签')
 class Test_all():
+    '''
+allure用例描述：
+使用方法                     参数值                参数说明
 
-
-
-
+@allure.epic()                 epic描述            敏捷里面的概念，定义史诗，往下是feature
+@allure.feature()              模块名称            功能点的描述，往下是story
+@allure.story()                用户故事            用户故事，往下是title
+@allure.title(用例的标题)       用例的标题            重命名html报告名称
+@allure.testcase()            测试用例的链接地址    对应功能测试用例系统里面的case
+@allure.issue()                缺陷                对应缺陷管理系统里面的链接
+@allure.description()          用例描述            测试用例的描述
+@allure.step()                 操作步骤            测试用例的步骤
+@allure.severity()             用例等级            blocker，critical，normal，minor，trivial
+@allure.link()                 链接                定义一个链接，在测试报告展现
+@allure.attachment()           附件                报告添加附件
+pytest默认按字母顺序去执行的（小写英文--->大写英文--->0-9数字）
+用例之间的顺序是文件之间按照ASCLL码排序，文件内的用例按照从上往下执行。
+setup_module->setup_claas->setup_function->testcase->teardown_function->teardown_claas->teardown_module
+    '''
     @allure.step(title="allure通过注解方式完成内容的展示，setp表示测试步骤1...")
+
     def test_setup(self):
         print("我就是打酱油的setup")
-
+    @pytest.mark.run(order=1)
     @allure.step(title="run就是一个正常的方法.")
     def test_run(self):
         allure.attach("自定义描述1", "描述内容，自定义")
         print("我要运行")
         assert True
 
-    #def test_skip(self):
-    #    print("我要跳过")
+    @pytest.mark.run(order=2)
+    def test_skip(self):
+        print("我要跳过")
 
     @allure.severity(allure.severity_level.BLOCKER)  #严重级别
     @allure.testcase("http://www.baidu.com/", "测试用例的地址")
     @allure.issue("http://music.migu.cn/v3/music/player/audio", "点击可跳转到bug地址")
+    @pytest.mark.run(order=3)
     def test_error(self):
         with allure.attach("自定义描述1", "我需要让他进行错误"):
             print("我错误了")
@@ -38,6 +56,7 @@ class Test_all():
     @allure.step("这里是步骤说明一")
     @pytest.mark.parametrize('param1,param2',[(1,10),(2,20)])
     @pytest.mark.parametrize('param',['青铜','白银','黄金'])
+
     def test_0(self,param1,param2,param):
         print(param1)
         allure.attach('附件内容是：'+param,'我是附件名',allure.attachment_type.TEXT)
@@ -72,10 +91,6 @@ class Test_all():
     def test_3(self):
         pass
 
-    @pytest.mark.parametrize('param4',param4)
-    def test_4(param4):
-        print("sssssssssss")
-        print(param4)
     #执行命令 pytest test_1.py --allure-stories "这里是第二个二级标签", "这里是第三个二级标签"
     #@allure.story @allure.feature 还可以用来指定执行的case集合
     #使用@allure.severity装饰器
@@ -97,6 +112,8 @@ class Test_all():
 
     #或者 allure.attach.file(source, name, attachment_type, extension)
     #链接@allure.link  @allure.issue  @allure.testcase
+
+
 if __name__ == '__main__':
     pytest.main(["-s","--alluredir","report/data/"])
     os.system(f'allure generate report/data/ -o report/html --clean')

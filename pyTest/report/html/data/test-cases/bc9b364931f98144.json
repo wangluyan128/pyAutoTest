@@ -1,0 +1,85 @@
+{
+  "uid" : "bc9b364931f98144",
+  "name" : "test_run",
+  "fullName" : "Test_Run.Test_all#test_run",
+  "historyId" : "839fe0151a60a9e89dbc3b9a2c0290fc",
+  "time" : {
+    "start" : 1606787276996,
+    "stop" : 1606787276997,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "run就是一个正常的方法.",
+      "time" : {
+        "start" : 1606787276996,
+        "stop" : 1606787276997,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e4fb99b1b1820e35",
+        "name" : "描述内容，自定义",
+        "source" : "e4fb99b1b1820e35.attach",
+        "type" : "text/plain",
+        "size" : 16
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "12468-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc9b364931f98144.json",
+  "parameterValues" : [ ]
+}

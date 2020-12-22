@@ -1,0 +1,85 @@
+{
+  "uid" : "ee4d198c72295717",
+  "name" : "test_error",
+  "fullName" : "Test_Run.Test_all#test_error",
+  "historyId" : "9a7a582d59355c7ee45cdf38fcfe8cd2",
+  "time" : {
+    "start" : 1608516852565,
+    "stop" : 1608516852566,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: __enter__",
+  "statusTrace" : "self = <Test_Run.Test_all object at 0x0000019F8ECEE710>\n\n    @allure.severity(allure.severity_level.BLOCKER)  #严重级别\n    @allure.testcase(\"http://www.baidu.com/\", \"测试用例的地址\")\n    @allure.issue(\"http://music.migu.cn/v3/music/player/audio\", \"点击可跳转到bug地址\")\n    def test_error(self):\n>       with allure.attach(\"自定义描述1\", \"我需要让他进行错误\"):\nE       AttributeError: __enter__\n\nTest_Run.py:42: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: __enter__",
+    "statusTrace" : "self = <Test_Run.Test_all object at 0x0000019F8ECEE710>\n\n    @allure.severity(allure.severity_level.BLOCKER)  #严重级别\n    @allure.testcase(\"http://www.baidu.com/\", \"测试用例的地址\")\n    @allure.issue(\"http://music.migu.cn/v3/music/player/audio\", \"点击可跳转到bug地址\")\n    def test_error(self):\n>       with allure.attach(\"自定义描述1\", \"我需要让他进行错误\"):\nE       AttributeError: __enter__\n\nTest_Run.py:42: AttributeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f0694d263d881df2",
+      "name" : "我需要让他进行错误",
+      "source" : "f0694d263d881df2.attach",
+      "type" : "text/plain",
+      "size" : 16
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "22368-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "点击可跳转到bug地址",
+    "url" : "http://music.migu.cn/v3/music/player/audio",
+    "type" : "issue"
+  }, {
+    "name" : "测试用例的地址",
+    "url" : "http://www.baidu.com/",
+    "type" : "test_case"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ee4d198c72295717.json",
+  "parameterValues" : [ ]
+}

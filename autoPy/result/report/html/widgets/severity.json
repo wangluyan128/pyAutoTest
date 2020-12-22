@@ -1,50 +1,40 @@
 [ {
-  "uid" : "5c9942637ca9d8db",
-  "name" : "部门管理|获取所有的三级部门",
+  "uid" : "9d64d3d36d461103",
+  "name" : "用户管理|查看所有用户",
   "time" : {
-    "start" : 1608516006479,
-    "stop" : 1608516007958,
-    "duration" : 1479
+    "start" : 1608625491754,
+    "stop" : 1608625492764,
+    "duration" : 1010
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "eb737706d79b5658",
+  "uid" : "f40df4f165b1b31d",
   "name" : "登录管理|get请求实现登录",
   "time" : {
-    "start" : 1608516006362,
-    "stop" : 1608516006417,
-    "duration" : 55
+    "start" : 1608625491609,
+    "stop" : 1608625491734,
+    "duration" : 125
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9cd224b265123d85",
-  "name" : "部门管理|查看详情",
+  "uid" : "43ab6fcc6ae5c06",
+  "name" : "用户管理|创建用户",
   "time" : {
-    "start" : 1608516008025,
-    "stop" : 1608516008074,
-    "duration" : 49
+    "start" : 1608625492775,
+    "stop" : 1608625492925,
+    "duration" : 150
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "86e3e46010d1c9ae",
-  "name" : "部门管理|部门管理分页查询",
+  "uid" : "c4a035c390a9a06f",
+  "name" : "用户管理|查看某个用户",
   "time" : {
-    "start" : 1608516006429,
-    "stop" : 1608516006466,
-    "duration" : 37
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ee619544cf876e81",
-  "name" : "部门管理|获取本人管理的部门列表",
-  "time" : {
-    "start" : 1608516007968,
-    "stop" : 1608516008013,
-    "duration" : 45
+    "start" : 1608625492936,
+    "stop" : 1608625493061,
+    "duration" : 125
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,0 +1,17 @@
+{
+    "message": "success",
+    "code": 0,
+    "data": {
+        "id": 1309,
+        "dhId": "test26",
+        "name": "测试账号3",
+        "admin": 0,
+        "superAdmin": null,
+        "deptAdmin": null,
+        "companyId": 6,
+        "status": 1,
+        "createdAt": "2020-12-22 16:24:54",
+        "updatedAt": "2020-12-22 16:24:54",
+        "department": null
+    }
+}

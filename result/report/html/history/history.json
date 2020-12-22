@@ -1,0 +1,180 @@
+{
+  "ed6d9d8622052a2b21d902b372684a93" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8bc5c736e6fb69af",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979563162,
+        "stop" : 1606979563172,
+        "duration" : 10
+      }
+    } ]
+  },
+  "08a80dcac48651c08b35492b55aaf70a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "50c446eb88099eb0",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979563359,
+        "stop" : 1606979563368,
+        "duration" : 9
+      }
+    } ]
+  },
+  "f711dd39ada450723aec46733e06c776" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "63ea85d4110325f3",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/{\"case_005\":\"$.data.create_time\"}",
+      "time" : {
+        "start" : 1606979563549,
+        "stop" : 1606979563558,
+        "duration" : 9
+      }
+    } ]
+  },
+  "b81bf1b86e71d4d02a8239b1bbc2db01" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b9057a0345b5a244",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}",
+      "time" : {
+        "start" : 1606979563738,
+        "stop" : 1606979563745,
+        "duration" : 7
+      }
+    } ]
+  },
+  "f6a3397353ad11578342caeb52691388" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3e42dc46788ce0b8",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/2",
+      "time" : {
+        "start" : 1606979563647,
+        "stop" : 1606979563655,
+        "duration" : 8
+      }
+    } ]
+  },
+  "f660992337d5a8902e5f0f0af9e22749" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "748d34d90d27430e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606979563056,
+        "stop" : 1606979563125,
+        "duration" : 69
+      }
+    } ]
+  },
+  "e4271338febd1a4ab628d6166e74ead2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a9901599b1372b1",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979563457,
+        "stop" : 1606979563464,
+        "duration" : 7
+      }
+    } ]
+  },
+  "0659820b7164f364c0b268e95f467f00" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a0d7715060769ac5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606979562946,
+        "stop" : 1606979563035,
+        "duration" : 89
+      }
+    } ]
+  },
+  "98e3538d3c395fdcb5d0bdce4e89c669" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "76bd9e1510285af9",
+      "status" : "broken",
+      "statusDetails" : "ValueError: Circular reference detected",
+      "time" : {
+        "start" : 1606979563855,
+        "stop" : 1606979563861,
+        "duration" : 6
+      }
+    } ]
+  }
+}

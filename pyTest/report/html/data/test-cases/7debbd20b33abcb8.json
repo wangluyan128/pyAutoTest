@@ -1,0 +1,425 @@
+{
+  "uid" : "7debbd20b33abcb8",
+  "name" : "用例标题1",
+  "fullName" : "Test_Run.Test_all#test_1",
+  "historyId" : "c82ba11db4ef2e5ac07590d480dc1476",
+  "time" : {
+    "start" : 1608521080024,
+    "stop" : 1608521080030,
+    "duration" : 6
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+  "statusTrace" : "self = <Test_Run.Test_all object at 0x000001BC86C29DD8>, param1 = 'value 1'\nparam2 = True, param3 = 1\n\n    @allure.title(\"用例标题1\")\n    @allure.story(\"这里是第一个二级标签\")\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.step(\"这里是步骤说明二\")\n    @pytest.mark.parametrize('param1',['value 1','value 2'])\n    @pytest.mark.parametrize('param2',[True],ids=[\"这是一个有意思的操作\"])\n    @pytest.mark.parametrize('param3',[1])\n    def test_1(self,param1,param2,param3):\n        print(\"111111111\")\n        allure.attach.file(r'E:\\Myproject/pytest-allure/test/test_1.jsp',\n>                          '我是附件截图的名字',attachment_type=allure.attachment_type.JPG)\n\nTest_Run.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:179: in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_pytest\\listener.py:224: in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\reporter.py:113: in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\logger.py:53: in report_attached_file\n    shutil.copy2(source, destination)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py:257: in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nsrc = 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'\ndst = 'E:\\\\pyAutoTest\\\\pyTest\\\\report\\\\data\\\\92c866fa-1381-48af-8d93-d0c4532c1545-attachment.jpg'\n\n    def copyfile(src, dst, *, follow_symlinks=True):\n        \"\"\"Copy data from src to dst.\n    \n        If follow_symlinks is not set and src is a symbolic link, a new\n        symlink will be created instead of copying the file it points to.\n    \n        \"\"\"\n        if _samefile(src, dst):\n            raise SameFileError(\"{!r} and {!r} are the same file\".format(src, dst))\n    \n        for fn in [src, dst]:\n            try:\n                st = os.stat(fn)\n            except OSError:\n                # File most likely does not exist\n                pass\n            else:\n                # XXX What about other special files? (sockets, devices...)\n                if stat.S_ISFIFO(st.st_mode):\n                    raise SpecialFileError(\"`%s` is a named pipe\" % fn)\n    \n        if not follow_symlinks and os.path.islink(src):\n            os.symlink(os.readlink(src), dst)\n        else:\n>           with open(src, 'rb') as fsrc:\nE           FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'\n\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py:120: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+    "statusTrace" : "self = <Test_Run.Test_all object at 0x000001BC86C29DD8>, param1 = 'value 1'\nparam2 = True, param3 = 1\n\n    @allure.title(\"用例标题1\")\n    @allure.story(\"这里是第一个二级标签\")\n    @allure.severity(allure.severity_level.BLOCKER)\n    @allure.step(\"这里是步骤说明二\")\n    @pytest.mark.parametrize('param1',['value 1','value 2'])\n    @pytest.mark.parametrize('param2',[True],ids=[\"这是一个有意思的操作\"])\n    @pytest.mark.parametrize('param3',[1])\n    def test_1(self,param1,param2,param3):\n        print(\"111111111\")\n        allure.attach.file(r'E:\\Myproject/pytest-allure/test/test_1.jsp',\n>                          '我是附件截图的名字',attachment_type=allure.attachment_type.JPG)\n\nTest_Run.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py:179: in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_pytest\\listener.py:224: in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\reporter.py:113: in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py:286: in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:93: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py:87: in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\logger.py:53: in report_attached_file\n    shutil.copy2(source, destination)\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py:257: in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nsrc = 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'\ndst = 'E:\\\\pyAutoTest\\\\pyTest\\\\report\\\\data\\\\92c866fa-1381-48af-8d93-d0c4532c1545-attachment.jpg'\n\n    def copyfile(src, dst, *, follow_symlinks=True):\n        \"\"\"Copy data from src to dst.\n    \n        If follow_symlinks is not set and src is a symbolic link, a new\n        symlink will be created instead of copying the file it points to.\n    \n        \"\"\"\n        if _samefile(src, dst):\n            raise SameFileError(\"{!r} and {!r} are the same file\".format(src, dst))\n    \n        for fn in [src, dst]:\n            try:\n                st = os.stat(fn)\n            except OSError:\n                # File most likely does not exist\n                pass\n            else:\n                # XXX What about other special files? (sockets, devices...)\n                if stat.S_ISFIFO(st.st_mode):\n                    raise SpecialFileError(\"`%s` is a named pipe\" % fn)\n    \n        if not follow_symlinks and os.path.islink(src):\n            os.symlink(os.readlink(src), dst)\n        else:\n>           with open(src, 'rb') as fsrc:\nE           FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'\n\nC:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py:120: FileNotFoundError",
+    "steps" : [ {
+      "name" : "这里是步骤说明二",
+      "time" : {
+        "start" : 1608521080024,
+        "stop" : 1608521080025,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'\n",
+      "statusTrace" : "  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py\", line 169, in impl\n    return func(*a, **kw)\n  File \"E:\\pyAutoTest\\pyTest\\Test_Run.py\", line 73, in test_1\n    '我是附件截图的名字',attachment_type=allure.attachment_type.JPG)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\_allure.py\", line 179, in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_pytest\\listener.py\", line 224, in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\reporter.py\", line 113, in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\hooks.py\", line 286, in __call__\n    return self._hookexec(self, self.get_hookimpls(), kwargs)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py\", line 93, in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\manager.py\", line 87, in <lambda>\n    firstresult=hook.spec.opts.get(\"firstresult\") if hook.spec else False,\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 208, in _multicall\n    return outcome.get_result()\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 80, in get_result\n    raise ex[1].with_traceback(ex[2])\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\allure_commons\\logger.py\", line 53, in report_attached_file\n    shutil.copy2(source, destination)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py\", line 257, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"C:\\Users\\DM\\AppData\\Local\\Programs\\Python\\Python36\\lib\\shutil.py\", line 120, in copyfile\n    with open(src, 'rb') as fsrc:\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "name" : "我是附件截图的名字",
+        "type" : "image/jpg",
+        "size" : 0
+      } ],
+      "parameters" : [ {
+        "name" : "param1",
+        "value" : "'value 1'"
+      }, {
+        "name" : "param2",
+        "value" : "True"
+      }, {
+        "name" : "param3",
+        "value" : "1"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "这里是第一个二级标签"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "37312-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param1",
+    "value" : "'value 1'"
+  }, {
+    "name" : "param2",
+    "value" : "True"
+  }, {
+    "name" : "param3",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "22539fb1456f49f7",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608521054621,
+        "stop" : 1608521054625,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8b95d916d7d350a2",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608520957159,
+        "stop" : 1608520957164,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "58b4f0141a67d0cd",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608520531756,
+        "stop" : 1608520531759,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "28bbea70feee571e",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608517608369,
+        "stop" : 1608517608373,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "24c338881000bf7d",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608517511048,
+        "stop" : 1608517511051,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8bdb09fe3f4ba228",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608517441867,
+        "stop" : 1608517441870,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "74e90afbcd8418b0",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608517298960,
+        "stop" : 1608517298963,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "22514c281f521cc4",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608517229797,
+        "stop" : 1608517229801,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "d60d58f69c8de06b",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516986421,
+        "stop" : 1608516986424,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "672bb4528bb37cb6",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516894495,
+        "stop" : 1608516894498,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e2c1864ca16cddb4",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516852666,
+        "stop" : 1608516852670,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "54bd64c808818d5c",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516781992,
+        "stop" : 1608516781995,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "77aecee7771b25ee",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516764500,
+        "stop" : 1608516764503,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "610e1804520c53ae",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1608516467706,
+        "stop" : 1608516467782,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "e9d619930518cc65",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607395980470,
+        "stop" : 1607395980473,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "813ca0eeeef488e1",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607394340309,
+        "stop" : 1607394340312,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c7ca3848a6b739f1",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607394060921,
+        "stop" : 1607394060924,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "978670fdb4c00510",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607393711352,
+        "stop" : 1607393711354,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8b967ba9f227fdb6",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607392607592,
+        "stop" : 1607392607596,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "84cdf4d776fe8db",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607392542182,
+        "stop" : 1607392542185,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "68d5ecdba45f17ba",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607392497189,
+        "stop" : 1607392497193,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "ec0097f111ff922a",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607392456575,
+        "stop" : 1607392456577,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ea461278044aeabc",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607392410607,
+        "stop" : 1607392410735,
+        "duration" : 128
+      }
+    }, {
+      "uid" : "8c01a98db51f3bca",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607306503010,
+        "stop" : 1607306503014,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "45f697147229a772",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607072538202,
+        "stop" : 1607072538206,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "4aa9f982c0af4f",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1607065272616,
+        "stop" : 1607065272620,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "dc6030a5cfcecf3f",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787904886,
+        "stop" : 1606787904893,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "be6d852d5146b092",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787870719,
+        "stop" : 1606787870726,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "eeee4abee0eefb2f",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787826235,
+        "stop" : 1606787826242,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "ef1122729f2a0592",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787757697,
+        "stop" : 1606787757703,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "8b44586009ad206c",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787705369,
+        "stop" : 1606787705374,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "c7531b1b997e8492",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787627886,
+        "stop" : 1606787627892,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "74718097197fb137",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787277104,
+        "stop" : 1606787277112,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "5575aa927d3832e8",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
+      "time" : {
+        "start" : 1606787191269,
+        "stop" : 1606787191275,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7debbd20b33abcb8.json",
+  "parameterValues" : [ "'value 1'", "True", "1" ]
+}

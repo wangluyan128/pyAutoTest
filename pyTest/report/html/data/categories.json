@@ -7,12 +7,12 @@
       "name" : "AttributeError: __enter__",
       "children" : [ {
         "name" : "test_error",
-        "uid" : "6c0e4a4994087968",
+        "uid" : "b2d66828d7148110",
         "parentUid" : "5abbebe81d5b9801a0be7a5f0084c5bf",
         "status" : "broken",
         "time" : {
-          "start" : 1607395980401,
-          "stop" : 1607395980402,
+          "start" : 1608521079919,
+          "stop" : 1608521079920,
           "duration" : 1
         },
         "flaky" : false,
@@ -24,25 +24,25 @@
       "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'E:\\\\Myproject/pytest-allure/test/test_1.jsp'",
       "children" : [ {
         "name" : "用例标题1",
-        "uid" : "15c9c9387b1d6e31",
+        "uid" : "7debbd20b33abcb8",
         "parentUid" : "406e65e4189616bd895b947cdea61fab",
         "status" : "broken",
         "time" : {
-          "start" : 1607395980470,
-          "stop" : 1607395980473,
-          "duration" : 3
+          "start" : 1608521080024,
+          "stop" : 1608521080030,
+          "duration" : 6
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'value 1'", "True", "1" ]
       }, {
         "name" : "用例标题1",
-        "uid" : "f00702ee72cdbc2",
+        "uid" : "49fb69606687c63d",
         "parentUid" : "406e65e4189616bd895b947cdea61fab",
         "status" : "broken",
         "time" : {
-          "start" : 1607395980573,
-          "stop" : 1607395980574,
+          "start" : 1608521080122,
+          "stop" : 1608521080123,
           "duration" : 1
         },
         "flaky" : false,

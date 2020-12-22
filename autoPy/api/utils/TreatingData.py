@@ -7,6 +7,7 @@
 @time:
 """
 import json
+import random
 from json import JSONDecodeError
 
 import jsonpath
@@ -29,16 +30,27 @@ class TreatingData(object):
         logger.info(f'处理依赖前data的数据:{data}')
         #处理依赖数据data
         if dependent != '':
-            if dependent.find('=') != -1:
+            if dependent.find('={') != -1:
                 dependent_key = dependent.split('=')[0]
                 dependent_value = dependent.split('=')[1]
                 #dependent_data = {dependent_key:save_response_dict.read_depend_data(dependent_value)}
                 dependent_data = json.loads(dependent_value)
-                print(dependent_data)
             else:
                 dependent_data = save_response_dict.read_depend_data(dependent)
             logger.debug(f'依赖数据解析获取的字典{dependent_data}')
-            if data != '':
+            if parameters != '':
+                #实例/id/name/num
+                parameters_list = parameters.split('/')
+                #print(parameters_list)
+                for dk,dv in dependent_data.items():
+                    for pl in parameters_list:
+                        if pl == dk:
+                            print(type(dv))
+                            if isinstance(dv,int):
+                                dv = str(dv)
+                                parameters=parameters.replace(pl,dv)
+                logger.info(f'parameters有数据,依赖有数据时{parameters}')
+            elif data != '':
                 data = json.loads(data)
                 exists_key = False
                 #处理data与依赖中有相同key的问题，目前支持列表，字典，本地列表形式调试通过，需要在定义时，data中该key定义成列表
@@ -46,10 +58,15 @@ class TreatingData(object):
                 for k,v in data.items():
                     for dk,dv in dependent_data.items():
                         if k == dk:
+                            print(type(data[k]))
                             if isinstance(data[k],list):
                                 data[k].append(dv)
                             if isinstance(data[k],dict):
                                 data[k].update(dv)
+                            if isinstance(data[k],int):  #自加1
+                                data[k]=dv+1
+                            if isinstance(data[k],str):  #为用例而加，双主键
+                                data[k]=dv+str(random.randint(0,100))
                             exists_key = True
                     if exists_key is False:
                         #合并组成一个新的data
@@ -60,6 +77,7 @@ class TreatingData(object):
                 #赋值给data
                 data = dependent_data
                 logger.info(f'data无数据，依赖有数据时{data}')
+
         else:
             if data == '':
                 data = None

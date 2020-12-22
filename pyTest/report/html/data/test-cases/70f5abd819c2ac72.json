@@ -1,0 +1,112 @@
+{
+  "uid" : "70f5abd819c2ac72",
+  "name" : "用例标题0",
+  "fullName" : "Test_Run.Test_all#test_0",
+  "historyId" : "624bad66b3b828e4e3685dafd78cd047",
+  "time" : {
+    "start" : 1607395980443,
+    "stop" : 1607395980444,
+    "duration" : 1
+  },
+  "description" : "这里是对test_0用例的一些详细说明",
+  "descriptionHtml" : "<p>这里是对test_0用例的一些详细说明</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "这里是对test_0用例的一些详细说明",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "这里是步骤说明一",
+      "time" : {
+        "start" : 1607395980443,
+        "stop" : 1607395980444,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3da68d21e7be1a86",
+        "name" : "我是附件名",
+        "source" : "3da68d21e7be1a86.txt",
+        "type" : "text/plain",
+        "size" : 24
+      } ],
+      "parameters" : [ {
+        "name" : "param1",
+        "value" : "1"
+      }, {
+        "name" : "param2",
+        "value" : "10"
+      }, {
+        "name" : "param",
+        "value" : "'白银'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "这里是第一个二级标签"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "3220-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "'白银'"
+  }, {
+    "name" : "param1",
+    "value" : "1"
+  }, {
+    "name" : "param2",
+    "value" : "10"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "70f5abd819c2ac72.json",
+  "parameterValues" : [ "'白银'", "1", "10" ]
+}

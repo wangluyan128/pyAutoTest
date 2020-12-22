@@ -1,0 +1,141 @@
+{
+  "uid" : "180178cc49eeeea7",
+  "name" : "用例标题2",
+  "fullName" : "Test_Run.Test_all#test_2",
+  "historyId" : "75fa7d714296f0466402ee49385b137c",
+  "time" : {
+    "start" : 1608517299155,
+    "stop" : 1608517299156,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "这里是操作步骤打印：name:\"<Test_Run.Test_all object at 0x000002B808AE5E10>\",age:\"0\"",
+      "time" : {
+        "start" : 1608517299155,
+        "stop" : 1608517299155,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'张三'"
+      }, {
+        "name" : "age",
+        "value" : "0"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "这里是操作步骤打印：name:\"<Test_Run.Test_all object at 0x000002B808AE5E10>\",age:\"20\"",
+      "time" : {
+        "start" : 1608517299155,
+        "stop" : 1608517299155,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'李四'"
+      }, {
+        "name" : "age",
+        "value" : "20"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "这里是操作步骤打印：name:\"<Test_Run.Test_all object at 0x000002B808AE5E10>\",age:\"30\"",
+      "time" : {
+        "start" : 1608517299156,
+        "stop" : 1608517299156,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "'王五'"
+      }, {
+        "name" : "age",
+        "value" : "30"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "这里是第二个二级标签"
+  }, {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "13204-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "点击我跳转禅道",
+    "url" : "http://bug.com/user-login-Lw==.html",
+    "type" : "test_case"
+  }, {
+    "name" : "点击我跳转百度",
+    "url" : "http://baidu.com",
+    "type" : "issue"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "180178cc49eeeea7.json",
+  "parameterValues" : [ ]
+}

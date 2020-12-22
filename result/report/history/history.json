@@ -1,0 +1,180 @@
+{
+  "ed6d9d8622052a2b21d902b372684a93" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4e059b63e3c34580",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979507270,
+        "stop" : 1606979507280,
+        "duration" : 10
+      }
+    } ]
+  },
+  "08a80dcac48651c08b35492b55aaf70a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f35f6989bcc9ef56",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979507464,
+        "stop" : 1606979507472,
+        "duration" : 8
+      }
+    } ]
+  },
+  "f711dd39ada450723aec46733e06c776" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "48230bf29350e5d9",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/{\"case_005\":\"$.data.create_time\"}",
+      "time" : {
+        "start" : 1606979507649,
+        "stop" : 1606979507657,
+        "duration" : 8
+      }
+    } ]
+  },
+  "b81bf1b86e71d4d02a8239b1bbc2db01" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7904974fc5629618",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}",
+      "time" : {
+        "start" : 1606979507837,
+        "stop" : 1606979507844,
+        "duration" : 7
+      }
+    } ]
+  },
+  "f6a3397353ad11578342caeb52691388" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1f937e958daf25a",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users/{\"case_005\":\"$.data.id\"}/state/2",
+      "time" : {
+        "start" : 1606979507746,
+        "stop" : 1606979507754,
+        "duration" : 8
+      }
+    } ]
+  },
+  "f660992337d5a8902e5f0f0af9e22749" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d12b14c22ca41168",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606979507147,
+        "stop" : 1606979507238,
+        "duration" : 91
+      }
+    } ]
+  },
+  "e4271338febd1a4ab628d6166e74ead2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ac8dc7bb0b1a746",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.InvalidURL: Failed to parse: http://dms-api.op.dianhun.cn:80users",
+      "time" : {
+        "start" : 1606979507559,
+        "stop" : 1606979507565,
+        "duration" : 6
+      }
+    } ]
+  },
+  "98e3538d3c395fdcb5d0bdce4e89c669" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7104f4189e783cc5",
+      "status" : "broken",
+      "statusDetails" : "ValueError: Circular reference detected",
+      "time" : {
+        "start" : 1606979507950,
+        "stop" : 1606979507955,
+        "duration" : 5
+      }
+    } ]
+  },
+  "0659820b7164f364c0b268e95f467f00" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad7e988c980f9483",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606979507073,
+        "stop" : 1606979507125,
+        "duration" : 52
+      }
+    } ]
+  }
+}

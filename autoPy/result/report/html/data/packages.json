@@ -5,69 +5,56 @@
     "name" : "test.TestApi",
     "children" : [ {
       "name" : "登录管理|get请求实现登录",
-      "uid" : "eb737706d79b5658",
+      "uid" : "f40df4f165b1b31d",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608516006362,
-        "stop" : 1608516006417,
-        "duration" : 55
+        "start" : 1608625491609,
+        "stop" : 1608625491734,
+        "duration" : 125
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'case_001'", "'登录管理|get请求实现登录'", "'access_log:1|access_log:2|demand:1'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'{\"message\":\"success\",\"code\":0}'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
     }, {
-      "name" : "部门管理|部门管理分页查询",
-      "uid" : "86e3e46010d1c9ae",
+      "name" : "用户管理|查看所有用户",
+      "uid" : "9d64d3d36d461103",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608516006429,
-        "stop" : 1608516006466,
-        "duration" : 37
+        "start" : 1608625491754,
+        "stop" : 1608625492764,
+        "duration" : 1010
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "'case_002'", "'部门管理|部门管理分页查询'", "''", "'{\"page\": \"0\", \"size\": \"20\",\"query\":\"电梦网络测试组\"}'", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "'params'", "'/api/department/page-query'", "'$.[message,code]'" ]
+      "parameters" : [ "'case_011'", "'用户管理|查看所有用户'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/admin-user'", "'$.[message,code]'" ]
     }, {
-      "name" : "部门管理|获取所有的三级部门",
-      "uid" : "5c9942637ca9d8db",
+      "name" : "用户管理|创建用户",
+      "uid" : "43ab6fcc6ae5c06",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608516006479,
-        "stop" : 1608516007958,
-        "duration" : 1479
+        "start" : 1608625492775,
+        "stop" : 1608625492925,
+        "duration" : 150
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "'case_003'", "'部门管理|获取所有的三级部门'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department'", "'$.[message,code]'" ]
+      "parameters" : [ "'case_012'", "'用户管理|创建用户'", "''", "'{\n  \"id\" : 1275,\n  \"dhId\" : \"test1\",\n  \"name\" : \"测试账号3\",\n  \"admin\" : 0,\n  \"companyId\" : 6,\n  \"status\" : 1,\n  \"createdAt\" : \"2020-10-23 18:24:24\",\n  \"updatedAt\" : \"2020-10-29 09:49:34\",\n  \"department\" : {\n    \"id\" : 147,\n    \"name\" : \"电梦网络测试组\",\n    \"orgId\" : 265,\n    \"orgType\" : 1,\n    \"pid\" : 0,\n    \"status\" : 1,\n    \"pms\" : \"fangwei\",\n    \"adminUsers\" : \"zhujun,shencenwei\",\n    \"products\" : \"5\",\n    \"productList\" : null,\n    \"demandTypes\" : [{\n\t\t\t\t\"id\": 37,\n\t\t\t\t\"name\": \"系统\"\n\t\t\t}, {\n\t\t\t\t\"id\": 46,\n\t\t\t\t\"name\": \"设计\"\n\t\t\t}, {\n\t\t\t\t\"id\": 44,\n\t\t\t\t\"name\": \"网站\"\n\t\t\t}, {\n\t\t\t\t\"id\": 45,\n\t\t\t\t\"name\": \"测试\"\n\t\t\t}],\n    \"projects\" : [{\n\t\t\t\t\"id\": 41,\n\t\t\t\t\"name\": null\n\t\t\t}, {\n\t\t\t\t\"id\": 42,\n\t\t\t\t\"name\": null\n\t\t\t}],\n    \"createdAt\" : \"2020-10-20 14:39:26\",\n    \"updatedAt\" : \"2020-12-21 14:33:44\"\n  }\n}'", "'{\"case_011\":[\"$.data[(@.length-1)].id\",\"$.data[?(@.name=='测试账号')].dhId\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'post'", "''", "'json'", "'/api/admin-user'", "'$.[message,code]'" ]
     }, {
-      "name" : "部门管理|获取本人管理的部门列表",
-      "uid" : "ee619544cf876e81",
+      "name" : "用户管理|查看某个用户",
+      "uid" : "c4a035c390a9a06f",
       "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
       "status" : "passed",
       "time" : {
-        "start" : 1608516007968,
-        "stop" : 1608516008013,
-        "duration" : 45
+        "start" : 1608625492936,
+        "stop" : 1608625493061,
+        "duration" : 125
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ "'case_004'", "'部门管理|获取本人管理的部门列表'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "''", "''", "'/api/department/my'", "'$.[message,code]'" ]
-    }, {
-      "name" : "部门管理|查看详情",
-      "uid" : "9cd224b265123d85",
-      "parentUid" : "4aa5d3581e1c29cb3c1b533fe2efcf31",
-      "status" : "passed",
-      "time" : {
-        "start" : 1608516008025,
-        "stop" : 1608516008074,
-        "duration" : 49
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "'case_005'", "'部门管理|查看详情'", "''", "''", "''", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/{\"case_004\":\"$.data[0].adminUserList[0].department.id\"}'", "'data'", "'/api/department'", "'$.[message,code]'" ]
+      "parameters" : [ "'case_013'", "'用户管理|查看某个用户'", "''", "''", "'{\"case_012\":[\"$.data.id\"]}'", "'{\"message\":\"success\",\"code\":0 }'", "''", "''", "'读'", "'get'", "'/id'", "'data'", "'/api/admin-user'", "'$.[message,code]'" ]
     } ],
     "uid" : "test.TestApi"
   } ]

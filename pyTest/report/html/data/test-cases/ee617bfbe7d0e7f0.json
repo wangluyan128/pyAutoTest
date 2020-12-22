@@ -1,0 +1,75 @@
+{
+  "uid" : "ee617bfbe7d0e7f0",
+  "name" : "test_01",
+  "fullName" : "Test_Run.Test_all#test_01",
+  "historyId" : "208407ed3ee3b613c7f2c8690d62986f",
+  "time" : {
+    "start" : 1608517608335,
+    "stop" : 1608517608335,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=3)"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "40028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ac00bdc868122215",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517511010,
+        "stop" : 1608517511010,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d555ce053afd9648",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517441830,
+        "stop" : 1608517441830,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=3)" ]
+  },
+  "source" : "ee617bfbe7d0e7f0.json",
+  "parameterValues" : [ ]
+}

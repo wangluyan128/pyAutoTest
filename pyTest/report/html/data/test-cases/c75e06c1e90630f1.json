@@ -1,0 +1,386 @@
+{
+  "uid" : "c75e06c1e90630f1",
+  "name" : "用例标题0",
+  "fullName" : "Test_Run.Test_all#test_0",
+  "historyId" : "1618f9e55bb898e58540279566fc4b0f",
+  "time" : {
+    "start" : 1608521080000,
+    "stop" : 1608521080001,
+    "duration" : 1
+  },
+  "description" : "这里是对test_0用例的一些详细说明",
+  "descriptionHtml" : "<p>这里是对test_0用例的一些详细说明</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "这里是对test_0用例的一些详细说明",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "这里是步骤说明一",
+      "time" : {
+        "start" : 1608521080000,
+        "stop" : 1608521080001,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d18a2361ad5298fe",
+        "name" : "我是附件名",
+        "source" : "d18a2361ad5298fe.txt",
+        "type" : "text/plain",
+        "size" : 24
+      } ],
+      "parameters" : [ {
+        "name" : "param1",
+        "value" : "2"
+      }, {
+        "name" : "param2",
+        "value" : "20"
+      }, {
+        "name" : "param",
+        "value" : "'白银'"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "这里是一级标签"
+  }, {
+    "name" : "story",
+    "value" : "这里是第一个二级标签"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "37312-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Test_Run"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "param",
+    "value" : "'白银'"
+  }, {
+    "name" : "param1",
+    "value" : "2"
+  }, {
+    "name" : "param2",
+    "value" : "20"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "974fb55133f55a90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608521054606,
+        "stop" : 1608521054607,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d1867058fee162eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608520957077,
+        "stop" : 1608520957078,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "73400d52752446c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608520531741,
+        "stop" : 1608520531742,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3c4d031a5554b17e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517608356,
+        "stop" : 1608517608357,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea880885c61db4b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517511032,
+        "stop" : 1608517511033,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "91b65deae117497c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517441853,
+        "stop" : 1608517441854,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "56e5e1745268de03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517298930,
+        "stop" : 1608517298936,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "3f5f21dc196967d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608517229782,
+        "stop" : 1608517229783,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a9787868206ab06e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516986407,
+        "stop" : 1608516986408,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d752fad3a659d219",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516894482,
+        "stop" : 1608516894483,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d14360dbe93a1708",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516852651,
+        "stop" : 1608516852652,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "28570015cfdb3d0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516781976,
+        "stop" : 1608516781976,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bd0e31519fc9fdd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516764484,
+        "stop" : 1608516764484,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9f71d5b43e362c17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608516467690,
+        "stop" : 1608516467691,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "10985b9dce8e5f4c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607395980449,
+        "stop" : 1607395980450,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d0b8ea34fee2ab99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607394340287,
+        "stop" : 1607394340288,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c3b8a726babaeaef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607394060899,
+        "stop" : 1607394060900,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9568fbbb50922fcf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607393711307,
+        "stop" : 1607393711310,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "66f2171026a6f9c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607392607562,
+        "stop" : 1607392607563,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7dbd13e7d1f322dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607392542161,
+        "stop" : 1607392542162,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3ff49d0ee6948934",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607392497157,
+        "stop" : 1607392497159,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4a24408070e84786",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607392456553,
+        "stop" : 1607392456554,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9d9d21f009a0a8d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607392410584,
+        "stop" : 1607392410586,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "24b7d63cc3a83660",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607306502986,
+        "stop" : 1607306502987,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e28b70c01525ea41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607072538157,
+        "stop" : 1607072538158,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "362847d424da222d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607065272589,
+        "stop" : 1607065272590,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c6d8d8616ac7d155",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787904842,
+        "stop" : 1606787904844,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4036b047390ad3b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787870676,
+        "stop" : 1606787870678,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "45d6ce220dc6ac2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787826192,
+        "stop" : 1606787826194,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c0bb30f524bfcf8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787757669,
+        "stop" : 1606787757672,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a0e049ef70731807",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787705344,
+        "stop" : 1606787705346,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cc96e18e9cc677d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787627859,
+        "stop" : 1606787627860,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e4f77ea31d1a4f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787277078,
+        "stop" : 1606787277080,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fb55524198683ec3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1606787191242,
+        "stop" : 1606787191244,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c75e06c1e90630f1.json",
+  "parameterValues" : [ "'白银'", "2", "20" ]
+}

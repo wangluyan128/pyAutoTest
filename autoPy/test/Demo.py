@@ -51,7 +51,7 @@ class TestDemo:
             }'
         temp = json.loads(a);
         node = "sites[-2].info".split('.')
-        # print(temp)
+        print(jsonpath.jsonpath(temp,'$..sites[-1].name'))
         # print(temp["sites"][1]["info"])
         #逐层读取数据
         for per_node in node:
@@ -397,5 +397,149 @@ class TestDemo:
         print(parameters_path_url)
 
         print(jsonpath.jsonpath(jsonstr,"$.data[0].adminUserList[0].department.id"))
+
+    def jsonpathDemo1(self):
+        '''
+        操作	说明
+        $	查询根元素。这将启动所有路径表达式。
+        @	当前节点由过滤谓词处理。
+        *	通配符，必要时可用任何地方的名称或数字。
+        ..	深层扫描。 必要时在任何地方可以使用名称。
+        .<name> 点，表示子节点
+        ['<name>' (, '<name>')] 括号表示子项
+        [<number> (, <number>)] 数组索引或索引
+        [start:end]             数组切片操作
+        [?(<expression>)]	    过滤表达式。 表达式必须求值为一个布尔值。
+        =====================
+        XPath   JSONPath    描述
+        /       $           根节点
+        .       @           现行节点
+        /       .or[]       取子节点
+        ..      n/a         取父节点，Jsonpath未支持
+        //      ..          就是不管位置，选择所有符合条件的条件
+        *       *           匹配所有元素节点
+        @       n/a         根据属性访问，Json不支持，因为Json是个Key-value递归结构，不需要属性访问。
+        []      []          迭代器标示（可以在里边做简单的迭代操作，如数组下标，根据内容选值等）
+        |       [,]         支持迭代器中做多选。
+        []      ?()         支持过滤操作.
+        n/a     ()          支持表达式计算
+        ()      n/a         分组，JsonPath不支持
+        =====================
+        函数	描述	输出
+        min()	提供数字数组的最小值	Double
+        max()	提供数字数组的最大值	Double
+        avg()	提供数字数组的平均值	Double
+        stddev()	提供数字数组的标准偏差值	Double
+        length()	提供数组的长度	Integer
+        =====================
+        操作符	描述
+        ==	left等于right（注意1不等于'1'）
+        !=	不等于
+        <	小于
+        <=	小于等于
+        >	大于
+        >=	大于等于
+        =~	匹配正则表达式[?(@.name =~ /foo.*?/i)]
+        in	左边存在于右边 [?(@.size in ['S', 'M'])]
+        nin	左边不存在于右边
+        size	（数组或字符串）长度
+        empty	（数组或字符串）为空
+        '''
+        json_str ={
+            "store": {
+                "book": [
+                    {
+                        "category": "reference",
+                        "author": "Nigel Rees",
+                        "title": "Sayings of the Century",
+                        "price": 8.95
+                    },
+                    {
+                        "category": "fiction",
+                        "author": "Evelyn Waugh",
+                        "title": "Sword of Honour",
+                        "price": 12.99
+                    },
+                    {
+                        "category": "fiction",
+                        "author": "Herman Melville",
+                        "title": "Moby Dick",
+                        "isbn": "0-553-21311-3",
+                        "price": 8.99
+                    },
+                    {
+                        "category": "fiction",
+                        "author": "J. R. R. Tolkien",
+                        "title": "The Lord of the Rings",
+                        "isbn": "0-395-19395-8",
+                        "price": 22.99
+                    }
+                ],
+                "bicycle": {
+                        "color": "red",
+                        "price": 19.95
+                    }
+                },
+                "expensive": 10
+            }
+        #jsondemo = json.dumps(json_str)
+        print("获取json中store下book下的所有author值")
+        print(jsonpath.jsonpath(json_str,"$.store.book[*].author"))
+        print("获取所有json中所有author的值")
+        print(jsonpath.jsonpath(json_str,"$..author"))
+        print("所有的东西，书籍和自行车")
+        print(jsonpath.jsonpath(json_str,"$.store.*"))
+        print("获取json中store下所有price的值")
+        print(jsonpath.jsonpath(json_str,"$.store..price"))
+        print("获取json中book数组的第3个值")
+        print(jsonpath.jsonpath(json_str,"$..book[2]"))
+        print("倒数的第二本书")
+        print(jsonpath.jsonpath(json_str,"$..book[-2]"))
+        print("前两本书")
+        print(jsonpath.jsonpath(json_str,"$..book[0,1]"))
+        print("	从索引0（包括）到索引2（排除）的所有图书")
+        print(jsonpath.jsonpath(json_str,"$..book[:2]"))
+        print("从索引1（包括）到索引2（排除）的所有图书")
+        print(jsonpath.jsonpath(json_str,"$..book[1:2]"))
+        print("获取json中book数组的最后两个值")
+        print(jsonpath.jsonpath(json_str,"$..book[-2:]"))
+        print("	获取json中book数组的第3个到最后一个的区间值")
+        print(jsonpath.jsonpath(json_str,"$..book[2:]"))
+        print("获取json中book数组中包含isbn的所有值")
+        print(jsonpath.jsonpath(json_str,"$..book[?(@.isbn)]"))
+        print("获取json中book数组中price<10的所有值")
+        print(jsonpath.jsonpath(json_str,"$.store.book[?(@.price < 10)]"))
+        print("获取json中book数组中price<=expensive的所有值")
+        print(jsonpath.jsonpath(json_str,"$..book[?(@.price <= $['expensive'])]"))
+        print("获取json中book数组中的作者以REES结尾的所有值（REES不区分大小写）")
+        print(jsonpath.jsonpath(json_str,"$..book[?(@.author =~ /.*REES/i)]"))
+        print("逐层列出json中的所有值，层级由外到内")
+        print(jsonpath.jsonpath(json_str,"$..*"))
+        print("获取json中book数组的长度")
+        print(jsonpath.jsonpath(json_str,"$..book.length()"))
+        print("取到最后一个book的title")
+        print(jsonpath.jsonpath(json_str,"$.store.book[(@.length-1)].title"))
+        print("取到价格小于10的书的title")
+        print(jsonpath.jsonpath(json_str,"$.store.book[?(@.price < 10)].title"))
+        print("按步长取，到第1个和第3本书的titile")
+        print(jsonpath.jsonpath(json_str,"$.store.book[0:3:2].title"))
+        print("按步长取到第1本书的titile")
+        print(jsonpath.jsonpath(json_str,"$.store.book[0:2:2].title"))
+        print(jsonpath.jsonpath(json_str,"$.store.book[?(@.category=='reference')].title"))
+        print(jsonpath.jsonpath(json_str,"$.store.book[(@.length-1)].price"))
+    def test(self):
+        str = "{\"case_011\":[\"$.data[?(@.name=='测试账号')].id\"]}"
+        str1 = "{'case_011':['$.data[?(@.name=='测试账号‘)].id']}"
+        print(json.loads(str))
+        parameters = "/id"
+        str2 = "{\"message\":\"success\",\"code\":0,\"data\":[{\"id\":6,\"dhId\":\"moore\",\"name\":\"张锐\",\"admin\":0,\"superAdmin\":null,\"deptAdmin\":null,\"companyId\":5,\"status\":1,\"createdAt\":\"2020-10-20 10:28:27\",\"updatedAt\":\"2020-12-22 00:00:23\",\"department\":{\"id\":60,\"name\":\"梦手游复刻版项目部\",\"orgId\":420,\"orgType\":3,\"pid\":42,\"status\":0,\"pms\":\"0\",\"adminUsers\":\"\",\"products\":null,\"productList\":null,\"adminUserList\":null,\"pmsList\":null,\"demandTypes\":[],\"projects\":[],\"createdAt\":\"2020-10-20 10:28:26\",\"updatedAt\":\"2020-10-20 10:28:26\"}},{\"id\":7,\"dhId\":\"liuyanqing\",\"name\":\"柳彦青\",\"admin\":0,\"superAdmin\":null,\"deptAdmin\":null,\"companyId\":5,\"status\":1,\"createdAt\":\"2020-10-20 10:28:27\",\"updatedAt\":\"2020-12-22 00:00:22\",\"department\":{\"id\":103,\"name\":\"X3项目部\",\"orgId\":535,\"orgType\":3,\"pid\":524,\"status\":0,\"pms\":\"0\",\"adminUsers\":\"\",\"products\":null,\"productList\":null,\"adminUserList\":null,\"pmsList\":null,\"demandTypes\":[],\"projects\":[],\"createdAt\":\"2020-10-20 10:28:26\",\"updatedAt\":\"2020-10-20 10:28:26\"}},{\"id\":8,\"dhId\":\"summersong\",\"name\":\"宋杰\",\"admin\":0,\"superAdmin\":null,\"deptAdmin\":null,\"companyId\":5,\"status\":1,\"createdAt\":\"2020-10-20 10:28:27\",\"updatedAt\":\"2020-11-20 00:00:09\",\"department\":{\"id\":91,\"name\":\"海外研发部\",\"orgId\":522,\"orgType\":3,\"pid\":11,\"status\":0,\"pms\":\"0\",\"adminUsers\":\"\",\"products\":null,\"productList\":null,\"adminUserList\":null,\"pmsList\":null,\"demandTypes\":[],\"projects\":[],\"createdAt\":\"2020-10-20 10:28:26\",\"updatedAt\":\"2020-11-21 00:00:06\"}}]}"
+        str2 = json.loads(str2)
+        str3 = "{\"message\":\"success\",\"code\":0,\"data\":{\"id\":13,\"dhId\":\"test30\",\"name\":\"测试账号\",\"admin\":0,\"superAdmin\":null,\"deptAdmin\":null,\"companyId\":6,\"status\":1,\"createdAt\":\"2020-10-23 18:24:24\",\"updatedAt\":\"2020-10-29 09:49:34\",\"department\":{\"id\":147,\"name\":\"电梦网络测试组\",\"orgId\":265,\"orgType\":1,\"pid\":0,\"status\":1,\"pms\":\"fangwei\",\"adminUsers\":\"zhujun,shencenwei\",\"products\":\"5\",\"productList\":null,\"adminUserList\":null,\"pmsList\":null,\"demandTypes\":[{\"id\":46,\"name\":\"设计\"},{\"id\":44,\"name\":\"网站\"},{\"id\":45,\"name\":\"测试\"},{\"id\":37,\"name\":\"系统\"}],\"projects\":[{\"id\":42,\"name\":null},{\"id\":41,\"name\":null}],\"createdAt\":\"2020-10-20 14:39:26\",\"updatedAt\":\"2020-12-21 14:33:44\"}}}"
+        str3 = json.loads(str3)
+        print(type(str3))
+        print(jsonpath.jsonpath(str2,"$.data[?(@.name=='张锐')].dhId"))
+        print(jsonpath.jsonpath(str3,"$.data.name"))
+        print(parameters.replace("id","1275"))
+
 if __name__ == "__main__":
-    t = TestDemo().pathDemo()
+    t = TestDemo().test()

@@ -1,141 +1,181 @@
 [ {
-  "uid" : "5c7614a34e312f00",
-  "name" : "用例标题2",
+  "uid" : "95f4832fb31e4e36",
+  "name" : "test_run",
   "time" : {
-    "start" : 1607395980652,
-    "stop" : 1607395980653,
-    "duration" : 1
+    "start" : 1608521079911,
+    "stop" : 1608521079913,
+    "duration" : 2
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9219b57ee3c44cb6",
-  "name" : "用例标题0",
+  "uid" : "ee617bfbe7d0e7f0",
+  "name" : "test_01",
   "time" : {
-    "start" : 1607395980443,
-    "stop" : 1607395980444,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4a76191f49cb79e5",
-  "name" : "用例标题0",
-  "time" : {
-    "start" : 1607395980457,
-    "stop" : 1607395980458,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "8f1460d094f522c9",
-  "name" : "test_setup",
-  "time" : {
-    "start" : 1607395980395,
-    "stop" : 1607395980395,
+    "start" : 1608517608335,
+    "stop" : 1608517608335,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "15c9c9387b1d6e31",
-  "name" : "用例标题1",
-  "time" : {
-    "start" : 1607395980470,
-    "stop" : 1607395980473,
-    "duration" : 3
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "6c0e4a4994087968",
+  "uid" : "b2d66828d7148110",
   "name" : "test_error",
   "time" : {
-    "start" : 1607395980401,
-    "stop" : 1607395980402,
+    "start" : 1608521079919,
+    "stop" : 1608521079920,
     "duration" : 1
   },
   "status" : "broken",
   "severity" : "blocker"
 }, {
-  "uid" : "9a3d21a13fb05a3e",
+  "uid" : "3028d92f212310b2",
   "name" : "用例标题0",
   "time" : {
-    "start" : 1607395980464,
-    "stop" : 1607395980465,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "2d94e45cbddd3c4f",
-  "name" : "test_skip",
-  "time" : {
-    "start" : 1606787191129,
-    "stop" : 1606787191129,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f00702ee72cdbc2",
-  "name" : "用例标题1",
-  "time" : {
-    "start" : 1607395980573,
-    "stop" : 1607395980574,
-    "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "blocker"
-}, {
-  "uid" : "dec25c506fbb70e6",
-  "name" : "用例标题0",
-  "time" : {
-    "start" : 1607395980428,
-    "stop" : 1607395980430,
+    "start" : 1608521079973,
+    "stop" : 1608521079975,
     "duration" : 2
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "1187903c0fb3d4c4",
-  "name" : "test_run",
-  "time" : {
-    "start" : 1607395980398,
-    "stop" : 1607395980399,
-    "duration" : 1
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "93f0aeb14c724925",
+  "uid" : "1fbed6c85ed347d1",
   "name" : "用例标题3",
   "time" : {
-    "start" : 1607395980655,
-    "stop" : 1607395980655,
+    "start" : 1608521080197,
+    "stop" : 1608521080197,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4a8025346c4fe644",
+  "uid" : "c75e06c1e90630f1",
   "name" : "用例标题0",
   "time" : {
-    "start" : 1607395980436,
-    "stop" : 1607395980437,
+    "start" : 1608521080000,
+    "stop" : 1608521080001,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "9aafb58342c14872",
+  "uid" : "21641659bbd0e008",
+  "name" : "test_setup",
+  "time" : {
+    "start" : 1608521079969,
+    "stop" : 1608521079970,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af5fc5fb4fc83585",
+  "name" : "用例标题2",
+  "time" : {
+    "start" : 1608521080194,
+    "stop" : 1608521080195,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5565fd22c2cf7cb",
   "name" : "用例标题0",
   "time" : {
-    "start" : 1607395980449,
-    "stop" : 1607395980450,
+    "start" : 1608521080016,
+    "stop" : 1608521080017,
     "duration" : 1
   },
   "status" : "passed",
   "severity" : "critical"
+}, {
+  "uid" : "c988be1f3d96d74c",
+  "name" : "test_02",
+  "time" : {
+    "start" : 1608517608563,
+    "stop" : 1608517608563,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a6c5dbd4ae91bfe",
+  "name" : "test_skip",
+  "time" : {
+    "start" : 1608521079916,
+    "stop" : 1608521079916,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a89f7ec91e5197a",
+  "name" : "用例标题0",
+  "time" : {
+    "start" : 1608521079991,
+    "stop" : 1608521079992,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7debbd20b33abcb8",
+  "name" : "用例标题1",
+  "time" : {
+    "start" : 1608521080024,
+    "stop" : 1608521080030,
+    "duration" : 6
+  },
+  "status" : "broken",
+  "severity" : "blocker"
+}, {
+  "uid" : "cab569e054267f4",
+  "name" : "用例标题0",
+  "time" : {
+    "start" : 1608521079982,
+    "stop" : 1608521079983,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2ead45d2feccce8",
+  "name" : "test_login01",
+  "time" : {
+    "start" : 1608517608334,
+    "stop" : 1608517608334,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd2cddbf622b41b8",
+  "name" : "用例标题0",
+  "time" : {
+    "start" : 1608521080008,
+    "stop" : 1608521080009,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d26bda5f1f4ba002",
+  "name" : "test_login02",
+  "time" : {
+    "start" : 1608517608331,
+    "stop" : 1608517608331,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49fb69606687c63d",
+  "name" : "用例标题1",
+  "time" : {
+    "start" : 1608521080122,
+    "stop" : 1608521080123,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "blocker"
 } ]

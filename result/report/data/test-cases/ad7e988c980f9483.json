@@ -1,0 +1,258 @@
+{
+  "uid" : "ad7e988c980f9483",
+  "name" : "get请求实现登录",
+  "fullName" : "test.TestApi.TestApiAuto#test_main[case_001-get请求实现登录-/open/login/as-写-get-params-----{\"dhId\": \"wangyan\",\"key\":\"666\"}-$.[message,code]-",
+  "historyId" : "0659820b7164f364c0b268e95f467f00",
+  "time" : {
+    "start" : 1606979507073,
+    "stop" : 1606979507125,
+    "duration" : 52
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "处理相关数据依赖，header",
+      "time" : {
+        "start" : 1606979507073,
+        "stop" : 1606979507077,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9deaeaf1f55a189f",
+        "name" : "请求头",
+        "source" : "9deaeaf1f55a189f.txt",
+        "type" : "text/plain",
+        "size" : 2
+      }, {
+        "uid" : "d8d09d95b7f0534f",
+        "name" : "请求数据",
+        "source" : "d8d09d95b7f0534f.txt",
+        "type" : "text/plain",
+        "size" : 43
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "发送请求，取得响应结果的json串",
+      "time" : {
+        "start" : 1606979507077,
+        "stop" : 1606979507118,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a74e75d7eeb92aaf",
+        "name" : "最终请求地址",
+        "source" : "a74e75d7eeb92aaf.txt",
+        "type" : "text/plain",
+        "size" : 47
+      }, {
+        "uid" : "d7bd1c680e4b39",
+        "name" : "实际响应",
+        "source" : "d7bd1c680e4b39.txt",
+        "type" : "text/plain",
+        "size" : 209
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2
+    }, {
+      "name" : "将响应结果的内容写入实际响应字典中",
+      "time" : {
+        "start" : 1606979507119,
+        "stop" : 1606979507121,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "从登录的响应中提取token到header中",
+        "time" : {
+          "start" : 1606979507120,
+          "stop" : 1606979507120,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "cc8608c0ec25317",
+        "name" : "实际响应字典",
+        "source" : "cc8608c0ec25317.txt",
+        "type" : "text/plain",
+        "size" : 245
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "根据配置文件的提取响应规划提取实际数据",
+      "time" : {
+        "start" : 1606979507121,
+        "stop" : 1606979507122,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "be9284d5bd797ad6",
+        "name" : "提取用于断言的实际响应部分数据",
+        "source" : "be9284d5bd797ad6.txt",
+        "type" : "text/plain",
+        "size" : 14
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "处理读取出来的预期结果响应",
+      "time" : {
+        "start" : 1606979507122,
+        "stop" : 1606979507123,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "eb111070c809a85f",
+        "name" : "测试结果",
+        "source" : "eb111070c809a85f.txt",
+        "type" : "text/plain",
+        "size" : 16
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "预期结果与实际响应进行断言操作",
+      "time" : {
+        "start" : 1606979507123,
+        "stop" : 1606979507125,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "be21c61d88ac8c2",
+        "name" : "测试结果",
+        "source" : "be21c61d88ac8c2.txt",
+        "type" : "text/plain",
+        "size" : 16
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "TestApi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestApiAuto"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-O07PCGI"
+  }, {
+    "name" : "thread",
+    "value" : "14716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.TestApi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_number",
+    "value" : "'case_001'"
+  }, {
+    "name" : "case_title",
+    "value" : "'get请求实现登录'"
+  }, {
+    "name" : "data",
+    "value" : "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'"
+  }, {
+    "name" : "dependent",
+    "value" : "''"
+  }, {
+    "name" : "expect",
+    "value" : "'['success', 0]'"
+  }, {
+    "name" : "file_path",
+    "value" : "''"
+  }, {
+    "name" : "file_var",
+    "value" : "''"
+  }, {
+    "name" : "is_token",
+    "value" : "'写'"
+  }, {
+    "name" : "method",
+    "value" : "'get'"
+  }, {
+    "name" : "parameters",
+    "value" : "''"
+  }, {
+    "name" : "parametric_key",
+    "value" : "'params'"
+  }, {
+    "name" : "path",
+    "value" : "'/open/login/as'"
+  }, {
+    "name" : "res_reg",
+    "value" : "'$.[message,code]'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad7e988c980f9483.json",
+  "parameterValues" : [ "'case_001'", "'get请求实现登录'", "'{\"dhId\": \"wangyan\",\"key\":\"666\"}'", "''", "'['success', 0]'", "''", "''", "'写'", "'get'", "''", "'params'", "'/open/login/as'", "'$.[message,code]'" ]
+}
