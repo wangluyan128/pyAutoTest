@@ -17,4 +17,4 @@ if __name__ =='__main__':
     #pytest.main(['pytestDemo.py'])#指定测试模块
     #pytest.main(['-k','Myclass and not method','pytestDemo.py'])
     #通过关键字表达式过滤执行 这条命令会匹配文件名、类名、方法名匹配表达式的用例，这里这条命令会运行 TestMyClass.test_something， 不会执行 TestMyClass.test_method_simple
-    pytest.main(['pytestDemo.py::testdemo::test_a'])
+    pytest.main(["-s","pytestDemo.py","--reruns","2","--reruns-delay","5"])

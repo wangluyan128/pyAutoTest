@@ -45,7 +45,6 @@ class TreatingData(object):
                 for dk,dv in dependent_data.items():
                     for pl in parameters_list:
                         if pl == dk:
-                            print(type(dv))
                             if isinstance(dv,int):
                                 dv = str(dv)
                             parameters=parameters.replace(pl,dv)
@@ -55,7 +54,6 @@ class TreatingData(object):
                 for k,v in data.items():
                     for dk,dv in dependent_data.items():
                         if k == dk:
-                            print(type(data[k]))
                             if isinstance(data[k],list):
                                 data[k].append(dv)
                             if isinstance(data[k],dict):
@@ -73,11 +71,9 @@ class TreatingData(object):
             elif parameters != '' and data == '':
                 #实例/id/name/num
                 parameters_list = parameters.split('/')
-                #print(parameters_list)
                 for dk,dv in dependent_data.items():
                     for pl in parameters_list:
                         if pl == dk:
-                            print(type(dv))
                             if isinstance(dv,int):
                                 dv = str(dv)
                             parameters=parameters.replace(pl,dv)
@@ -98,7 +94,7 @@ class TreatingData(object):
                             if isinstance(data[k],int):  #自加1
                                 data[k]=dv+1
                             if isinstance(data[k],str):  #为用例而加，双主键
-                                data[k]=dv+str(random.randint(0,100))
+                                data[k]=dv+str(random.randint(0,10000))
                             exists_key = True
                     if exists_key is False:
                         #合并组成一个新的data
@@ -153,8 +149,6 @@ class TreatingData(object):
 
         #字典中存在有不是str的元素：使用map转换在全字符串的列表
         path_list = list(map(str,path_list))
-        #print(list(path_list))
-
         #将字符串列表转换成字符：500/item/200
         parameters_path_url = "/".join(path_list)
         logger.info(f'path路径参数解析依赖后的路径为{parameters_path_url}')

@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Dec 22 17:18:03 CST 2020","Tue Dec 22 17:18:03 CST 2020","118","test","TestApi","TestApiAuto","","","用户管理|查看某个用户",""
-"passed","Tue Dec 22 17:18:03 CST 2020","Tue Dec 22 17:18:04 CST 2020","122","test","TestApi","TestApiAuto","","","用户管理|修改用户信息",""
-"passed","Tue Dec 22 17:18:03 CST 2020","Tue Dec 22 17:18:03 CST 2020","146","test","TestApi","TestApiAuto","","","用户管理|创建用户",""
-"passed","Tue Dec 22 17:18:04 CST 2020","Tue Dec 22 17:18:04 CST 2020","150","test","TestApi","TestApiAuto","","","用户管理|分页查询",""
-"passed","Tue Dec 22 17:18:02 CST 2020","Tue Dec 22 17:18:02 CST 2020","55","test","TestApi","TestApiAuto","","","登录管理|get请求实现登录",""
-"passed","Tue Dec 22 17:18:04 CST 2020","Tue Dec 22 17:18:04 CST 2020","137","test","TestApi","TestApiAuto","","","用户管理|禁用/删除用户",""
-"passed","Tue Dec 22 17:18:02 CST 2020","Tue Dec 22 17:18:03 CST 2020","919","test","TestApi","TestApiAuto","","","用户管理|查看所有用户",""
