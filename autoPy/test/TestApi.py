@@ -69,7 +69,7 @@ class TestApiAuto(object):
         logger.add(log_path,encoding='utf-8')
         #pytest比unittest更简化，方便
         #pytest.main(args = [f'--alluredir={report_data}'])
-        pytest.main(["-s",os.path.basename(sys.argv[0]),"--alluredir", report_data,"--reruns","3","--reruns-delay","5"])   # 运行失败的用例可以执行3次,每次间隔5秒
+        pytest.main(["-s",os.path.basename(sys.argv[0]),"--alluredir", report_data])   # 运行失败的用例可以执行3次,每次间隔5秒 ,"--reruns","3","--reruns-delay","5"
         # 本地生成 allure 报告文件
         os.system(f'allure generate {report_data} -o {report_generate} --clean')
         # 直接启动allure报告（会占用一个进程，建立一个本地服务并且自动打开浏览器访问，ps 程序不会自动结束，需要自己去关闭）
@@ -88,7 +88,7 @@ class TestApiAuto(object):
         allure.dynamic.title(case_title)
         logger.debug(f'***********...执行用例编号： {case_number} ...***********')
         with allure.step("处理相关数据依赖，header"):
-            data,header,parameters_path_url = treat_data.treating_data(is_token,parameters,dependent,data,save_response_dict)
+            data,header,parameters_path_url = treat_data.treating_data(is_token,file_var,file_path,parameters,dependent,data,save_response_dict)
             allure.attach(json.dumps(header,ensure_ascii=False,indent=4),"请求头",allure.attachment_type.TEXT)
             allure.attach(json.dumps(data,ensure_ascii=False,indent=4),"请求数据",allure.attachment_type.TEXT)
         with allure.step("发送请求，取得响应结果的json串"):

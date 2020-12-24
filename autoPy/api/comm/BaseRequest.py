@@ -10,6 +10,8 @@ import requests
 from loguru import logger
 
 
+
+
 class BaseRequest(object):
     def __init__(self):
         #整个接口测试中使用同一个session来管理cookies
@@ -33,6 +35,10 @@ class BaseRequest(object):
         session = self.session
         if(file_var in [None,'']) and (file_path in [None,'']):
             files = None
+            #try:
+            #    del treat_data.token_header['Content-Type']
+            #except KeyError as e:
+            #    logger.error(f'头文件尚无content-type属性，进入下一个检查，本轮值不发生变化：{e}')
         else:
             #文件不为空的操作
             if file_path.startswith('[') and file_path.endswith(']'):
@@ -42,8 +48,10 @@ class BaseRequest(object):
                 for file_path in file_path_list:
                     files.append((file_var,(open(file_path,'rb'))))
             else:
+            #    treat_data.token_header['Content-Type'] = "multipart/form-data"
                 #单文件上传
-                files = {file_var:open(file_path,'rb')}
+                #files = {file_var:open(file_path,'rb')}
+                files ={"file":(file_var,open(file_path,'rb'),"multipart/form-data")}
 
         if parametric_key == 'params':
             res = session.request(method = method,url = url,params=data,headers = header)
@@ -52,7 +60,7 @@ class BaseRequest(object):
         elif parametric_key == 'json':
             res = session.request(method = method,url = url,json = data,files = files,headers = header)
         elif parametric_key == '':
-            res = session.request(method = method,url = url,params=data,headers = header)
+            res = session.request(method = method,url = url,params=data,files = files,headers = header)
         else:
             raise ValueError('可选关键字为：get/delete/head/options/请求使用params,post/put/patch请求可使用json(application/json)/data')
         logger.info(f'请求方法：{method},请求路径：{url},请求参数：{data},请求文件：{files},请求头:{header}')

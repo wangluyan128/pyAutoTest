@@ -21,12 +21,17 @@ class TreatingData(object):
     def __init__(self):
         self.no_token_header = {}
         self.token_header = {}
-    def treating_data(self,is_token,parameters,dependent,data,save_response_dict):
+    def treating_data(self,is_token,file_var,file_path,parameters,dependent,data,save_response_dict):
         #使用哪个header
         if is_token == '':
             header = self.no_token_header
         else:
             header = self.token_header
+
+            #if file_var != '' and file_path != '':     #调上传文件接口用
+            #    self.token_header['Content-Type'] = "multipart/form-data"
+            #else:
+            #    del self.token_header['Content-Type']
         logger.info(f'处理依赖前data的数据:{data}')
         #处理依赖数据data
         if dependent != '':
@@ -105,7 +110,6 @@ class TreatingData(object):
                 #赋值给data
                 data = dependent_data
                 logger.info(f'data无数据，依赖有数据时{data}')
-
         else:
             if data == '':
                 data = None
