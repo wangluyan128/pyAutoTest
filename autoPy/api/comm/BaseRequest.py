@@ -6,6 +6,9 @@
 @file: BaseRequest.py
 @time:
 """
+import os
+
+import filetype as filetype
 import requests
 from loguru import logger
 
@@ -51,7 +54,19 @@ class BaseRequest(object):
             #    treat_data.token_header['Content-Type'] = "multipart/form-data"
                 #单文件上传
                 #files = {file_var:open(file_path,'rb')}
-                files ={"file":(file_var,open(file_path,'rb'),"multipart/form-data")}
+               # header['Content-Type'] = "multipart/form-data"
+               #根据文件路径，自动获取文件名称和文件mineo类型
+                a = filetype.guess(file_path)
+                if a is None:
+                    print('cannot guess file_path!')
+                #媒体类型
+                typee = a.mime
+                #文件真实路径
+                realp = os.path.realpath(file_path)
+                #获取文件名
+                fname = os.path.split(file_path)[-1]
+
+                files ={"file":(file_var,open(file_path,'rb'),typee)}#"multipart/form-data"
 
         if parametric_key == 'params':
             res = session.request(method = method,url = url,params=data,headers = header)

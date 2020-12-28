@@ -5,11 +5,15 @@ import os
 import re
 import zipfile
 from collections import OrderedDict
+from urllib import request
 
+import filetype
 import jsonpath
 import pytest
+import requests
 
 from api.utils.ReadData import ReadData
+from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
 
 
 class TestDemo:
@@ -540,8 +544,79 @@ class TestDemo:
         print(jsonpath.jsonpath(str2,"$.data[?(@.name=='张锐')].dhId"))
         print(jsonpath.jsonpath(str3,"$.data.name"))
         print(parameters.replace("id","1275"))
+    def up(self,filepath="E:\\1.jpg"):
+        #根据文件路径，自动获取文件名称和文件minme类型
+        a = filetype.guess(filepath)
+        if a is None:
+            print('cannot guess file_type!')
+        #媒体类型
+        typee = a.mime
+        #文件真实路径
+        realp = os.path.realpath(filepath)
+        #获取文件名
+        fname = os.path.split(filepath)[-1]
+        return (fname,open(realp,'rb'),typee)
+        #m = MultipartEncoder(
+        #    filters=[
+        #        ('source',up()),
+        #    ]
+        #)
+    #r = request.post('http://httpbin.org/post',data=m,headers={'Content-Type':m.content_type})
+    #print(r.text)
 
+    def uploadDemo(self):
+       #单文件上传
+        files1 = {"file":open("1.jpg","rb")}
+        #r1 =  requests.post("http://localhost:8888/upload",files = files1)
 
+        #显式地设置文件名，文件类型和请求头：
+        files2 = {'file':('1.jpg',open('1.jpg','rb'),'image/jpep',{'Expires':'0'})}
+        #r2 = requests.post('http://localhost:8888/upload',files=files2)
+        #多文件上传
+        files3 = [
+            ('',('1.jpg',open('1.jpg','rb'),'image/jpeg')),
+            ('file',('2.jpg',open('2.jpg','rb'),'image/jpeg'))
+        ]
+        r3 = requests.post('http://localhost:8888/upload', files=files3)
+        #上传时附带其他参数
+        data = {
+            "name":"upload",
+            "age":100
+        }
+        files4 = [
+            ('file',('1.jpg',open('1.jpg','rb'),'image/jpeg')),
+            ('file',('2.jpg',open('2.jpg','rb'),'image/jpeg'))
+        ]
+        #r4 = requests.post('http://localhost:8888/upload',files=files4,data=data)
+        #流式上传文件
+        m = MultipartEncoder(
+            fields={
+                'name':'upload','age':'100',
+                'file':('1.jpg',open('1.jpg','rb'),'image/jpeg'),
+                'file':('2.jpg',open('2.jpg','rb'),'image/jpeg')
+            }
+        )
+        #r5=requests.post('http://localhost:8888/upload',data=m,headers = {'Content-Type':m.content_type})
+        #监听上传进度
+
+        print(r3.content)
+    def my_callback(self,monitor):
+        progress = (monitor.bytes_read / len(monitor)) * 100
+        print("\r文件上传进度：%d%%(%d/%d)" % (progress,monitor.bytes_read,len(monitor)), end=" ")
+
+    e = MultipartEncoder(
+        fields={
+            'name':'unload','age':'100',
+            'file':('1.jpg',open('1.jpg','rb'),'image/jpeg'),
+            'file':('2.jpg',open('2.jpg','rb'),'image/jpeg')
+        }
+    )
+
+#    m = MultipartEncoderMonitor(e,my_callback)
+#    r6 = request.post('http://localhost:8888/upload',data=m,
+#                      headers={'Content-Type':m.content_type})
 
 if __name__ == "__main__":
-    t = TestDemo().test()
+    t = TestDemo().uploadDemo()
+
+
