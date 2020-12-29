@@ -564,7 +564,7 @@ class TestDemo:
     #r = request.post('http://httpbin.org/post',data=m,headers={'Content-Type':m.content_type})
     #print(r.text)
 
-    def uploadDemo(self):
+    def uploadDemo(self,file_path):
        #单文件上传
         files1 = {"file":open("1.jpg","rb")}
         #r1 =  requests.post("http://localhost:8888/upload",files = files1)
@@ -574,10 +574,25 @@ class TestDemo:
         #r2 = requests.post('http://localhost:8888/upload',files=files2)
         #多文件上传
         files3 = [
-            ('',('1.jpg',open('1.jpg','rb'),'image/jpeg')),
-            ('file',('2.jpg',open('2.jpg','rb'),'image/jpeg'))
+            ('files',('1.jpg',open('1.jpg','rb'),'image/jpeg')),
+            ('files',('2.jpg',open('2.jpg','rb'),'image/jpeg'))
+
         ]
-        r3 = requests.post('http://localhost:8888/upload', files=files3)
+        if file_path.startswith('[') and file_path.endswith(']'):
+           file_path_list = eval(file_path)    #字符串转成列表
+           files3_1 = []
+           for file_path in file_path_list:
+               fileg = filetype.guess(file_path)
+               if fileg is None:
+                   print('cannot guess file_path!')
+                #媒体类型
+               typee = fileg.mime
+               #获取文件名
+               fname = os.path.split(file_path)[-1]
+               files3_1.append(('files',(fname,open(file_path,'rb'),typee)))
+
+        print(type(files3))
+        r3 = requests.post('http://localhost:8888/uploads', files=files3_1)
         #上传时附带其他参数
         data = {
             "name":"upload",
@@ -617,6 +632,7 @@ class TestDemo:
 #                      headers={'Content-Type':m.content_type})
 
 if __name__ == "__main__":
-    t = TestDemo().uploadDemo()
+    l1 = "['1.jpg','2.jpg']"
+    t = TestDemo().uploadDemo(l1)
 
 
