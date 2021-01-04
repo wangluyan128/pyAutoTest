@@ -103,7 +103,7 @@ class TestApiAuto(object):
             if is_token =='写':
                 with allure.step("从登录的响应中提取token到header中"):
                     treat_data.token_header['Authorization'] = "Bearer " +jsonpath.jsonpath(res,token_reg)[0]
-        with allure.step("根据配置文件的提取响应规划提取实际数据"):
+        with allure.step("根据配置文件的提取响应结果提取实际数据"):
             #print("查看res响应类型："+str(type(res)))
             if isinstance(res,list):
                pass

@@ -579,17 +579,23 @@ class TestDemo:
 
         ]
         if file_path.startswith('[') and file_path.endswith(']'):
-           file_path_list = eval(file_path)    #字符串转成列表
-           files3_1 = []
-           for file_path in file_path_list:
-               fileg = filetype.guess(file_path)
-               if fileg is None:
+            print(file_path)
+            file_path_list = eval(file_path)    #字符串转成列表
+            #file_path = file_path[1:-1]
+            #file_path_list = file_path.split(',')
+            print(type(file_path_list))
+            print(file_path_list)
+            files3_1 = []
+            for file_path in file_path_list:
+                print(file_path)
+                fileg = filetype.guess(file_path)
+                if fileg is None:
                    print('cannot guess file_path!')
                 #媒体类型
-               typee = fileg.mime
+                typee = fileg.mime
                #获取文件名
-               fname = os.path.split(file_path)[-1]
-               files3_1.append(('files',(fname,open(file_path,'rb'),typee)))
+                fname = os.path.split(file_path)[-1]
+                files3_1.append(('files',(fname,open(file_path,'rb'),typee)))
 
         print(type(files3))
         r3 = requests.post('http://localhost:8888/uploads', files=files3_1)
@@ -630,9 +636,13 @@ class TestDemo:
 #    m = MultipartEncoderMonitor(e,my_callback)
 #    r6 = request.post('http://localhost:8888/upload',data=m,
 #                      headers={'Content-Type':m.content_type})
-
+    def test1(self):
+        res = {'message': 'success', 'code': 0, 'data': {'id': 611, 'title': '更新了您的需求,将【预计结束】由【--】调整为【2020-12-25】', 'content': '创建需求1110-1', 'link': '', 'type': 'demand_update', 'relationId': 100087, 'productId': 4, 'fromUser': 'shencenwei', 'toUser': 'wangyan', 'status': True, 'createdAt': '2020-12-23 18:09:29', 'updatedAt': '2021-01-04 16:35:00'}}
+        res_reg = "$.[data.status]"
+        really = jsonpath.jsonpath(res,res_reg)
+        print(really)
 if __name__ == "__main__":
-    l1 = "['1.jpg','2.jpg']"
-    t = TestDemo().uploadDemo(l1)
+    l1 = "[\"e:/1.jpg\",\"e:/2.jpg\"]"
+    t = TestDemo().test1()
 
 

@@ -45,28 +45,33 @@ class BaseRequest(object):
         else:
             #文件不为空的操作
             if file_path.startswith('[') and file_path.endswith(']'):
+                print(file_path)
                 file_path_list = eval(file_path)    #字符串转成列表
                 files = []
                 #多文件上传
                 for file_path in file_path_list:
-                    files.append((file_var,(open(file_path,'rb'))))
+
+                    fileg = filetype.guess(file_path)
+                    if fileg is None:
+                        print('cannot guess file_path!')
+                        #媒体类型
+                    typee = fileg.mime
+                    #获取文件名
+                    fname = os.path.split(file_path)[-1]
+                    files.append((file_var,(fname,open(file_path,'rb'),typee)))
             else:
-            #    treat_data.token_header['Content-Type'] = "multipart/form-data"
                 #单文件上传
-                #files = {file_var:open(file_path,'rb')}
-               # header['Content-Type'] = "multipart/form-data"
-               #根据文件路径，自动获取文件名称和文件mineo类型
-                a = filetype.guess(file_path)
-                if a is None:
+                #根据文件路径，自动获取文件名称和文件mineo类型
+                fileg = filetype.guess(file_path)
+                if fileg is None:
                     print('cannot guess file_path!')
                 #媒体类型
-                typee = a.mime
+                typee = fileg.mime
                 #文件真实路径
                 realp = os.path.realpath(file_path)
                 #获取文件名
                 fname = os.path.split(file_path)[-1]
-
-                files ={"file":(file_var,open(file_path,'rb'),typee)}#"multipart/form-data"
+                files = {file_var:(fname,open(file_path,'rb'),typee)}
 
         if parametric_key == 'params':
             res = session.request(method = method,url = url,params=data,headers = header)
