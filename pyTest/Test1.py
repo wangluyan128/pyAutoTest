@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+import subprocess
+
 import pytest
 
 
@@ -24,7 +26,7 @@ class Test(object):
     def test_one(self):
         print("执行用例test_one")
         assert True
-
+   
 
 if __name__ == '__main__':
     pytest.main(['-s','Test1.py'])
